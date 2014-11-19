@@ -1,0 +1,354 @@
+.mainPanel .catagoryNameBar{
+	position:relative;
+	font-size: 20px;
+	line-height: 50px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.mainPanel .catagoryNameBar span{
+	position: absolute;
+	top: 3px;
+	right: 0;
+	font-size: 14px;
+}
+.mainPanel .catagoryNameBar span u{
+	text-decoration: none;
+}
+
+.mainPanel .filterPanel{
+	padding-top:4px;
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 14px;
+	position: relative;
+}
+.mainPanel .filterPanel .labelCol{
+	display: inline-block;
+	line-height: 32px;
+	width: 46px;
+	padding-left: 4px;
+}
+.mainPanel .filterPanel .keyCol{
+	position:relative;
+	display: inline-block;
+	line-height: 32px;
+	width: 115px;
+	color: #666;
+	cursor: default;
+}
+.mainPanel .filterPanel .keyCol .labelBlock>i{
+	display: inline-block;
+	width: 10px;
+	height: 7px;
+	background: url(../images/icons.png) no-repeat -44px -52px;
+	margin-left: 4px;	
+}
+.mainPanel .filterPanel .keyRow{
+	display: none;
+}
+.mainPanel .filterPanel .comboxRow .labelBlock{
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	border-bottom: 4px solid #fff;
+}
+.mainPanel .filterPanel .comboxRow .popBlock{
+	position: absolute;
+	top:32px;
+	line-height: 22px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.4s ease-out 0s;
+}
+.mainPanel .filterPanel .keyCol:hover{
+	z-index: 5;
+}
+.mainPanel .filterPanel .keyCol:hover .popBlock{
+	visibility: visible;
+	opacity: 1;
+	font-size: 12px;
+}
+.mainPanel .filterPanel .keyCol:hover .labelBlock{
+	border-bottom: 4px solid #ed145b;
+	color: #ed145b;
+}
+.mainPanel .filterPanel .keyCol:hover .labelBlock>i{
+	background-position: -34px -52px;
+}
+.mainPanel .filterPanel .comboxRow .popBlock .border{
+	border: 4px solid #e1e1e1;
+	background-color: #fff;
+	padding: 14px 14px 14px 4px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.price .popBlock{
+	width: 270px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.style .popBlock{
+	width: 248px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.color .popBlock{
+	width: 360px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.size .popBlock{
+	width: 470px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.price .border div{
+	display:inline-block;
+	width: 58px;
+	border: 1px solid #ccc;
+	padding:  2px 6px;
+	line-height: 16px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.price .border{
+	padding: 14px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.price .border div input{
+	width: 100%;
+	border: none;	
+}
+.mainPanel .filterPanel .comboxRow .keyCol.price .border span{
+	margin: 0 4px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.price .border .sureBtn{
+	display: inline-block;
+	width: 54px;
+	height: 24px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	margin-left: 8px;
+	vertical-align: bottom;
+}
+.mainPanel .filterPanel .comboxRow .keyCol .popBlock a{
+	display: inline-block;
+	width: 101px;
+	margin-left: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mainPanel .filterPanel .comboxRow .keyCol .popBlock a i{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-right: 4px;
+	background: url(../images/icons.png) no-repeat -13px -102px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol .popBlock a.unable{
+	color: #ccc;
+}
+.mainPanel .filterPanel .comboxRow .keyCol .popBlock a.unable i{
+	background-position:  -26px -102px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol .popBlock a.selected{
+	color: #ed145b;
+}
+.mainPanel .filterPanel .comboxRow .keyCol .popBlock a.selected i{
+	background-position:  -0 -102px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.color .popBlock a i{
+	background: none;
+	border: 2px solid #fff;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+}
+.mainPanel .filterPanel .comboxRow .keyCol.color .popBlock a i img{
+	width: 13px;
+	height: 13px;
+	border: 1px solid #fff;
+}
+.mainPanel .filterPanel .comboxRow .keyCol .popBlock a.selected i{
+	border-color: #6c696a;
+}
+
+.mainPanel .filterPanel .keyRow .keyCol{
+	vertical-align: top;
+}
+.mainPanel .filterPanel .keyRow .border{
+	position:relative;
+	display: block;
+	border: 1px solid #e5e5e5;
+	line-height: 26px;
+	margin-right: 8px;
+	padding: 0 18px 0 4px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	color: #333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 12px;
+}
+.mainPanel .filterPanel .keyRow .border a{
+	position:absolute;
+	top:50%;
+	right:6px;
+	display: block;
+	width: 8px;
+	height: 8px;
+	margin-top:-4px;
+	background: url(../images/icons.png) no-repeat -34px -59px;
+}
+.mainPanel .filterPanel .keyRow .border img{
+	vertical-align: -2px;
+}
+
+.mainPanel .filterPanel .comboxRow{
+	position: relative;
+	z-index: 9;
+}
+.mainPanel .filterPanel .order{
+	position: absolute;
+	right: 0;
+	text-align: right;
+}
+.mainPanel .filterPanel .order .popBlock{
+	text-align: left;
+	left: auto;
+	right: 0;
+}
+.mainPanel .filterPanel .order .popBlock .current{
+	color: #ed145b;
+}
+.mainPanel .listPanel{
+	margin-left: -25px;
+	margin-top: 20px;
+}
+.mainPanel .listPanel li{
+	width: 25%;
+	float: left;
+	margin-bottom: 20px;
+	position:relative;
+}
+.mainPanel .listPanel li .border{
+	display:block;
+	margin-left: 25px;
+}
+.mainPanel .listPanel li i{
+	position:absolute;
+	top:4px;
+	right:4px;
+	width: 32px;
+	height: 32px;
+	background: url(../images/catagory_toWish.png) no-repeat -32px 0;	
+}
+.mainPanel .listPanel li .border a{
+	display: block;	
+}
+
+.mainPanel .listPanel li .border i:hover{
+	background-position: -32px -32px;
+}
+.mainPanel .listPanel li .border .added{
+	background-position: 0 0;
+}
+.mainPanel .listPanel li .border .added:hover{
+	background-position: 0 -32px;
+}
+
+.mainPanel .listPanel li .border .descriptBlock{
+	text-align: center;
+}
+.mainPanel .listPanel li .border img{
+	width: 100%;
+}
+.mainPanel .listPanel li .border .descriptBlock h3{
+	font-size: 14px;
+	line-height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mainPanel .listPanel li .border .descriptBlock h1{
+	font-size: 18px;
+	color: #f33b7e;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.mainPanel .loadingRow{
+	visibility:hidden;
+	text-align: center;
+}
+
+@media only screen and (max-width: 784px) {
+	
+	.mainPanel .catagoryNameBar{
+		padding: 0 10px;
+	}
+	.mainPanel .catagoryNameBar span{
+		right: 10px;
+	}
+	.comm_navDenoteBar,
+	.mainPanel .filterPanel .order,
+	.mainPanel .filterPanel .labelCol,
+	.mainPanel .filterPanel .keyRow .border img {
+		display: none;
+	}
+	.mainPanel .filterPanel .keyCol{
+		width: 25%;
+		position: static;
+		text-align: center;
+	}
+	.mainPanel .filterPanel .comboxRow .popBlock{
+		left: 0;
+		text-align: left;
+		z-index: 0;
+	}
+	
+	.mainPanel .filterPanel{
+		padding: 0 5px;
+	}
+	.mainPanel .filterPanel .keyRow .keyCol{
+		text-align: left;
+	}
+	.mainPanel .filterPanel .comboxRow .keyCol.price .popBlock,
+	.mainPanel .filterPanel .comboxRow .keyCol.size .popBlock,
+	.mainPanel .filterPanel .comboxRow .keyCol.style .popBlock,
+	.mainPanel .filterPanel .comboxRow .keyCol.color .popBlock{
+		width: 100%;
+	}
+	.mainPanel .listPanel{
+		margin-left: 0;
+	}
+	.mainPanel .listPanel li{
+		float: none;
+		margin-left: 0;
+		width: auto;
+		text-align: center;
+	}
+	.mainPanel .listPanel li .border{
+		position:relative;
+		margin-left: 0;
+		display: inline-block;
+		width: 100%;
+		max-width: 230px;
+	}
+	.mainPanel .filterPanel .comboxRow:hover .labelBlock {
+		border-bottom-color: #e1e1e1;
+	}
+	.mainPanel .filterPanel .comboxRow  .keyCol:hover  .labelBlock{
+		border-bottom-color: #ed145b;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
