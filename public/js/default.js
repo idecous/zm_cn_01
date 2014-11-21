@@ -359,8 +359,10 @@ var EBE_ToplMenuModule = function(el,index){
 	}
 	
 	function imgCompleteHandler(isCenter){
+		imgEl.width("auto");
 		imgWidth = imgEl.width(); 
 		imgHeight = imgEl.height();
+		imgEl.width("100%");
 		var blockHeight = blockEl.height();
 		if( blockHeight < imgHeight + 20){
 			mainMenuEl.height(imgHeight + 20);
@@ -373,9 +375,12 @@ var EBE_ToplMenuModule = function(el,index){
 	}
 	function centerImg(){
 		if(imgEl.length == 0){return;}
-		if( imgWidth == 0 ){
+		if( imgWidth <= 100 ){
 			if(imgEl.prop("complete")){
 				imgCompleteHandler(true);
+				console.log( imgWidth );
+
+
 			}else{
 				imgEl[0].onload = imgCompleteHandler;
 				return;
@@ -516,7 +521,7 @@ var TopSwitchManager = function(){
 		isInit = true;
 		updateSizeHandler();
 	}else{
-		placeholderEL.load(function(){
+		placeholderEl.load(function(){
 			isInit = true;
 			updateSizeHandler();
 		});

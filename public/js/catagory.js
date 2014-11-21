@@ -248,13 +248,13 @@ EBE_PriceFilter.prototype = Object.create(EBE_FilterBlockBase.prototype);
 		if( val > 9999999 ){
 			inputEl.val(9999999);
 		}
-		var val01 = parseInt( this.popInputEls.eq(0).val() );
-		var val02 = parseInt( this.popInputEls.eq(1).val() );
-		if( tIndex == 1 && (val02 < val01) ){
-			inputEl.val(val01);
-		}else if( tIndex == 0 && (val02 < val01) ){
-			inputEl.val(val02);
-		}
+		//var val01 = parseInt( this.popInputEls.eq(0).val() );
+		//var val02 = parseInt( this.popInputEls.eq(1).val() );
+		//if( tIndex == 1 && (val02 < val01) ){
+		//	inputEl.val(val01);
+		//}else if( tIndex == 0 && (val02 < val01) ){
+		//	inputEl.val(val02);
+		//}
 	};
 	this.build = function(){
 		this.el = $(".mainPanel .filterPanel .comboxRow .price");
@@ -385,11 +385,13 @@ var EBE_ListItem = function(toWishHandler,el){
 		var that = this;
 		this.wishBtnEl.click(function(){
 			if( that.data.isWish ){return;}
-			that.wishBtnEl.addClass("added");
-			that.data.isWish = true;
 			that.toWishHandler( that.data );
 		});
-	};	
+	};
+	this.toWish = function(){
+		this.wishBtnEl.addClass("added");
+		this.data.isWish = true;
+	};
 	this.setData = function(data){
 		this.data = data;
 		this.el.attr("iid",data.id),
@@ -479,6 +481,16 @@ var EBE_List = function( pageHandler,toWishFn,totalPage ){
 	this.itemToWishHandler = function(data){
 		this.toWishFn( data.id , data.name);
 	};
+	this.toWish = function( id ){
+		var i,item;
+		for( i=0; i < this.used.length ;i++){
+			item =  this.used[i];
+			if( item.data && item.data.id== id ){
+				item.toWish();
+				break;
+			}
+		}
+	};
 	this.scroll7ResizeHandler = function(){
 		if( this.isLoading || this.page == this.totalPage){return;}
 		var offsetTop = this.el.offset().top;
@@ -548,6 +560,9 @@ $(function(){
 		//console.log("添加收藏[id,名称]",id,name);
 		//请求服务器
 		alert("添加"+name+"到收藏成功!");
+
+		list.toWish( id );
+
 	},window.totalPage);	
 	var filter = new EBE_FilterManager(function(data){
 		//console.log("过滤条件",data);	

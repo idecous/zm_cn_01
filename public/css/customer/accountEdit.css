@@ -1,0 +1,29 @@
+.comm_topSpace{
+    height:  30px;
+}
+.groupName{
+    font-size: 18px;
+    padding: 20px 0 10px;
+}
+.comm_form_formList input[type="checkbox"]{
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+.extraPanel{
+    display: none;
+}
+.operationBar{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 784px) {
+    .comm_bottomSpace{
+        height: 10px;
+    }
+    .comm_topSpace{
+        height:  20px;
+    }
+    .comm_contentMainPanel{
+        padding: 0 10px;
+    }
+
+}

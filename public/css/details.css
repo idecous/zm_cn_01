@@ -1,0 +1,589 @@
+.comm_topSpace{
+	height: 10px;
+}
+
+.popSizeWindow{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 500;
+	background-color: rgba(0,0,0,0.6);
+	visibility: hidden;
+}
+.popSizeWindow .viewBlock{
+	position: absolute;
+}
+.popSizeWindow .viewBlock img{
+	width: 100%;
+}
+.popSizeWindow .viewBlock a{
+	display: block;
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background:url(../images/icons.png) no-repeat 0 -115px;		
+}
+
+.mainPreviewBlock{
+	position:relative;
+	float: left;
+	width: 59%;
+	background-color: #B7B7B7;
+	overflow: hidden;
+}
+.mainPreviewBlock .placeholderBG{
+	width: 100%;
+}
+.mainPreviewBlock .imgContainer{
+	position:absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+}
+.mainPreviewBlock .imgContainer img{
+	position:absolute;
+	left:0;
+	right:0;
+	width: 100%;
+	display: none;
+}
+.mainPreviewBlock .whitehMask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(255,255,255,0.5);
+	z-index: 5;
+	display: none;
+}
+.mainPreviewBlock .viewArea{
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #fff;
+	overflow: hidden;
+	display: none;
+	z-index: 6;
+}
+.mainPreviewBlock .viewArea img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mainPreviewBlock .mouseArea{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: 7;
+	background: url(1pAlpha.png);
+}
+ .mainPreviewBlock .listGroup{
+	position:absolute;
+	left:0;
+	bottom: -220px;
+	width: 100%;
+	height: 220px;
+	background:rgba(0,0,0,0.5);
+    z-index: 8;
+}
+ .mainPreviewBlock .listGroup .listContainer{
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	right: 15px;
+	bottom: 9px;
+	overflow: hidden;
+}
+.mainPreviewBlock .listGroup .arrow{
+	position:absolute;
+	top:50%;	
+	width: 15px;
+	height: 100%;
+	background: url(../images/details_preview_arrows.png);
+	margin-top: -110px;
+}
+.mainPreviewBlock .listGroup .leftArrow{
+	left: 0;
+	background-position: 0 0;
+}
+.mainPreviewBlock .listGroup .rightArrow{
+	right: 0;
+	background-position: -15px 0;
+}
+.mainPreviewBlock .listContainer ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.mainPreviewBlock .listContainer ul li{
+	position:relative;
+	float:left;
+	width: 135px;
+	height:198px;
+	border:1px solid #908986;
+	overflow: hidden;
+}
+.mainPreviewBlock .listContainer ul li a img{
+	width: 100%;
+}
+.mainPreviewBlock .listContainer ul li.checked{
+	border:1px solid #000;
+}
+.mainPreviewBlock .listContainer ul li a i{
+	position:absolute;
+	left:50%;
+	top:50%;
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	margin-top: -25px;
+	background: url(../images/details_playerBtn.png);
+}
+.mainPreviewBlock .showMore{
+	position:absolute;
+	bottom:0;
+	left:0;
+	line-height:38px;
+	width: 100%;
+	height: 38px;
+	color:#fff;
+	font-size:14px;
+	background:rgba(0,0,0,0.5);
+    z-index: 9;	
+}
+.mainPreviewBlock .showMore span{
+	padding-left:10px;
+}
+
+.mainPreviewBlock .mobileNavBlock{
+	position:absolute;
+	height: 20px;
+	line-height: 20px;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+	display: none;
+}
+.mainPreviewBlock .mobileNavBlock a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/mobile/details_nav.png);
+	margin-left: 10px;
+	background-position: -20px 0;
+}
+.mainPreviewBlock .mobileNavBlock a:first-child{
+	margin-left: 0;
+}
+.mainPreviewBlock .mobileNavBlock a.selected{
+	background-position: 0 0;
+}
+
+
+.mainParamBlock{
+	position:relative;
+	float:left;
+	width: 41%;	
+	min-height: 385px;
+}
+.mainParamBlock .partViewPosUtility{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	z-index: 1;
+}
+.mainParamBlock .partViewPosUtility .partViewBorder{
+	position:relative;
+	width: 93.9%;
+	display: none;
+	margin: 0 auto;
+}
+.mainParamBlock .partViewPosUtility .partViewBorder .placeholderBG{
+	width: 100%;
+}
+.mainParamBlock .partViewBlock{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;	
+}
+.mainParamBlock .partViewBlock img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mainParamBlock .borderBlock{
+	margin-left: 9.756%;
+}
+.mainParamBlock .borderBlock h2{
+	font-size: 16px;
+}
+.mainParamBlock .borderBlock h1{
+	font-size: 20px;
+	color: #ff4553;
+}
+.mainParamBlock .borderBlock .productCode{
+	font-size: 14px;
+	color: #666;
+	line-height: 60px;
+}
+.mainParamBlock .borderBlock .label{
+	line-height: 18px;
+	position: relative;
+	margin-top: 15px;
+}
+.mainParamBlock .borderBlock .label a{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.mainParamBlock .borderBlock .label a i{
+	display: inline-block;
+	width: 17px;
+	height: 13px;
+	background: url(../images/icons.png) no-repeat -39px -102px;
+	vertical-align: -2px;
+	margin-right: 4px;
+}
+
+
+.mainParamBlock .borderBlock .colorGroup{
+	margin-top: 10px;
+	margin-left: -5px;
+}
+.mainParamBlock .borderBlock .colorGroup li{
+	width: 11.11%;
+	float: left;
+	margin-bottom: 5px;
+}
+.mainParamBlock .borderBlock .colorGroup li a{
+	display: block;
+	margin-left: 5px;
+	border: 1px solid #fff;
+	line-height: 0;
+}
+.mainParamBlock .borderBlock .colorGroup .current a{
+	border: 1px solid #000;
+}
+.mainParamBlock .borderBlock .colorGroup li a img{
+	width: 100%;
+}
+.mainParamBlock .sizeGroup{
+	margin-left: -10px;
+	margin-top: 10px;	
+}
+.mainParamBlock .sizeGroup li{
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.mainParamBlock .sizeGroup li a{
+	display: block;
+	width: 60px;
+	height: 26px;
+	line-height:26px;
+	border: 1px solid #ccc;
+	color: #666;
+	text-align: center;
+}
+.mainParamBlock .sizeGroup .checked {
+	border-color: #333;
+	color: #000;
+}
+.mainParamBlock .sizeGroup .unable{
+	color: #999;
+	background: url(../images/details_size_unable.jpg) no-repeat 100% 100%;
+	cursor: default;
+}
+
+.mainParamBlock .QtyRow{
+	margin-top: 10px;
+}
+.mainParamBlock .QtyRow .group{
+	display: inline-block;
+}
+.mainParamBlock .QtyRow .group a{
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	background-color: #f0f0f0;
+	border: 1px solid #f0f0f0;
+	line-height: 33px;
+	text-align: center;
+	color: #d1d1d1;
+	font-size: 18px;
+	vertical-align: top;
+}
+.mainParamBlock .QtyRow .group a:hover{
+	color: #000;
+	border-color: #cbcbcb;
+}
+.mainParamBlock .QtyRow .group .inputBorder{
+	display:inline-block;
+	margin:0 5px;
+	width: 33px;
+	height: 26px;
+	border: 1px solid #f0f0f0;
+	vertical-align: top;
+	padding-top: 7px;
+}
+.mainParamBlock .QtyRow .group .inputBorder input{
+	width: 100%;	
+	text-align: center;
+	border: none;
+	font-size: 14px;
+}
+.mainParamBlock .QtyRow .inventory{
+	display: inline;
+	vertical-align: bottom;
+	color: #666;
+	margin-left: 10px;
+	visibility: hidden;
+}
+.mainParamBlock .QtyRow .inventory b{
+	font-weight: normal;
+}
+.mainParamBlock .actionRow{
+	margin-top: 25px;
+}
+.mainParamBlock .actionRow a{
+	display: inline-block;
+	height: 40px;
+	line-height:40px;
+	text-align: center;
+	vertical-align: top;
+}
+.mainParamBlock .actionRow .toShoppingcar{
+	background-color: #c40000;
+	color: #fff;
+	width: 180px;
+	font-size: 14px;
+}
+.mainParamBlock .actionRow .toShoppingcar i{
+	display: inline-block;
+	width: 22px;
+	height: 14px;
+	background: url(../images/icons.png) no-repeat -7px 0;
+	margin-right: 4px;
+	vertical-align: -2px;
+}
+.mainParamBlock .actionRow .toWish{
+	width: 40px;
+	background-color: #333;
+	margin-left: 1px;
+}
+.mainParamBlock .actionRow .toWish i{
+	display: inline-block;
+	width: 20px;
+	height: 17px;
+	background: url(../images/icons.png) no-repeat -56px -102px;
+	vertical-align: -2px;
+}
+
+.mainParamBlock .messageNavBar{
+	margin-top: 45px;
+	position: relative;
+	z-index: 1;
+	border-bottom: 1px solid #ccc;
+}
+.mainParamBlock .messageNavBar a{
+	position:relative;
+	
+	display: inline-block;
+	border: 1px solid #fff;
+	height:32px;
+	line-height:32px;
+	font-size: 14px;
+	text-align: center;
+	width: 135px;
+}
+.mainParamBlock .messageNavBar .current{
+	border-color: #ccc;
+	border-bottom-color: #fff; 
+	bottom:-1px;
+}
+
+.mainParamBlock .messageContentBlock{
+	height: 270px;
+	overflow-y: scroll;
+	margin-top: -1px;
+	position: relative;
+}
+.mainParamBlock .messageContentBlock .block{
+	padding: 15px 4px;
+}
+.mainParamBlock .messageContentBlock .block.hide{
+	display: none;
+}
+.mainPanel .subTitleBar{
+	margin-top: 60px;
+	border-bottom: 1px solid #e1e1e1;
+	text-align: center;
+}
+.mainPanel .subTitleBar span{
+	position:relative;
+	bottom:-12px;
+	font-size: 20px;
+	display: inline-block;
+	padding: 0 25px;
+	background-color: #fff;
+}
+
+.mainPanel .recommendPanel{
+	margin-left: -25px;
+	margin-top: 30px;
+}
+.mainPanel .recommendPanel li{
+	width: 25%;
+	float: left;
+}
+.mainPanel .recommendPanel li .border{
+	margin-left: 25px;	
+	position: relative;
+}
+.mainPanel .recommendPanel li .border a{
+	display: block;
+}
+.mainPanel .recommendPanel li .border a img{
+	width: 100%;
+}
+.mainPanel .recommendPanel li .border i{
+	display: block;
+	position: absolute;
+	top:4px;
+	right:4px;
+	width: 32px;
+	height: 32px;
+	background: url(../images/catagory_toWish.png) no-repeat -32px 0;		
+}
+.mainPanel .recommendPanel li .border i:hover{
+	background-position: -32px -32px;
+}
+.mainPanel .recommendPanel li .border .added{
+	background-position: 0 0;
+}
+.mainPanel .recommendPanel li .border .added:hover{
+	background-position: 0 -32px;
+}
+.mainPanel .recommendPanel li .border .descriptBlock{
+	text-align: center;
+}
+.mainPanel .recommendPanel li .border .descriptBlock h3{
+	font-size: 14px;
+	line-height: 35px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mainPanel .recommendPanel li .border .descriptBlock h1{
+	font-size: 18px;
+	color: #f33b7e;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+@media \0screen {
+	.popSizeWindow{
+		background:url(1pAlpha.png);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	}
+	
+	.mainPreviewBlock .whitehMask{
+	background:url(1pAlpha.png);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7AFFFFFF, endColorstr=#7AFFFFFF);
+	}
+	.mainPreviewBlock .listGroup{
+	background:url(1pAlpha.png);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+	}
+	.mainPreviewBlock .showMore{
+	 background:url(1pAlpha.png);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+	}
+}
+
+@media only screen and (max-width: 784px) {
+	
+	.comm_navDenoteBar,
+	.mainPreviewBlock .showMore,
+	.mainParamBlock .partViewPosUtility{
+		display: none;
+	}
+	.mainPreviewBlock {
+		float: none;
+		width: 100%;
+		max-width: 590px;
+		margin: 0 auto;
+	}
+	.mainPreviewBlock .mobileNavBlock {
+		display: block;
+	}
+	.comm_topSpace{
+		height: 20px;
+	}
+	.mainParamBlock{
+		float: none;
+		width: auto;
+		margin-top: 20px;
+	}
+	.mainParamBlock .borderBlock {
+		margin: 0 10px;
+	}
+	.mainParamBlock .messageNavBar a {
+		width: 80px;
+	}
+	.mainPanel .recommendPanel {
+		margin-left: 0;
+	}
+	.mainPanel .recommendPanel li{
+		width: auto;
+		float: none;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.mainPanel .recommendPanel li .border {
+		display: inline-block;
+		width: 100%;
+		max-width: 230px;
+		margin-left: 0;
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

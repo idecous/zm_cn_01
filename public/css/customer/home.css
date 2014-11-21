@@ -1,0 +1,70 @@
+.comm_topSpace{
+   height:  30px;
+}
+
+.mainPanel .leftBlock{
+    float: left;
+    width: 48%;
+}
+.mainPanel .rightBlock{
+    float: right;
+    width: 48%;
+}
+.mainPanel .subTitle{
+    border-bottom: 1px solid #e1dfe0;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    text-align: right;
+}
+.mainPanel .subTitle h3{
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+.mainPanel .subTitle a{
+    color: #f00;
+    margin-right: 4px;
+}
+.mainPanel p{
+    line-height: 20px;
+    font-size: 14px;
+}
+.mainPanel .secondRow{
+    clear: both;
+    padding-top: 20px;
+}
+.mainPanel .secondRow h4{
+    font-size: 15px;
+    padding: 4px 0 10px;
+}
+.mainPanel .secondRow .subContent p{
+    margin-bottom: 10px;
+}
+.mainPanel .secondRow .subContent a{
+    color: #f00;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 784px) {
+    .comm_bottomSpace{
+        height: 10px;
+    }
+    .comm_topSpace{
+        height:  20px;
+    }
+
+    .mainPanel .leftBlock,.mainPanel .rightBlock{
+        float: none;
+        width: auto;
+        padding: 0 10px;
+    }
+    .mainPanel .rightBlock{
+        margin-top: 30px;
+    }
+    .mainPanel .secondRow{
+        margin-top: 30px;
+    }
+    .mainPanel .secondRow .subTitle{
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,34 @@
+.comm_topSpace{
+    height:  30px;
+}
+
+.groupName{
+    font-size: 18px;
+    padding: 0px 0 10px;
+}
+.setDefaultRow{
+    line-height: 26px;
+}
+.setDefaultRow input{
+    margin-right: 6px;
+    vertical-align: -1px;
+}
+.operationBar{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 784px) {
+    .comm_bottomSpace{
+        height: 10px;
+    }
+    .comm_topSpace{
+        height:  20px;
+    }
+    .comm_contentMainPanel{
+        padding: 0 10px;
+    }
+    .operationBar{
+        margin-top: 10px;
+    }
+
+}

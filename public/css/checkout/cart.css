@@ -1,0 +1,272 @@
+.mainPanel .titlePanel{
+    position: relative;
+}
+.mainPanel .titlePanel .infoBlock{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #666;
+}
+.mainPanel .emptyMessage{
+    font-size: 40px;
+    line-height: 180px;
+    text-align: center;
+    color: #666;
+}
+
+.mainPanel table{
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-collapse:collapse;
+}
+.mainPanel table thead tr{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+.mainPanel table thead tr th{
+    font-size: 12px;
+    font-weight: normal;
+}
+.mainPanel table tbody td{
+    text-align: center;
+    padding: 15px 2px 10px 2px;
+    line-height: 26px;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.mainPanel table tbody td img{
+    float:left;
+    position: relative;
+}
+.mainPanel table tbody .productImage{
+    display: inline-block;
+}
+.mainPanel table tbody .descriptBlock{
+    margin-left: 90px;
+    text-align: left;
+    min-height: 100px;
+    vertical-align: top;
+}
+.mainPanel table tbody .descriptBlock h3{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.mainPanel table tbody .descriptBlock div{
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+.mainPanel .quantitySelector{
+    width: 84px;
+    height: 24px;
+}
+.mainPanel .quantitySelector a{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height:22px;
+    text-align:center;
+    border: 1px solid #ddd;
+}
+.mainPanel table tbody td .quantitySelector input,
+.mainPanel .mobileBlock .quantitySelector input{
+    width: 28px;
+    height: 22px;
+    border: 1px solid #ddd;
+    text-align:center;
+    vertical-align: 0;
+    margin: 0 3px;
+}
+
+.mainPanel .updateRow{
+    border: 1px solid #ddd;
+    border-top: none;
+    background-color: #f1f1f1;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 20px;
+    text-align: right;
+}
+.mainPanel .updateRow .codeGroup{
+    float: left;
+}
+.mainPanel .updateRow .codeGroup span{
+    font-size: 12px;
+    margin-right: 10px;
+
+}
+.mainPanel .updateRow .codeGroup input[type='text']{
+    width: 192px;
+    height: 24px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    padding: 2px 4px;
+    vertical-align: 5px\0;
+}
+.mainPanel .updateRow .codeGroup input[type='text'].warn{
+    border: 1px solid #f00;
+}
+.mainPanel .updateRow .inputBorder{
+    display: inline-block;
+}
+
+.mainPanel .updateRow .updateBtn{
+    width: 127px;
+    height: 30px;
+    line-height:30px;
+    background-color: #f1f1f1;
+    border: 1px solid #333;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 12px;
+    vertical-align: -1px;
+    cursor: pointer;
+}
+.mainPanel .updateRow .updateBtn:hover{
+    background-color: #333;
+    color: #fff;
+}
+.mainPanel .updateRow .comm_form_button{
+    vertical-align: -2px;
+}
+
+
+
+.mainPanel .amountBlock{
+    line-height: 50px;
+    font-size: 14px;
+}
+.mainPanel .amountBlock b{
+    font-size: 16px;
+    color: #df4141;
+}
+.mainPanel .actionBlock{
+    text-align: right;
+}
+.mainPanel .actionBlock a{
+    display: inline-block;
+    margin-left: 15px;
+    padding: 0 40px;
+}
+
+.mainPanel .mobileBlock{
+    display: none;
+    border-top: 1px solid #ddd;
+}
+.mainPanel .mobileBlock li{
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+.mainPanel .mobileBlock li .imgCol{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    padding: 10px 0;
+    text-align: center;
+}
+.mainPanel .mobileBlock li .imgCol .toWish{
+    font-size: 10px;
+    border: 1px solid #333;
+    margin-top: 5px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4px;
+}
+.mainPanel .mobileBlock li .imgCol .toWish:hover{
+    background-color: #333;
+    color: #fff;
+}
+.mainPanel .mobileBlock li .paramCol{
+    margin: 0 50px 0 130px;
+    min-height: 130px;
+    padding-bottom: 10px;
+}
+.mainPanel .mobileBlock li .paramCol h3{
+    font-size: 14px;
+    padding-top:10px;
+}
+.mainPanel .mobileBlock li .paramCol .quantitySelector{
+    margin:10px 0;
+}
+
+.mainPanel .mobileBlock li .operationCol{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 140px;
+    line-height:140px;
+    text-align: center;
+}
+
+@media \0screen {
+    .mainPanel table tbody td .quantitySelector input,
+    .mainPanel .mobileBlock .quantitySelector input{
+        vertical-align: 1px;
+        padding: 2px 0;
+        height: 18px;
+    }
+    .mainPanel .updateRow .comm_form_button{
+        vertical-align: 0;
+    }
+}
+@media only screen and (max-width: 784px) {
+    .comm_navDenoteBar,
+    .mainPanel .titlePanel,
+    .mainPanel table{
+        display: none;
+    }
+    .mainPanel .mobileBlock{
+        display: block;
+    }
+
+    .mainPanel .updateRow{
+        height: auto;
+        line-height: 30px;
+        padding: 10px 10px 20px 10px;
+    }
+    .mainPanel .updateRow .codeGroup{
+        float: none;
+    }
+    .mainPanel .updateRow .codeGroup span{
+        display: block;
+        text-align: left;
+        margin: 0;
+    }
+    .mainPanel .updateRow .inputBorder{
+        display: block;
+        position: relative;
+        text-align: left;
+        border: 1px solid #ddd;
+        overflow: hidden;
+    }
+    .mainPanel .updateRow .codeGroup input[type="text"]{
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        border: none;
+    }
+    .mainPanel .updateRow .comm_form_button{
+        margin-top: 10px;
+    }
+    .mainPanel .amountBlock{
+        padding: 0 10px;
+    }
+
+    .mainPanel .actionBlock {
+        text-align: left;
+    }
+
+    .mainPanel .actionBlock a{
+        display: block;
+        margin: 10px 10px 0 10px;
+    }
+}
+

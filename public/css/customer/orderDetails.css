@@ -1,0 +1,152 @@
+.comm_topSpace{
+    height:  30px;
+}
+.mainPanel .orderBlock{
+    overflow: hidden;
+}
+.mainPanel .orderBlock h3{
+    font-size: 14px;
+    margin-right:20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.mainPanel .orderBlock p{
+    font-size: 12px;
+    margin-right:20px;
+    padding-bottom: 20px;
+}
+.mainPanel .orderBlock .right h3{
+    margin-left: 20px;
+}
+.mainPanel .orderBlock .right p{
+    margin-left: 20px;
+    line-height: 20px;
+}
+.mainPanel .orderBlock .half{
+    width: 50%;
+    float: left;
+}
+table{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-collapse:collapse;
+}
+table thead tr{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f1f1f1;
+    padding: 0 4px;
+}
+table tbody td{
+    text-align: center;
+    padding: 10px 2px;
+    line-height: 26px;
+    font-size: 12px;
+}
+
+table .alignLeft{
+    text-align: left;
+    padding: 0 10px;
+}
+.mainPanel .totalRow{
+    line-height: 70px;
+}
+.mainPanel .totalRow .again{
+    height: 30px;
+    line-height:30px;
+    width: 100px;
+    float: right;
+    margin-top: 15px;
+    text-align: center;
+}
+.mainPanel .totalRow span{
+    font-size: 12px;
+}
+.mainPanel .totalRow .total{
+    font-size: 16px;
+}
+
+.mobileBlock{
+    display: none;
+    font-size: 12px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.mobileBlock ul li {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 10px;
+}
+.mobileBlock ul li .paramRow{
+    position: relative;
+}
+.mobileBlock ul li .paramRow img{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
+.mobileBlock ul li .paramRow .paramCol{
+    margin: 0 10px 0 120px;
+    padding: 10px 10px;
+    min-height:100px;
+    line-height: 24px;
+}
+.mobileBlock ul li .paramRow .paramCol h1{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.mobileBlock ul li .NoRow{
+    height: 30px;
+    line-height:30px;
+    padding: 0 10px;
+    background-color: #eee;
+}
+
+@media only screen and (max-width: 784px) {
+    .comm_bottomSpace{
+        height: 10px;
+    }
+    .comm_topSpace{
+        height:  20px;
+    }
+
+    table{
+        display: none;
+    }
+    .mobileBlock{
+        display: block;
+    }
+    .mainPanel .orderBlock .half {
+        float: none;
+        width: auto;
+    }
+    .mainPanel .orderBlock p,
+    .mainPanel .orderBlock .right p{
+        margin: 10px 10px 0 10px;
+    }
+    .mainPanel .orderBlock h3,
+    .mainPanel .orderBlock .right h3{
+        margin: 0;
+        padding: 0 10px;
+    }
+    .mainPanel .orderBlock h3{
+        text-align: center;
+        font-size: 14px;
+        line-height: 40px;
+        border-bottom: 1px solid #ddd;
+    }
+    .mainPanel .totalRow{
+        margin: 0 10px;
+        text-align: right;
+        line-height: 20px;
+    }
+    .mainPanel .totalRow span{
+        white-space: nowrap;
+    }
+    .mainPanel .totalRow .again{
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+}

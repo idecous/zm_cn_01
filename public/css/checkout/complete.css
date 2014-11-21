@@ -1,0 +1,190 @@
+.mainPanel .processPanel u{
+    text-decoration: none;
+}
+.mainPanel .processPanel a{
+    position:relative;
+    display:block;
+    width: 25%;
+    float:left;
+    overflow: hidden;
+    height: 33px;
+    line-height: 33px;
+    background-color: #ededed;
+    color: #666;
+}
+.mainPanel .processPanel a .head{
+    position:absolute;
+    left:0;
+    top:0;
+    height:33px;
+    width: 7px;
+    background: url(../../images/icons.png) no-repeat;
+}
+.mainPanel .processPanel a .textBlock{
+    margin: 0 7px;
+    text-align: center;
+}
+.mainPanel .processPanel a .textBlock i{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../../images/icons.png) no-repeat;
+    margin-right: 10px;
+    vertical-align: -4px;
+}
+.mainPanel .processPanel a .tail{
+    position:absolute;
+    right:0;
+    top:0;
+    height:33px;
+    width: 7px;
+    background: url(../../images/icons.png) no-repeat;
+}
+.mainPanel .processPanel .step01 .textBlock i{
+    background-position: -119px 0;
+}
+.mainPanel .processPanel .step02 .textBlock i{
+    background-position: -136px 0;
+}
+.mainPanel .processPanel .step03 .textBlock i{
+    background-position: -153px 0;
+}
+.mainPanel .processPanel .step04 .textBlock i{
+    background-position: -170px 0;
+}
+.mainPanel .processPanel a.current {
+    background-color: #333;
+    color: #fff;
+}
+.mainPanel .processPanel .step01 .head{
+    background: none;
+}
+.mainPanel .processPanel .step04 .tail{
+    background: none;
+}
+.mainPanel .processPanel .step01.current .textBlock i{
+    background-position: -119px -17px;
+}
+.mainPanel .processPanel .step02.current .textBlock i{
+    background-position: -136px -17px;
+}
+.mainPanel .processPanel .step03.current .textBlock i{
+    background-position: -153px -17px;
+}
+.mainPanel .processPanel .step04.current .textBlock i{
+    background-position: -170px -17px;
+}
+
+.mainPanel .processPanel a.hNN .head{
+    background-position: -111px -34px;
+}
+.mainPanel .processPanel a.hNN .head{
+    background-position: -126px -34px;
+}
+.mainPanel .processPanel a.tNN .tail{
+    background-position: -119px -34px;
+}
+.mainPanel .processPanel a.tNC .tail{
+    background-position: -147px -34px;
+}
+.mainPanel .processPanel a.tCN .tail{
+    background-position: -133px -34px;
+}
+.mainPanel .processPanel a.hCN .head{
+    background-position: -140px -34px;
+}
+.mainPanel .processPanel a.hCC .head{
+    background-position: -154px -34px;
+}
+
+.mainPanel h1{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 75px;
+}
+.mainPanel .infoBlock{
+    position:relative;
+    width: 510px;
+    margin: 100px auto 0 auto;
+}
+.mainPanel .infoBlock .imgBlock{
+    position:absolute;
+    top:10px;
+    left:0;
+    width: 31.76%;
+}
+.mainPanel .infoBlock img{
+    width: 100%;
+}
+.mainPanel .infoBlock .textBlock{
+    position:absolute;
+    top:0px;
+    left:31.76%;
+    width: 68.23%;
+}
+.mainPanel .infoBlock .textBlock .border{
+    padding: 10px 0 0 100px;
+}
+.mainPanel .infoBlock .textBlock .border b{
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+.mainPanel .infoBlock .textBlock .border p{
+    color: #666;
+    line-height: 18px;
+}
+.mainPanel .infoBlock .textBlock .border a{
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    line-height:25px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    border-radius: 3px;
+    margin: 15px 0 10px 0;
+}
+
+.comm_bottomSpace{
+    height: 520px;
+}
+
+@media only screen and (max-width: 784px) {
+    .mainPanel .processPanel span,
+    .mainPanel .processPanel u,
+    .comm_navDenoteBar{
+        display: none;
+    }
+    .mainPanel h1 {
+        padding-top: 55px;
+    }
+    .mainPanel .infoBlock {
+        text-align: center;
+        width: auto;
+    }
+    .mainPanel .infoBlock .imgBlock {
+        display:inline-block;
+        position: static;
+        width: 100%;
+        max-width: 162px;
+    }
+    .mainPanel .infoBlock .textBlock{
+        position: static;
+        width: auto;
+        margin-top: 30px;
+    }
+    .mainPanel .infoBlock .textBlock .border{
+        padding: 0 10px;
+    }
+    .mainPanel .infoBlock .textBlock .border a {
+        margin: 25px 0;
+        width:auto;
+        display: block;
+        height: 35px;
+        line-height: 35px;
+    }
+    .comm_bottomSpace{
+        height: 120px;
+    }
+}

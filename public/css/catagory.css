@@ -227,6 +227,7 @@
 	position:absolute;
 	top:4px;
 	right:4px;
+	display:block;
 	width: 32px;
 	height: 32px;
 	background: url(../images/catagory_toWish.png) no-repeat -32px 0;	
@@ -272,7 +273,6 @@
 }
 
 @media only screen and (max-width: 784px) {
-	
 	.mainPanel .catagoryNameBar{
 		padding: 0 10px;
 	}
@@ -294,10 +294,6 @@
 		left: 0;
 		text-align: left;
 		z-index: 0;
-	}
-	
-	.mainPanel .filterPanel{
-		padding: 0 5px;
 	}
 	.mainPanel .filterPanel .keyRow .keyCol{
 		text-align: left;
