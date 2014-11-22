@@ -1,0 +1,26 @@
+.comm_topSpace{
+    height:  30px;
+}
+
+.comm_form_formList li input[type='checkbox']{
+    vertical-align: -1px;
+}
+.comm_form_formList li label{
+    float: none;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+@media only screen and (max-width: 784px) {
+    .comm_bottomSpace{
+        height: 10px;
+    }
+    .comm_topSpace{
+        height:  20px;
+    }
+    .comm_form_formList{
+        padding: 0 10px;
+    }
+
+
+}

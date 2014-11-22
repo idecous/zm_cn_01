@@ -1,0 +1,76 @@
+.mainPanel .centerBlock{
+    padding-top: 20px;
+}
+.contentPanel{
+    position:relative;
+    margin-top: 50px;
+}
+
+.contentPanel .leftPanel{
+    float: left;
+    width: 49%;
+}
+.contentPanel .rightPanel{
+    float:right;
+    width: 49%;
+}
+
+.contentPanel h2 {
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.m_formList{
+    width: 80%;
+}
+
+.forgotPWBtn{
+    display:block;
+    margin: 20px 10px 20px 0;
+}
+.forgotPWBtn:hover{
+    color: #ababab;
+}
+.forgotPassword  abbr{
+    cursor: pointer;
+}
+.forgotPassword h1{
+    margin-top: 10px;
+}
+.forgotPassword h2{
+    font-size: 16px;
+    padding-top: 20px;
+}
+.forgotPassword p{
+    margin: 9px 0;
+}
+.rightPanel .m_formList{
+    float: right;
+}
+.forgotPassword{
+    display: none;
+}
+@media only screen and (max-width: 784px) {
+
+    .rightPanel{
+        margin-top: 20px;
+    }
+    .contentPanel .rightPanel  h2{
+        float: none;
+        width: auto;
+    }
+    .contentPanel .leftPanel{
+        float: none;
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .contentPanel .rightPanel{
+        float: none;
+        width: auto;
+        padding: 0 10px;
+    }
+
+
+}

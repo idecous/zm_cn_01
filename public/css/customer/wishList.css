@@ -40,6 +40,9 @@ table tbody td{
 table tbody a{
     display: block;
 }
+table tbody a:hover{
+    color: #adadad;
+}
 table tbody .m7p_button{
     font-size: 12px;
     height: 22px;

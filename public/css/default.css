@@ -853,6 +853,8 @@ a.comm_form_button{
 .comm_form_formList li .comm_form_inputBox .comm_form_validationFailed{
 	border-color: #f00;
 }
+
+
 .comm_form_messages{
 	width: 100%;
 }
