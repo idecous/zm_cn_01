@@ -357,6 +357,7 @@
 }
 .mainParamBlock .QtyRow .inventory b{
 	font-weight: normal;
+	vertical-align: bottom;
 }
 .mainParamBlock .actionRow{
 	margin-top: 25px;
@@ -430,6 +431,42 @@
 .mainParamBlock .messageContentBlock .block.hide{
 	display: none;
 }
+
+.mainParamBlock .messageContentBlock .block li{
+	position: relative;
+	height: 24px;
+	line-height: 24px;
+	white-space: nowrap;
+}
+.mainParamBlock .messageContentBlock .block li div{
+	margin-right: 85px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #999;
+}
+.mainParamBlock .messageContentBlock .block li div i{
+	display: inline-block;
+	max-width: 85px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #272727;
+	font-style: normal;
+	vertical-align: bottom;
+}
+.mainParamBlock .messageContentBlock .block li div b{
+	color: #272727;
+	font-weight: normal;
+}
+.mainParamBlock .messageContentBlock .block li u{
+	position: absolute;
+	top: 2px;
+	right: 0;
+	text-decoration: none;
+}
+
+
+
+
 .mainPanel .subTitleBar{
 	margin-top: 60px;
 	border-bottom: 1px solid #e1e1e1;
