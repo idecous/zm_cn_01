@@ -224,10 +224,10 @@
 	margin-left: 25px;
 }
 .mainPanel .listPanel li i{
+	display: none;
 	position:absolute;
 	top:4px;
 	right:4px;
-	display:block;
 	width: 32px;
 	height: 32px;
 	background: url(../images/catagory_toWish.png) no-repeat -32px 0;	
