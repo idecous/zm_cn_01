@@ -1,0 +1,10 @@
+
+.comm_contentMainPanel img{
+    width: 100%;
+    margin-top: 15px;
+}
+@media only screen and (max-width: 784px) {
+    .comm_contentMainPanel .comm_form_pageTitle{
+        text-align: center;
+    }
+}

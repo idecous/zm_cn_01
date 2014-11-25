@@ -1,0 +1,112 @@
+.descriptBlock{
+    float: left;
+    width: 40%;
+}
+.descriptBlock h1{
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 30px;
+    height: 40px;
+}
+.descriptBlock h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 35px;
+}
+.descriptBlock p{
+    margin-top: 20px;
+    line-height: 24px;
+    font-size: 14px;
+}
+.descriptBlock b{
+    display:block;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: normal;
+}
+.descriptBlock .separator{
+    height: 1px;
+    background-color: #000;
+    margin-top: 20px;
+    width: 72%;
+}
+.descriptBlock .operationGroup{
+    margin-top: 20px;
+}
+.descriptBlock .operationGroup a{
+    display: inline-block;
+    background: url(../../images/customer/stores_operation.jpg) no-repeat -16px 0;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+.descriptBlock .operationGroup a:first-child{
+    background-position: 0 0;
+    margin-right: 15px;
+}
+
+.comm_contentMainPanel .mapBlock{
+    position:relative;
+    float: right;
+    padding-top: 30px;
+    width: 60%;
+    text-align: center;
+}
+.comm_contentMainPanel .mapBlock .border{
+    display: inline-block;
+    max-width: 450px;
+    width: 100%;
+}
+.comm_contentMainPanel .mapBlock img{
+    width: 100%;
+}
+.comm_contentMainPanel .mapBlock .textBlock{
+    position:relative;
+    line-height: 30px;
+}
+.comm_contentMainPanel .mapBlock .textBlock a{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color:#aaaaaa;
+}
+.comm_contentMainPanel .mapBlock .textBlock a i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../images/customer/stores_operation.jpg) no-repeat -32px 0;
+    vertical-align: -3px;
+    margin-left: 4px;
+}
+
+@media only screen and (max-width: 784px) {
+    .descriptBlock{
+        float: none;
+        margin: 0;
+        width: auto;
+        padding: 0 20px;
+    }
+    .comm_contentMainPanel .mapBlock {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    .comm_contentMainPanel .mapBlock  .mapGroup{
+        display: inline-block;
+        width: 100%;
+        max-width: 535px;
+    }
+    .comm_contentMainPanel .mapBlock .textBlock span{
+        display: block;
+    }
+    .comm_contentMainPanel .mapBlock .textBlock a span{
+        display: inline;
+    }
+    .comm_contentMainPanel .mapBlock .textBlock a{
+        position: static;
+        white-space: nowrap;
+    }
+
+
+}

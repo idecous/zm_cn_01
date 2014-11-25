@@ -1,0 +1,41 @@
+.comm_contentMainPanel .leftBlock{
+    float:left;
+    width: 55%;
+}
+
+.comm_contentMainPanel .rightBlock{
+    width: 30%;
+    float: right;
+    padding-top: 60px;
+}
+.comm_contentMainPanel .rightBlock h3{
+    font-size: 16px;
+}
+.comm_contentMainPanel .rightBlock p{
+    margin-top: 20px;
+    line-height: 22px;
+}
+@media only screen and (min-width: 785px) and (max-width: 920px) {
+    .comm_contentMainPanel .leftBlock {
+        margin-right: 10px;
+        float: none;
+        width: auto;
+    }
+    .comm_contentMainPanel .rightBlock {
+        float: none;
+        width: auto;
+        padding-top: 40px;
+    }
+}
+@media only screen and (max-width: 784px) {
+    .comm_contentMainPanel .leftBlock{
+        float: none;
+        width: auto;
+        padding: 0 10px;
+    }
+    .comm_contentMainPanel .rightBlock{
+        float: none;
+        width: auto;
+        padding: 10px;
+    }
+}

@@ -4,11 +4,12 @@
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="UTF-8">
-        <title>Home</title>
+        <title>Customer Service</title>
         <link rel="stylesheet" type="text/css" href="../public/css/default.css"/>
-        <link rel="stylesheet" type="text/css" href="../public/css/customer/home.css"/>
+        <link rel="stylesheet" type="text/css" href="../public/css/manual/customerService.css"/>
         <script type="text/javascript" src="../public/js/jquery.js"></script>
         <script type="text/javascript" src="../public/js/default.js"></script>
+        <script type="text/javascript" src="../public/js/manual/customerService.js"></script>
     </head>
     <body>
         <div class="header centerBlock">
@@ -158,63 +159,109 @@
         <div class="mainPanel comm_whiteBG">
             <div class="comm_centerBlock">
                 <div class="comm_topSpace"></div>
+                <ul class="comm_form_messages">
+                    <li class="successMsg">
+                        <ul>
+                            <li>
+                                <span>Your inquiry was submitted and will be responded to as soon as possible. Thank you for contacting us.</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="errorlMsg">
+                        <ul>
+                            <li>
+                                <span>There is already an account with this email address. If you are sure that it is your email address,<a href="#">click here</a>to get your password and access your account.</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
                 <div class="comm_contentMainPanel">
-                    <h1 class="comm_form_pageTitle">My Dashboard</h1>
-                    <div class="firstRow">
-                        <div class="leftBlock">
-                            <div class="subTitle">
-                                <h3>Contact Information</h3>
-                                <a href="#">Edit</a>
-                            </div>
-                            <div class="subContent">
-                                <p>Fan N<br/>867446793@qq.com<br/><a href="#">Change Password</a></p>
-                            </div>
-                        </div>
-                        <div class="rightBlock">
-                            <div class="subTitle">
-                                <h3>Newsletters</h3>
-                                <a href="#">Edit</a>
-                            </div>
-                            <div class="subContent">
-                                <p>You are currently not subscribed to any newsletter.</p>
-                            </div>
-                        </div>
+                    <h1 class="comm_form_pageTitle">Contact Us</h1>
+                    <div class="leftBlock">
+                        <form>
+                            <ul class="comm_form_formList">
+                                <li>
+                                    <label><em>*</em><span>Name</span></label>
+                                    <div class="comm_form_inputBox">
+                                        <div class="inputText">
+                                            <input  type="text" value="" />
+                                        </div>
+                                        <div class="comm_form_validationAdvice">This is a required field.</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label><em>*</em><span>Email</span></label>
+                                    <div class="comm_form_inputBox">
+                                        <div class="inputText">
+                                            <input type="text" value="" />
+                                        </div>
+                                        <div class="comm_form_validationAdvice">This is a required field.</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label><span>Telephone</span></label>
+                                    <div class="comm_form_inputBox">
+                                        <div class="inputText">
+                                            <input type="text" value="" />
+                                        </div>
+                                        <div class="comm_form_validationAdvice">This is a required field.</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label><em>*</em><span>Department</span></label>
+                                    <div class="comm_form_inputBox comm_form_select">
+                                        <div class="inputSelect">
+                                            <select>
+                                                <option value="1">Urgent Issues</option>
+                                            </select>
+                                        </div>
+                                        <div class="comm_form_validationAdvice">This is a required field.</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label><em>*</em><span>Comment</span></label>
+                                    <div class="comm_form_inputBox">
+                                        <div class="inputTextarea">
+                                            <textarea></textarea>
+                                        </div>
+                                        <div class="comm_form_validationAdvice">This is a required field.</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input class="comm_form_button" type="submit" value="SUBMIT" />
+                                </li>
+                            </ul>
+                        </form>
                     </div>
-                    <div class="secondRow">
-                        <div class="subTitle">
-                            <h3>Address Book</h3>
-                            <a href="#">Manage Addresses</a>
-                        </div>
-                        <div class="leftBlock subContent">
-                            <h4>Default Billing Address</h4>
-                            <p>You have not set a default billing address.</p>
-                            <a href="#">Edit Address</a>
-                        </div>
-                        <div class="rightBlock subContent">
-                            <h4>Default Shipping Address</h4>
-                            <p>You have not set a default shipping address.</p>
-                            <a href="#">Edit Address</a>
-                        </div>
+                    <div class="rightBlock">
+                        <h3>Eve By Eves Headquarter</h3>
+                        <p>350 N. Camden Drive<br/>
+                            Beverly Hills, CA 90210<br/>
+                            1-626-376-9481<br/>
+                            Store Hours<br/>
+                            Mon- Friday 9 am- 10 pm<br/>
+                            Sat &amp; Sun 9 am-5 pm<br/>
+                            info@evebyeves.com</p>
                     </div>
-                    <div class="comm_clearFloat"></div>
                 </div>
                 <div class="comm_sidePanel">
                     <ul>
-                        <li class="current"><a href="#">Account Dashboard</a></li>
-                        <li><a href="#">Account Information</a></li>
-                        <li><a href="#">Address Book</a></li>
-                        <li><a href="#">My Orders</a></li>
-                        <li><a href="#">My Wishlist</a></li>
-                        <li><a href="#">Comment</a></li>
-                        <li><a href="#">Newsletter Subscriptions</a></li>
+                        <li><a href="#">My ACCOUNT</a></li>
+                        <li class="current"><a href="#">CUSTOMER SERVICE</a></li>
+                        <li><a href="#">MY ORDERS</a></li>
+                        <li><a href="#">SHIPPING</a></li>
+                        <li><a href="#">RETURNS EXCHANGES</a></li>
+                        <li><a href="#">STORES LOCATIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">FAQs</a></li>
                     </ul>
                 </div>
                 <div class="comm_clearFloat"></div>
-                </div>
+             </div>
             <div class="comm_bottomSpace"></div>
         </div>
 
-        <div class="footer comm_centerBlock">
+    <div class="footer comm_centerBlock">
             <!--<a class="mobileUser" href="#">登陆</a>
             <a class="mobileUser" href="#">注册</a> -->
             <a class="mobileUser" href="#">ID:FIONA1121 FIONA1121 FIONA1121</a>

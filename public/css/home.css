@@ -9,14 +9,12 @@ html,body {
     overflow:hidden;
     visibility: hidden;
 }
-
 .mainViewArea .logoBlock{
     position: absolute;
     top: 22px;
     left: 50%;
     margin-left: -191px;
 }
-
 .mainViewArea .searchBlock{
     position: absolute;
     top:45px;
@@ -26,6 +24,9 @@ html,body {
     height: 20px;
     padding: 4px 2px 0px 24px;
     background-color: #fff;
+}
+.mainViewArea .searchBlock.warn{
+    border-color: #f00;
 }
 .mainViewArea .searchBlock input[type="submit"]{
     position: absolute;
@@ -663,20 +664,10 @@ html,body {
 .mainViewArea  .contentBlock .middleBlock a .odd{
     z-index: 1;
 }
-
-
-
-
 .mainViewArea .footer{
     position: absolute;
     bottom: 0;
-
-
 }
-
-
-
-
 .mainViewArea .scrollBar{
     position:absolute;
     overflow:hidden;
@@ -693,19 +684,12 @@ html,body {
     background-color: #ccc;
 }
 
-
-
-
-
-
-
-
-
-.mainViewArea .middleNavigationBlock .mobileMenu{
+.mobileMenu{
     display: none;
     position: relative;
+    padding: 30px 0;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .button{
+.mobileMenu .button{
     position: relative;
     border: 1px solid #000;
     position: relative;
@@ -713,11 +697,11 @@ html,body {
     line-height: 28px;
     margin: 0 15px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .button span{
+.mobileMenu .button span{
     font-size: 14px;
     margin-left: 10px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .button i{
+.mobileMenu .button i{
     display: inline-block;
     position: absolute;
     right:10px;
@@ -726,9 +710,9 @@ html,body {
     height: 16px;
     background: url(../images/icons.png) no-repeat -29px -9px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule{
+.mobileMenu .topNavModule{
     position: absolute;
-    top: 40px;
+    top: 70px;
     left: 0;
     width: 100%;
     line-height: 28px;
@@ -739,17 +723,17 @@ html,body {
     opacity: 0;
     transition: all 0.25s ease-out 0s;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule.open{
+.mobileMenu .topNavModule.open{
     visibility: visible;
     opacity: 1;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .btnBlock{
+.mobileMenu .topNavModule .btnBlock{
     border-bottom: 1px solid #ccc;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule a{
+.mobileMenu .topNavModule a{
     padding-left: 10px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule li i{
+.mobileMenu .topNavModule li i{
     display: block;
     float: right;
     height: 28px;
@@ -757,48 +741,55 @@ html,body {
     cursor:pointer;
     background: url(../images/icons.png) no-repeat -63px 0;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule li i.open{
+.mobileMenu .topNavModule li i.open{
     background-position: -91px 0;
 }
 
-.mainViewArea .middleNavigationBlock .mobileMenu .popBlock a:before{
+.mobileMenu .popBlock a:before{
     content: "-";
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .popBlock a{
+.mobileMenu .topNavModule .popBlock a{
     padding-left: 28px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu li .popBlock ul li .subPopBlock a {
+.mobileMenu li .popBlock ul li .subPopBlock a {
     padding-left: 56px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .popBlock{
+.mobileMenu .topNavModule .popBlock{
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .popBlock.open{
+.mobileMenu .topNavModule .popBlock.open{
     max-height: 500px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .subPopBlock{
+.mobileMenu .topNavModule .subPopBlock{
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .subPopBlock.open{
+.mobileMenu .topNavModule .subPopBlock.open{
     max-height: 500px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .btnBlock:hover{
+.mobileMenu .topNavModule .btnBlock:hover{
     background-color: #ebebeb;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .btnBlock:hover i{
+.mobileMenu .topNavModule .btnBlock:hover i{
     background-position: -63px -29px;
 }
-.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .btnBlock:hover i.open{
+.mobileMenu .topNavModule .btnBlock:hover i.open{
     background-position: -91px -28px;
 }
-
-
-
-
+.mobileLogoBlock{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -44px;
+    margin-left: -191px;
+}
+.mobileLogoBlock img{
+    width: 100%;
+}
 
 @media \0screen {
     .mainViewArea .navGroupPanel ul li a{
@@ -818,6 +809,14 @@ html,body {
 }
 
 @media only screen and (max-width: 784px) {
+    .mainViewArea{
+        display: none;
+    }
+    .mobileLogoBlock,
+    .mobileMenu{
+        display: block;
+    }
+
 
 
 

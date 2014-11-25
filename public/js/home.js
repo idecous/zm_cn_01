@@ -272,9 +272,6 @@ var EBE_TopMenuModule = function(el,index){
         if( imgWidth <= 100 ){
             if(imgEl.prop("complete")){
                 imgCompleteHandler(true);
-                console.log( imgWidth );
-
-
             }else{
                 imgEl[0].onload = imgCompleteHandler;
                 return;
@@ -328,13 +325,6 @@ var EBE_TopMenuModule = function(el,index){
     });
 };
 
-
-
-
-
-
-
-
 var EBE_ContentBlockManage = function( initFn ){
     var el = $(".mainViewArea .contentBlock");
     var topNavModuleEl = el.find(".navigationBlock .normalMenu .topNavModule");
@@ -353,8 +343,6 @@ var EBE_ContentBlockManage = function( initFn ){
     var img = new Image();
     img.onload = initFn;
     img.src = aboutImgEls.eq(0).attr("src");
-
-
 
     aboutEls.mouseenter(function(){
         var tIndex = aboutEls.index(this);
@@ -398,9 +386,7 @@ var EBE_ContentBlockManage = function( initFn ){
         nHeight = aboutImgHeight*rate;
         aboutEls.css({"width":nWidth,"height":nHeight,"top": (mbHeight - nHeight)/2});
         aboutEls.eq(0).css("left", mbWidth/2 - 20 - nWidth );
-        aboutEls.eq(1).css("left", mbWidth/2 + 20  );
-
-
+        aboutEls.eq(1).css("left", mbWidth/2 + 20 );
     }
 
     function initHandler() {
@@ -434,6 +420,16 @@ var EBE_ScrollManager = function(){
     var el = $(".mainViewArea");
     var logoBlockEl = el.find(".logoBlock");
     var searchEl = el.find(".searchBlock");
+    var searchFormEl = el.find("form");
+    var searchBlockEl = searchFormEl.find(".searchBlock");
+    var searchInputEl = searchFormEl.find("input[type='text']");
+    searchFormEl.submit(function(){
+        if( $.trim(searchInputEl.val()) == "" ){
+            searchBlockEl.addClass("warn");
+            return false;
+        }
+    });
+
     var screenWidth = 0;
     var screenHeight = 0;
     var topPadding = 150;
@@ -498,14 +494,8 @@ var EBE_ScrollManager = function(){
         }, 10);
     };
 
-
-
-
-
-
     var topNavBlock = new EBE_TopGroupNavigationManager(moduleInitFn);
     var contentBlock = new EBE_ContentBlockManage(moduleInitFn);
-
 
     function resizeHandler(){
         screenWidth  = el.width();
@@ -536,24 +526,75 @@ var EBE_ScrollManager = function(){
         topNavBlock.setOpacity(  Math.pow(rate,3).toFixed(2) );
         contentBlock.updatePos(screenHeight,rate );
     }
-
-
-
-
-
-
-
-
-
-
-
-
 };
 
+var EBE_MobileMenuManager = function(){
+    var winEl = $(window);
+    var bodyEl = $("body");
+    var el = $(".mobileMenu");
+    var navEl = $(".mainViewArea .contentBlock .topNavModule").clone();
+    navEl.find(">li>.popBlock>a").detach();
+    el.append(navEl);
+    var isOpen = false;
+    var openBtnEl = el.find(".button");
+    openBtnEl.mousedown(function(e){
+        if(isOpen){return;}
+        setNavVisible(true);
+        e.stopPropagation();
+    });
+    navEl.mousedown(function(e){
+        e.stopPropagation();
+    });
+    winEl.mousedown(function(){
+        setNavVisible(false);
+    });
+    var sub01Els = el.find(".popBlock");
+    var sub02Els = el.find(".popBlock .subPopBlock");
+    var navBtnEls = el.find("li");
+    var subOpenBtnEls = navBtnEls.find("i");
+
+    subOpenBtnEls.click(function(){
+        var iEl = subOpenBtnEls.eq( subOpenBtnEls.index(this) );
+        var liEl = iEl.parent().parent();
+        var popBlockEl = liEl.children(".popBlock");
+        var subPopBlockEl = liEl.children(".subPopBlock");
+
+        if( iEl.hasClass("open") ){
+            if(popBlockEl.length>0){
+                popBlockEl.removeClass("open");
+            }else{
+                subPopBlockEl.removeClass("open");
+            }
+            iEl.removeClass("open");
+        }else{
+            if(popBlockEl.length>0){
+                popBlockEl.addClass("open");
+            }else{
+                subPopBlockEl.addClass("open");
+            }
+            iEl.addClass("open");
+        }
+    });
+    function setNavVisible(val){
+        if(val==isOpen){return;}
+        if(val){
+            navEl.addClass("open");
+        }else{
+            navEl.removeClass("open");
+            sub01Els.removeClass("open");
+            sub02Els.removeClass("open");
+            subOpenBtnEls.removeClass("open");
+        }
+        isOpen = val;
+    }
+    winEl.resize(function(){
+        setNavVisible(false);
+    });
+};
 
 $(function(){
+    new EBE_MobileMenuManager();
     new EBE_ScrollManager();
-
 });
 
 
