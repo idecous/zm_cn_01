@@ -1,0 +1,837 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.mainViewArea{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    visibility: hidden;
+}
+
+.mainViewArea .logoBlock{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    margin-left: -191px;
+}
+
+.mainViewArea .searchBlock{
+    position: absolute;
+    top:45px;
+    right: 10%;
+    border:  1px solid #a3a3a3;
+    width: 138px;
+    height: 20px;
+    padding: 4px 2px 0px 24px;
+    background-color: #fff;
+}
+.mainViewArea .searchBlock input[type="submit"]{
+    position: absolute;
+    left:4px;
+    top:6px;
+    width: 14px;
+    height: 14px;
+    border: none;
+    background: url(../images/icons.png) no-repeat 0 -14px;
+    cursor: pointer;
+}
+.mainViewArea .searchBlock input[type="text"]{
+    width: 100%;
+    border: none;
+}
+
+.mainViewArea .navGroupPanel{
+    position:absolute;
+    top:100px;
+    left:0;
+    width: 100%;
+    background-color: #363434;
+}
+.mainViewArea .navGroupPanel .viewBlock{
+    position:absolute;
+    top: 9px;
+    left:0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1197px;
+}
+.mainViewArea .navGroupPanel .placeholderBG{
+    width: 100%;
+}
+.mainViewArea .navGroupPanel ul{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.mainViewArea .navGroupPanel ul li{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.mainViewArea .navGroupPanel ul li .navImg{
+    width: 100%;
+}
+
+.mainViewArea .navGroupPanel ul li .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:20.05%;
+    z-index: 10;
+    cursor: pointer;
+}
+.mainViewArea .navGroupPanel ul li a{
+    position: absolute;
+    display: block;
+    background-color: #000;
+    opacity: 0;
+}
+.mainViewArea .navGroupPanel ul .blockA {
+    z-index: 1;
+}
+.mainViewArea .navGroupPanel ul .blockB {
+    z-index: 2;
+}
+.mainViewArea .navGroupPanel ul .blockC {
+    z-index: 3;
+}
+.mainViewArea .navGroupPanel ul .blockD {
+    z-index: 4;
+}
+.mainViewArea .navGroupPanel ul .blockE {
+    z-index: 5;
+}
+.mainViewArea .navGroupPanel ul .blockA .block01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:30.05%;
+    height:100%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block02{
+    position: absolute;
+    top: 1.61%;
+    left: 30.91%;
+    width:18.04%;
+    height:46.7%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block03{
+    position: absolute;
+    top: 49.43%;
+    left: 30.91%;
+    width:18.04%;
+    height:21.74%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block04{
+    position: absolute;
+    top: 72.78%;
+    left: 30.91%;
+    width:18.04%;
+    height:25.6%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block05{
+    position: absolute;
+    top: 1.61%;
+    left: 49.54%;
+    width:18.04%;
+    height:46.7%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block06{
+    position: absolute;
+    top: 49.43%;
+    left: 49.54%;
+    width:30.74%;
+    height:48.95%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block07{
+    position: absolute;
+    top: 1.61%;
+    right: 19.71%;
+    width:12.11%;
+    height:26.24%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block08{
+    position: absolute;
+    top: 28.98%;
+    right: 19.71%;
+    width:12.11%;
+    height:19.32%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block09{
+    position: absolute;
+    top: 1.61%;
+    right: 0.83%;
+    width:18.29%;
+    height:26.41%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block10{
+    position: absolute;
+    top: 28.98%;
+    right: 0.83%;
+    width:18.29%;
+    height:43.8%;
+}
+.mainViewArea .navGroupPanel ul .blockA .block11{
+    position: absolute;
+    top: 73.91%;
+    right: 0.83%;
+    width:18.29%;
+    height:24.47%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:30.05%;
+    height:100%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block02{
+    position: absolute;
+    top: 1.61%;
+    left: 30.82%;
+    width:18.29%;
+    height:26.24%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block03{
+    position: absolute;
+    top: 28.98%;
+    left: 30.82%;
+    width:18.29%;
+    height:43.8%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block04{
+    position: absolute;
+    top: 73.91%;
+    left: 30.82%;
+    width:18.29%;
+    height:24.47%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block05{
+    position: absolute;
+    top: 1.61%;
+    left: 49.7%;
+    width:12.11%;
+    height:26.24%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block06{
+    position: absolute;
+    top: 28.98%;
+    left: 49.7%;
+    width:12.11%;
+    height:19.32%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block07{
+    position: absolute;
+    top: 49.43%;
+    left: 49.7%;
+    width:12.11%;
+    height:48.95%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block08{
+    position: absolute;
+    top: 1.61%;
+    right: 19.54%;
+    width:18.04%;
+    height:46.7%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block09{
+    position: absolute;
+    top: 49.43%;
+    right: 19.54%;
+    width:18.04%;
+    height:48.95%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block10{
+    position: absolute;
+    top: 1.61%;
+    right: 0.83%;
+    width:18.12%;
+    height:46.7%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block11{
+    position: absolute;
+    top: 49.43%;
+    right: 0.83%;
+    width:18.12%;
+    height:22.22%;
+}
+.mainViewArea .navGroupPanel ul .blockB .block12{
+    position: absolute;
+    top: 72.78%;
+    right: 0.83%;
+    width:18.12%;
+    height:25.6%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:30.05%;
+    height:100%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block02{
+    position: absolute;
+    top: 1.61%;
+    left: 30.9%;
+    width:18.13%;
+    height:25.6%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block03{
+    position: absolute;
+    top: 28.34%;
+    left: 30.9%;
+    width:18.13%;
+    height:22.22%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block04{
+    position: absolute;
+    top: 51.69%;
+    left: 30.9%;
+    width:18.13%;
+    height:46.8%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block05{
+    position: absolute;
+    top: 1.61%;
+    left: 49.62%;
+    width:18.04%;
+    height:48.95%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block06{
+    position: absolute;
+    top: 51.69%;
+    left: 49.62%;
+    width:18.04%;
+    height:46.8%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block07{
+    position: absolute;
+    top: 1.61%;
+    right: 19.63%;
+    width:12.11%;
+    height:48.95%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block08{
+    position: absolute;
+    top: 51.69%;
+    right: 19.63%;
+    width:12.11%;
+    height:19.32%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block09{
+    position: absolute;
+    top: 72.14%;
+    right: 19.63%;
+    width:12.11%;
+    height:26.34%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block10{
+    position: absolute;
+    top: 1.61%;
+    right: 0.75%;
+    width:18.29%;
+    height:24.47%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block11{
+    position: absolute;
+    top: 27.21%;
+    right: 0.75%;
+    width:18.29%;
+    height:43.8%;
+}
+.mainViewArea .navGroupPanel ul .blockC .block12{
+    position: absolute;
+    top: 72.14%;
+    right: 0.75%;
+    width:18.29%;
+    height:26.34%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:30.05%;
+    height:100%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block02{
+    position: absolute;
+    top: 1.61%;
+    left: 30.82%;
+    width:18.29%;
+    height:24.47%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block03{
+    position: absolute;
+    top: 27.21%;
+    left: 30.82%;
+    width:18.29%;
+    height:43.8%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block04{
+    position: absolute;
+    top: 72.14%;
+    left: 30.82%;
+    width:18.29%;
+    height:26.24%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block05{
+    position: absolute;
+    top: 1.61%;
+    left: 49.7%;
+    width:12.11%;
+    height:48.95%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block06{
+    position: absolute;
+    top: 51.69%;
+    left: 49.7%;
+    width:12.11%;
+    height:19.32%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block07{
+    position: absolute;
+    top: 72.14%;
+    left: 49.7%;
+    width:12.11%;
+    height:26.24%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block08{
+    position: absolute;
+    top: 1.61%;
+    right: 19.54%;
+    width:18.04%;
+    height:48.95%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block09{
+    position: absolute;
+    top: 51.69%;
+    right: 19.54%;
+    width:18.04%;
+    height:46.69%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block10{
+    position: absolute;
+    top: 1.61%;
+    right: 0.83%;
+    width:18.12%;
+    height:25.6%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block11{
+    position: absolute;
+    top: 28.34%;
+    right: 0.83%;
+    width:18.12%;
+    height:22.22%;
+}
+.mainViewArea .navGroupPanel ul .blockD .block12{
+    position: absolute;
+    top: 51.69%;
+    right: 0.83%;
+    width:18.12%;
+    height:46.7%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:30.05%;
+    height:100%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block02{
+    position: absolute;
+    top: 1.61%;
+    left: 30.99%;
+    width:18.04%;
+    height:46.7%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block03{
+    position: absolute;
+    top: 49.43%;
+    left: 30.99%;
+    width:18.04%;
+    height:22.22%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block04{
+    position: absolute;
+    top: 72.78%;
+    left: 30.99%;
+    width:18.04%;
+    height:25.60%;
+}
+
+.mainViewArea .navGroupPanel ul .blockE .block05{
+    position: absolute;
+    top: 1.61%;
+    left: 49.62%;
+    width:12.11%;
+    height:26.24%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block06{
+    position: absolute;
+    top: 28.98%;
+    left: 49.62%;
+    width:12.11%;
+    height:19.32%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block07{
+    position: absolute;
+    top: 49.43%;
+    left: 49.62%;
+    width:18.04%;
+    height:48.95%;
+}
+
+.mainViewArea .navGroupPanel ul .blockE .block08{
+    position: absolute;
+    top: 1.61%;
+    right: 19.63%;
+    width:18.04%;
+    height:46.69%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block09{
+    position: absolute;
+    top: 49.43%;
+    right: 19.63%;
+    width:12.11%;
+    height:48.95%;
+}
+
+.mainViewArea .navGroupPanel ul .blockE .block10{
+    position: absolute;
+    top: 1.61%;
+    right: 0.75%;
+    width:18.29%;
+    height:26.24%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block11{
+    position: absolute;
+    top: 28.98%;
+    right: 0.75%;
+    width:18.29%;
+    height:43.8%;
+}
+.mainViewArea .navGroupPanel ul .blockE .block12{
+    position: absolute;
+    top: 73.91%;
+    right: 0.75%;
+    width:18.29%;
+    height:24.47%;
+}
+
+.mainViewArea  .contentBlock{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    z-index: 20;
+}
+.mainViewArea .comm_centerBlock{
+    position: relative;
+}
+
+.mainViewArea  .contentBlock .navigationBlock .normalMenu{
+    position:relative;
+    line-height: 40px;
+    height: 40px;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .current{
+    font-weight: bold;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule>li{
+    width: 10%;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule>li:hover>.btnBlock a{
+    border-bottom: 4px solid #f33b7e;
+    padding-bottom: 5px;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule>li:hover .popBlock{
+    visibility:visible;
+    opacity:1;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock{
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: #e1e1e1;
+    text-align: left;
+    font-size: 14px;
+    transition: all 0.25s ease-out 0s;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock li .btnBlock{
+    position: relative;
+    margin: 0 15px;
+    border-bottom: 1px solid #ebebeb;
+    height: 47px;
+    line-height: 47px;
+    white-space: nowrap;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock li.last .btnBlock{
+    border-bottom:none;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock li .btnBlock a{
+    display: block;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock li .btnBlock i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 17px;
+    height: 17px;
+    margin-top:-9px;
+    background:  url(../images/icons.png) no-repeat 0 -52px;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock li.over{
+    background-color: #ebebeb;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock li.over .btnBlock i{
+    background-position: -17px -52px;
+}
+
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .base:hover{
+    background-color: #f33b7e;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .base:hover a{
+    color: #fff;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .base:hover .btnBlock{
+    border-bottom-color: #f33b7e;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .mainMenuBlock{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    background-color: #f5f5f5;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .subMenuBlock{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 0;
+    background-color: #ebebeb;
+    overflow:hidden;
+    transition: all 0.25s ease-out 0s;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .subMenuBlock.open{
+    width: 235px;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .propaganda{
+    display:block;
+    position: absolute;
+    left: 210px;
+    top:10px;
+    transition: all 0.25s ease-out 0s;
+}
+.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock img{
+    width: 100%;
+    height: 100%;
+}
+.mainViewArea  .contentBlock .nav{
+    z-index: 10;
+}
+.mainViewArea  .contentBlock .middleBlock{
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    bottom: 180px;
+    width: 100%;
+
+    background: url(../images/home_middle_bg.png);
+}
+.mainViewArea  .contentBlock .middleBlock a{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+
+}
+.mainViewArea  .contentBlock .middleBlock a img{
+    position: absolute;
+}
+.mainViewArea  .contentBlock .middleBlock a .odd{
+    z-index: 1;
+}
+
+
+
+
+.mainViewArea .footer{
+    position: absolute;
+    bottom: 0;
+
+
+}
+
+
+
+
+.mainViewArea .scrollBar{
+    position:absolute;
+    overflow:hidden;
+    width: 7px;
+    top:8px;
+    right: 0;
+    z-index: 20;
+}
+.mainViewArea .scrollBar .thumb{
+    position:absolute;
+    top:0;
+    left:0;
+    width:7px;
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+.mainViewArea .middleNavigationBlock .mobileMenu{
+    display: none;
+    position: relative;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .button{
+    position: relative;
+    border: 1px solid #000;
+    position: relative;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 15px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .button span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .button i{
+    display: inline-block;
+    position: absolute;
+    right:10px;
+    top:6px;
+    width: 19px;
+    height: 16px;
+    background: url(../images/icons.png) no-repeat -29px -9px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    line-height: 28px;
+    background-color: #fcd4d2;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease-out 0s;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule.open{
+    visibility: visible;
+    opacity: 1;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .btnBlock{
+    border-bottom: 1px solid #ccc;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule a{
+    padding-left: 10px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule li i{
+    display: block;
+    float: right;
+    height: 28px;
+    width: 28px;
+    cursor:pointer;
+    background: url(../images/icons.png) no-repeat -63px 0;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule li i.open{
+    background-position: -91px 0;
+}
+
+.mainViewArea .middleNavigationBlock .mobileMenu .popBlock a:before{
+    content: "-";
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .popBlock a{
+    padding-left: 28px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu li .popBlock ul li .subPopBlock a {
+    padding-left: 56px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .popBlock{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .popBlock.open{
+    max-height: 500px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .subPopBlock{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .subPopBlock.open{
+    max-height: 500px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .btnBlock:hover{
+    background-color: #ebebeb;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .btnBlock:hover i{
+    background-position: -63px -29px;
+}
+.mainViewArea .middleNavigationBlock .mobileMenu .topNavModule .btnBlock:hover i.open{
+    background-position: -91px -28px;
+}
+
+
+
+
+
+@media \0screen {
+    .mainViewArea .navGroupPanel ul li a{
+        background:url(1pAlpha.png);
+    }
+    .mainViewArea .contentBlock .contentMiddleBlock{
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c121212, endColorstr=#4c121212);
+    }
+    .mainViewArea .contentBlock .contentMiddleBlock a{
+        background:url(1pAlpha.png);
+        z-index: 102;
+    }
+    .mainViewArea .contentBlock .contentMiddleBlock a img{
+        background:url(1pAlpha.png);
+        filter: alpha(opacity=0);
+    }
+}
+
+@media only screen and (max-width: 784px) {
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

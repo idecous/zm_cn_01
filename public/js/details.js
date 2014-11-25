@@ -16,7 +16,7 @@ var EBE_GoodsViewManager = function(){
 	var viewMaskEl = el.find(".whitehMask"); 
 	var viewAreaEl = el.find(".viewArea");
 	var viewAreaImgEl = viewAreaEl.find("img");
-	var mouswAreaEl = el.find(".mouseArea"); 
+	var mouseAreaEl = el.find(".mouseArea");
 	var partViewEl = $(".mainParamBlock .partViewBlock");
 	var partViewBorderEl = $(".mainParamBlock .partViewBorder");
 	
@@ -93,7 +93,7 @@ var EBE_GoodsViewManager = function(){
 	});
 	
 	var rateX,rateY,bordeWidth,bordeHeight,mWidth,mHeight,isMobileStatus;
-	mouswAreaEl.mouseenter(function(e){
+	mouseAreaEl.mouseenter(function(e){
 		isMobileStatus = !topBarEl.is(":visible");
 		if( isMobileStatus ){return; }
 		viewMaskEl.show();
@@ -122,7 +122,7 @@ var EBE_GoodsViewManager = function(){
 	
 	var isTouch = false;
 	var touchX = 0;
-	mouswAreaEl.bind("mousedown touchstart",function(e){
+	mouseAreaEl.bind("mousedown touchstart",function(e){
 		isMobileStatus = topBarEl.is(":visible");
 		if( !isMobileStatus ){return; }
 		isTouch = true;
@@ -230,15 +230,29 @@ var EBE_GoodsViewManager = function(){
 		phoneNavLiEls.removeClass("selected");
 		phoneNavLiEls.eq(value).addClass("selected");
 	}
-	
+	var initIndex = containerLiEl.filter(".checked").index();
+	function updateInitNavPosByIndex(val){
+		if( val > 3 ){
+			containerUlEl.css( "left", -(val -3) * (liWidth+liRightM));
+			leftArrowEl.show();
+			if( val == totalItem-1){
+				rightArrowEl.hide();
+			}
+		}
+
+
+	};
+
 	if( holderEl.prop("complete") ){
 		isInit = true;
 		updateViewListCountBySize();
-		setMainViewIndex(0);
+		setMainViewIndex(initIndex);
+		updateInitNavPosByIndex(initIndex);
 	}else{
 		isInit = true;
 		holderEl[0].onload = updateViewListCountBySize;
-		setMainViewIndex(0);
+		setMainViewIndex(initIndex);
+		updateInitNavPosByIndex(initIndex);
 	}
 	winEl.resize(function(){
 		if(!isInit){return;}

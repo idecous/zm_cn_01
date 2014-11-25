@@ -313,7 +313,7 @@ var EBE_MobileMenuManager = function(){
 		setNavVisible(false);	
 	});
 };
-var EBE_ToplMenuModule = function(el,index){
+var EBE_TopMenuModule = function(el,index){
 	var mianWidth = 200;
 	var subWidth = 235;
 	var blockEl = el.find(".popBlock");
@@ -437,7 +437,7 @@ var EBE_TopMenuManager = function(){
 	var el = $(".header .normalMenu .topNavModule");
 	var moduleBlockEls = el.children("li");
 	moduleBlockEls.each( function( index ){
-		new EBE_ToplMenuModule( moduleBlockEls.eq(index) ,index);
+		new EBE_TopMenuModule( moduleBlockEls.eq(index) ,index);
 	} ); 
 };
 var TopSwitchManager = function(){
