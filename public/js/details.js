@@ -232,15 +232,14 @@ var EBE_GoodsViewManager = function(){
 	}
 	var initIndex = containerLiEl.filter(".checked").index();
 	function updateInitNavPosByIndex(val){
-		if( val > 3 ){
-			containerUlEl.css( "left", -(val -3) * (liWidth+liRightM));
+		if( val > viewCount-1 ){
+			scrollIndex = val -viewCount+1;
+			containerUlEl.css( "left", -scrollIndex * (liWidth+liRightM));
 			leftArrowEl.show();
 			if( val == totalItem-1){
 				rightArrowEl.hide();
 			}
 		}
-
-
 	};
 
 	if( holderEl.prop("complete") ){
