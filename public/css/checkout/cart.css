@@ -111,6 +111,10 @@
 .mainPanel .updateRow .codeGroup input[type='text'].warn{
     border: 1px solid #f00;
 }
+.mainPanel .updateRow .codeGroup input[type='submit']{
+    margin-right: 10px;
+}
+
 .mainPanel .updateRow .inputBorder{
     display: inline-block;
 }

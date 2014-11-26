@@ -197,18 +197,18 @@
 			<div class="comm_navDenoteBar">购物车 > 我的购物车 </div>
 			<div class="comm_topSpace"></div>
 
-			<!--<ul class="comm_form_messages">-->
-				<!--<li class="successMsg">-->
-					<!--<ul>-->
-						<!--<li><span>If there is an account associated with ss@2dd.com you will receive an email with a link to reset your password.</span></li>-->
-					<!--</ul>-->
-				<!--</li>-->
-				<!--<li class="errorlMsg">-->
-					<!--<ul>-->
-						<!--<li><span>There is already an account with this email address. If you are sure that it is your email address,<a href="#">click here</a>to get your password and access your account.</span></li>-->
-					<!--</ul>-->
-				<!--</li>-->
-			<!--</ul>-->
+			<ul class="messages">
+				<li class="success-msg">
+					<ul>
+						<li><span>If there is an account associated with ss@2dd.com you will receive an email with a link to reset your password.</span></li>
+					</ul>
+				</li>
+				<li class="error-msg">
+					<ul>
+						<li><span>There is already an account with this email address. If you are sure that it is your email address,<a href="#">click here</a>to get your password and access your account.</span></li>
+					</ul>
+				</li>
+			</ul>
 
 			<!--<h1 class="emptyMessage">购物车为空</h1>-->
 
@@ -318,8 +318,11 @@
 
 
 			<div class="updateRow">
-				<form action="#code">
-					<div class="codeGroup"><span>输入折扣券号码:</span><div class="inputBorder"><input type="text"/></div><input class="comm_form_button" type="submit" name="apply_code" value="提交使用"/></div>
+				<form action="#">
+					<input type="hidden"/>
+					<div class="codeGroup">
+						<span>输入折扣券号码:</span><div class="inputBorder"><input type="text"/></div><input class="comm_form_button" type="submit" name="apply_code" value="提交使用"/><input class="comm_form_button" type="submit" name="cancel" value="取消"/>
+					</div>
 				</form>
 				<input class="comm_form_button" type="submit" name="update_car" value="更新购物车"/>
 			</div>

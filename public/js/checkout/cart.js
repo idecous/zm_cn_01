@@ -81,7 +81,12 @@ var EBE_UpdateManager = function(){
     var codeFormEl = $(".mainPanel .updateRow form:eq(0)");
     var codeInputEl = codeFormEl.find("input[type=text]");
     var submitEls = codeFormEl.find("input[type=submit]");
+    var codeHiddenEl = codeFormEl.find("input[type=hidden]");
 
+    submitEls.mousedown(function(){
+        var tIndex = submitEls.index(this);
+        codeHiddenEl.val(  tIndex==0?"0":"1" );
+    });
     codeFormEl.submit(function(e){
         var code= $.trim( codeInputEl.val() );
         if( code == "" ){
@@ -90,7 +95,7 @@ var EBE_UpdateManager = function(){
         }
     });
     var formEl = $(".mainPanel form:eq(0)");
-    var updateSubmitEl= $(".mainPanel .updateRow .comm_form_button:eq(1)");
+    var updateSubmitEl= $(".mainPanel .updateRow .comm_form_button:eq(2)");
     updateSubmitEl.click(function(){
         formEl.submit();
     });
