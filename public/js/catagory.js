@@ -553,22 +553,40 @@ $(function(){
 	var list = new EBE_List(function(page){
 		//console.log("请求数据页面[页]",page);
 		//请求服务器  过滤条件 cacheFilterData 页数:page
-		
-		list.appendData( getPageData(5), page );
+
+		$.post("getpage/xxxx", { "filter": cacheFilterData, "page":page },
+			function(result){
+				console.log( result );
+				// 分拆result  按以下格式填充
+				//list.appendData( getPageData(5), page );
+			}
+		);
 		
 	},function(id,name){
 		//console.log("添加收藏[id,名称]",id,name);
 		//请求服务器
-		alert("添加"+name+"到收藏成功!");
 
-		list.toWish( id );
-
+		$.post("towhish/xxxx", { "id": id, "name":name },
+			function(result){
+				console.log( result );
+				// 根据result  判断是否收藏成功
+				//alert("添加"+name+"到收藏成功!");
+				//list.toWish( id );
+			}
+		);
 	},window.totalPage);	
 	var filter = new EBE_FilterManager(function(data){
 		//console.log("过滤条件",data);	
 		cacheFilterData = data;
 		//请求服务器  过滤条件 cacheFilterData 页数:1
-		list.setData( getPageData(2), 5 , 888 );
+		$.post("getpage/xxxx", { filter: cacheFilterData, page:1 },
+			function(result){
+				console.log( result );
+				// 分拆result  按以下格式填充
+				//list.setData( getPageData(2), 5 , 888 );
+			}
+		);
+		
 	});
 	//filter.update();
 });
