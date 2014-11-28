@@ -378,9 +378,6 @@ var EBE_TopMenuModule = function(el,index){
 		if( imgWidth <= 100 ){
 			if(imgEl.prop("complete")){
 				imgCompleteHandler(true);
-				console.log( imgWidth );
-
-
 			}else{
 				imgEl[0].onload = imgCompleteHandler;
 				return;
@@ -594,14 +591,19 @@ var EBE_AccordionManager = function(){
 var G_screenHeightManager;
 var G_shoppingCar=null;
 
+
+
 $(function(){
+	var bodyEl = $("body").css("visibility","visible");
+	if(!$.support.style && !$.support.tbody ){
+		bodyEl.empty().append( $("<h1 style='text-align: center;margin-top: 100px;'>请使用IE8以上现代浏览器查看本站！</h1>") );
+		return;
+	}
 	G_screenHeightManager = new EVE_ScreenHeightManager();
 	G_shoppingCar = new EVE_ShoppingCar();
 	new EVE_TopSearchManager("请不要留空！");
 	new EBE_MobileMenuManager();
 	new EBE_TopMenuManager();
 	new TopSwitchManager();
-
 	new EBE_AccordionManager();
-	
 });

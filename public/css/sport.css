@@ -1,0 +1,156 @@
+.mainPanel .row01{
+    margin-top: 60px;
+}
+.mainPanel .row01 .imgBlock{
+    width: 44%;
+    display: inline-block;
+    vertical-align: top;
+}
+.mainPanel .row01 .imgBlock .border{
+    margin: 0 20px;
+}
+.mainPanel .row01 .imgBlock img{
+    width: 100%;
+}
+
+.mainPanel .row01 .descriptBlock{
+    width: 56%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+}
+.mainPanel .row01 .descriptBlock .border{
+    margin: 0 11% 0 17%;
+    color: #464646;
+}
+.mainPanel .row01 .descriptBlock h3{
+    font-size: 24px;
+}
+.mainPanel .row01 .descriptBlock h1{
+    font-size: 40px;
+    line-height: 70px;
+    border-bottom: 1px solid #cecece;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainPanel .row01 .descriptBlock p{
+    color: #333;
+    margin-top: 30px;
+    line-height: 24px;
+}
+.mainPanel .row01 .descriptBlock a{
+    display: inline-block;
+    color: #ed145b;
+    border: 1px solid #000;
+    width: 148px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.2s ease-out 0s;
+    margin-top: 40px;
+}
+.mainPanel .row01 .descriptBlock a:hover{
+    color: #fcd4d2;
+    background-color: #464646;
+}
+
+.mainPanel .row02{
+    text-align: justify;
+    margin-top: 50px;
+}
+.mainPanel .row02 li{
+    display: inline-block;
+    width: 32%;
+}
+.mainPanel .row02 li .border{
+    padding: 9px;
+    border: 1px solid #939598;
+}
+.mainPanel .row02 li .border img{
+    width: 100%;
+}
+.mainPanel .row02 li .border .descriptBlock{
+    position: relative;
+    padding-bottom: 30px;
+    text-align: left;
+}
+.mainPanel .row02 li .border .descriptBlock h2{
+    font-size: 18px;
+    color: #252525;
+    line-height: 38px;
+}
+.mainPanel .row02 li .border .descriptBlock p{
+    color: #666;
+    line-height: 18px;
+}
+.mainPanel .row02 li .border .descriptBlock a{
+    position: absolute;
+    right : 5px;
+    bottom: 0;
+    display: inline-block;
+    color: #ed145b;
+    border: 1px solid #000;
+    width: 88px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    transition: all 0.2s ease-out 0s;
+}
+.mainPanel .row02 li .border .descriptBlock a:hover{
+    color: #fcd4d2;
+    background-color: #464646;
+}
+
+@media only screen and (max-width: 784px) {
+
+    .mainPanel .row01 .imgBlock,
+    .mainPanel .row01 .descriptBlock {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+    .mainPanel .row01 .imgBlock .border {
+        display: inline-block;
+        margin: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    .mainPanel .row01 .descriptBlock .border{
+        margin: 0 10px;
+    }
+
+    .mainPanel .row02{
+        text-align: center;
+    }
+    .mainPanel .row02 li{
+        width: auto;
+    }
+    .mainPanel .row02 li .border{
+        border: none;
+        padding: 0;
+    }
+    .mainPanel .row02 li .border .imgBlock{
+        display: inline-block;
+        width: 100%;
+        max-width: 300px;
+    }
+    .mainPanel .row02 li .border .descriptBlock{
+        text-align: center;
+        margin: 0 10px;
+    }
+    .mainPanel .row02 li .border .descriptBlock a{
+        position: static;
+        margin-top: 20px;
+        width: 148px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 18px;
+    }
+    .mainPanel .row02 .comm_justifyFix{
+        display: none;
+    }
+
+}

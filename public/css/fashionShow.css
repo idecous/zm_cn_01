@@ -1,0 +1,150 @@
+.mainPanel .multipleViewBlock{
+    position: relative;
+    width: 100%;
+    visibility: hidden;
+}
+.mainPanel .multipleViewBlock .holderBG{
+    width: 100%;
+}
+.mainPanel .multipleViewBlock .contentBlock{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mainPanel .multipleViewBlock .contentBlock a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mainPanel .multipleViewBlock .contentBlock a img{
+    width: 100%;
+}
+
+.mainPanel .subTitle{
+    text-align: center;
+}
+.mainPanel .subTitle a{
+    display: inline-block;
+    font-size: 14px;
+    color: #969292;
+    border-bottom: 1px solid #969292;
+}
+.mainPanel .subTitle a b{
+    font-weight: normal;
+}
+.mainPanel .subTitle a i{
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    background: url("../images/icons.png") no-repeat -63px -56px;
+    margin-left: 30px;
+    vertical-align: 3px;
+}
+.mainPanel .yearBar{
+    border-bottom: 1px solid #b7b7b7;
+    line-height: 22px;
+    margin-top: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.mainPanel .yearBar .label{
+    display: inline-block;
+    border: 1px solid #dadada;
+    border-bottom: none;
+    padding: 0 10px;
+    color: #6d6e71;
+}
+.mainPanel .yearBar a{
+    display: inline-block;
+    color: #b1b3b6;
+}
+.mainPanel .yearBar a span{
+    border: none;
+    display: inline-block;
+    line-height: 12px;
+    padding: 0 15px;
+    border-left: 1px solid #b1b3b6;
+    color: #b1b3b6;
+}
+
+.mainPanel .yearBar .first span{
+    border-left:none;
+}
+.mainPanel .yearBar .current span{
+    color: #ed145b;
+}
+.mainPanel .descriptPanel{
+    text-align: right;
+    margin-top: 10px;
+    border-bottom: 1px solid #b7b7b7;
+    padding-bottom: 10px;
+}
+.mainPanel .descriptPanel .imgBlock{
+    float: left;
+    width: 25.9%;
+}
+.mainPanel .descriptPanel .imgBlock img{
+    width: 100%;
+}
+.mainPanel .descriptPanel .textBlock{
+    display: inline-block;
+    width: 74.1%;
+    text-align: left;
+}
+.mainPanel .descriptPanel .textBlock .border{
+    margin: 10px 20px;
+    min-height: 331px;
+}
+.mainPanel .descriptPanel .textBlock .border h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.mainPanel .descriptPanel .textBlock .border p{
+    line-height: 16px;
+}
+
+.mainPanel .videoPlayer{
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+}
+.mainPanel .videoPlayer img{
+    width: 100%;
+}
+.mainPanel .videoPlayer video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 784px) {
+    .mainPanel .yearBar .label{
+        display: none;
+    }
+    .mainPanel .descriptPanel{
+        text-align: center;
+    }
+    .mainPanel .descriptPanel .imgBlock{
+        display: inline-block;
+        width: 100%;
+        max-width: 259px;
+        float: none;
+    }
+    .mainPanel .descriptPanel .textBlock{
+        width: auto;
+    }
+    .mainPanel .descriptPanel .textBlock .border h1{
+        text-align: center;
+    }
+    .mainPanel .descriptPanel .textBlock .border{
+        margin: 10px;
+    }
+}
+
+
+

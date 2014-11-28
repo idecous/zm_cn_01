@@ -1,0 +1,101 @@
+.mainPanel .row01,
+.mainPanel .row02{
+    margin-top: 10px;
+}
+.mainPanel .row01 a,
+.mainPanel .row02 a{
+    display: block;
+}
+.mainPanel .row01 img,
+.mainPanel .row02 img{
+    width: 100%;
+}
+
+.mainPanel .row03{
+    margin-top: 30px;
+    text-align: right;
+}
+.mainPanel .row03 .leftGroup{
+    position: relative;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.mainPanel .row03 .leftGroup h1{
+    font-size: 24px;
+    color: #1b1004;
+    border-bottom: 1px solid #cecdcc;
+    line-height: 50px;
+    margin-right: 18px;
+}
+.mainPanel .row03 .leftGroup p{
+    margin-right: 18px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+.mainPanel .row03 .leftGroup a{
+    display: inline-block;
+    color: #ed145b;
+    border: 1px solid #000;
+    width: 148px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.2s ease-out 0s;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.mainPanel .row03 .leftGroup a:hover{
+    color: #fcd4d2;
+    background-color: #464646;
+}
+
+.mainPanel .row03 .rightGroup{
+    display: inline-block;
+    width: 67%;
+    text-align: justify;
+}
+.mainPanel .row03 .rightGroup li{
+    display: inline-block;
+    width: 24.02%;
+}
+.mainPanel .row03 .rightGroup li a{
+    display: block;
+}
+.mainPanel .row03 .rightGroup li a img{
+    width: 100%;
+}
+@media only screen and (max-width: 784px) {
+    .mainPanel .row03 .leftGroup{
+        float: none;
+        width: auto;
+    }
+    .mainPanel .row03 .rightGroup{
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+    .mainPanel .row03 .rightGroup li{
+        display: block;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .mainPanel .row03 .rightGroup li a{
+        display: inline-block;
+        width: 100%;
+        max-width: 161px;
+    }
+    .mainPanel .row03 .leftGroup h1{
+        margin: 0 10px;
+    }
+    .mainPanel .row03 .leftGroup p{
+        margin:  20px 10px;
+        text-align: center;
+    }
+    .mainPanel .row03 .leftGroup a{
+        margin: 0;
+    }
+
+}

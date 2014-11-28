@@ -1,0 +1,142 @@
+.mainPanel .row01{
+    margin-top: 10px;
+}
+.mainPanel .row01 a{
+    display: block;
+}
+.mainPanel .row01 img{
+    width: 100%;
+}
+
+.mainPanel .commRow{
+    position: relative;
+    margin-top: 35px;
+}
+
+.mainPanel .commRow .imgBlock{
+    width: 51%;
+    display: inline-block;
+}
+.mainPanel .commRow .outerBorder{
+    border: 1px solid #ccc;
+    padding: 9px;
+}
+.mainPanel .commRow .outerBorder .middleBorder{
+    border: 1px solid #ccc;
+    padding: 9px;
+}
+.mainPanel .commRow .outerBorder .middleBorder a{
+    display: block;
+}
+.mainPanel .commRow .outerBorder .middleBorder a img{
+    width: 100%;
+}
+.mainPanel .commRow .descriptBlock{
+    position: absolute;
+    width: 49%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    text-align: left;
+}
+.mainPanel .commRow .descriptBlock .textContent{
+    position: relative;
+    margin: 0 14%;
+    height: 100%;
+}
+.mainPanel .commRow .descriptBlock .textContent h1{
+    display: inline-block;
+    font-size: 28px;
+    color: #898989;
+    border-bottom: 1px solid #898989;
+    margin-top: 15%;
+    white-space: nowrap;
+}
+.mainPanel .commRow .descriptBlock .textContent p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #666;
+}
+.mainPanel .commRow .descriptBlock .textContent a{
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    display: inline-block;
+    color: #ed145b;
+    border: 1px solid #000;
+    width: 148px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.2s ease-out 0s;
+}
+.mainPanel .commRow .descriptBlock .textContent a:hover{
+    color: #fcd4d2;
+    background-color: #464646;
+}
+.mainPanel .row02 {
+    text-align: right;
+}
+.mainPanel .row02 .descriptBlock{
+    right: auto;
+    left: 0;
+}
+.mainPanel .row03 .descriptBlock .textContent h1{
+    border-bottom: none;
+}
+.mainPanel .row03 .descriptBlock .textContent h2{
+    display: inline-block;
+    color: #898989;
+    font-size: 24px;
+    border-bottom: 1px solid #898989;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 784px) {
+
+    .mainPanel .commRow .imgBlock{
+        display: block;
+        width: auto;
+    }
+    .mainPanel .commRow .outerBorder{
+        border: none;
+        padding: 0;
+    }
+    .mainPanel .commRow .outerBorder .middleBorder{
+        border: none;
+        padding: 0;
+        text-align: center;
+    }
+    .mainPanel .commRow .outerBorder .middleBorder a{
+        display: inline-block;
+        width: 100%;
+        max-width: 470px;
+    }
+    .mainPanel .commRow .descriptBlock{
+        width: auto;
+        position: static;
+    }
+    .mainPanel .commRow .descriptBlock .textContent{
+        height: auto;
+        text-align: center;
+    }
+    .mainPanel .commRow .descriptBlock .textContent{
+        margin: 0 10px;
+    }
+    .mainPanel .commRow .descriptBlock .textContent h1{
+        display: block;
+        margin-top: 20px;
+        white-space: normal;
+    }
+    .mainPanel .row03 .descriptBlock .textContent h2{
+        white-space: normal;
+    }
+    .mainPanel .commRow .descriptBlock .textContent a {
+        display: inline-block;
+        position: static;
+        margin-top: 20px;
+    }
+
+}

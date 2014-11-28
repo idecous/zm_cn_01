@@ -1,0 +1,96 @@
+.mainPanel .row01{
+    margin-top: 20px;
+    text-align: justify;
+}
+.mainPanel .row01 li{
+    display: inline-block;
+    width: 66%;
+}
+.mainPanel .row01 li:first-child{
+    width: 31.5%;
+}
+.mainPanel .row01 li a{
+    display: block;
+}
+.mainPanel .row01 li a img{
+    width: 100%;
+}
+.mainPanel .subTitleBar{
+    font-size: 42px;
+    color: #636363;
+    text-align: center;
+    border-bottom: 1px solid #707070;
+    line-height: 70px;
+}
+
+.mainPanel .row02{
+    text-align: justify;
+    margin-top: 60px;
+}
+.mainPanel .row02 li{
+    display: inline-block;
+    width: 31.5%;
+    margin-bottom: 30px;
+}
+.mainPanel .row02 li a{
+    display: block;
+}
+.mainPanel .row02 li a img{
+    width: 100%;
+}
+@media only screen and (max-width: 784px) {
+    .mainPanel .row01{
+        text-align: center;
+    }
+    .mainPanel .row01 li{
+        display: block;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .mainPanel .row01 li:first-child{
+        width: auto;
+    }
+    .mainPanel .row01 li a{
+        display: inline-block;
+        width: 100%;
+        max-width: 660px;
+    }
+    .mainPanel .row01 li:first-child a{
+        max-width: 315px;
+    }
+    .mainPanel .subTitleBar{
+        padding: 0 10px;
+    }
+    .mainPanel .row02{
+        text-align: center;
+    }
+    .mainPanel .row02 li{
+        display: block;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .mainPanel .row02 li a{
+        display: inline-block;
+        width: 100%;
+        max-width: 315px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,6 +12,9 @@ html, button, input, select, textarea {
     font: normal 12px "Microsoft YaHei","Times New Roman","Arial","Helvetica","Verdana","sans-serif";
     color:#333;
 }
+body{
+	visibility: hidden;
+}
 a{
 	text-decoration: none;
 	color: #333;
@@ -42,6 +45,15 @@ h1,h2,h3,h4,h5,h6{
 .comm_clearFloat{
 	clear: both;
 	height: 0;
+}
+.comm_justifyFix{
+	display:inline-block;
+	width:100%!important;
+	height:0!important;
+	line-height: 0!important;
+	padding: 0!important;
+	margin: 0!important;
+	overflow:hidden;
 }
 .comm_enFontFamily{
 	font-family: "Times New Roman";
@@ -516,6 +528,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .header .topNavigationBlock .normalMenu .current{ 
 	font-weight: bold;
+	border-bottom: 4px solid #f33b7e;
+	padding-bottom: 5px;
 }
 .header .topNavigationBlock .normalMenu .topNavModule>li{
 	width: 10%;
@@ -1137,7 +1151,7 @@ a.comm_form_button{
 		padding: 0 10px;
 	}
 	.comm_bottomSpace{
-		height: 30px; 
+		height: 40px;
 	}
 	.footer{
 		height: auto;

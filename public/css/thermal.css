@@ -1,0 +1,136 @@
+.mainPanel .row01{
+    margin-top: 25px;
+    text-align: justify;
+}
+.mainPanel .row01 li{
+    display: inline-block;
+    width: 32%;
+}
+.mainPanel .row01 li img{
+    width: 100%;
+}
+.mainPanel .row01 li .descriptBlock{
+    position: relative;
+    text-align: left;
+    padding: 0 10px;
+}
+.mainPanel .row01 li .descriptBlock h1{
+    font-size: 30px;
+    color: #2c2e2e;
+    line-height: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainPanel .row01 li .descriptBlock p{
+    color: #070707;
+    height: 100px;
+    overflow: hidden;
+}
+.mainPanel .row01 li .descriptBlock a{
+    display: inline-block;
+    color: #ed145b;
+    border: 1px solid #000;
+    width: 148px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.2s ease-out 0s;
+}
+.mainPanel .row01 li .descriptBlock a:hover{
+    color: #fcd4d2;
+    background-color: #464646;
+}
+.mainPanel .subTitle{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #898989;
+    margin-top: 50px;
+    color: #2c2e2e;
+}
+
+.mainPanel .row02{
+    margin-top: 30px;
+    text-align: justify;
+}
+.mainPanel .row02 li{
+    display: inline-block;
+    width: 32%;
+    position: relative;
+}
+.mainPanel .row02 li .border{
+    position: relative;
+}
+.mainPanel .row02 li a{
+    position: absolute;
+    border: 1px solid #898989;
+    display: block;
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+}
+.mainPanel .row02 li img{
+    width: 100%;
+}
+.mainPanel .row02 li .imgBlock{
+    padding: 20px 20px 10px 20px;
+}
+.mainPanel .row02 li .desriptBlock{
+    text-align: center;
+    color: #2c2e2e;
+}
+.mainPanel .row02 li .desriptBlock h1{
+    font-size: 18px;
+}
+.mainPanel .row02 li .desriptBlock p{
+    font-size: 14px;
+    padding: 10px 10px 20px 10px;
+}
+
+
+@media only screen and (max-width: 784px) {
+    .mainPanel .row01{
+        text-align: center;
+    }
+    .mainPanel .row01 li{
+        display: block;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .mainPanel .row01 li img{
+        max-width: 320px;
+    }
+    .mainPanel .row01 li .descriptBlock{
+        text-align: center;
+    }
+    .mainPanel .row01 li .descriptBlock p{
+        height: auto;
+    }
+    .mainPanel .row01 li .descriptBlock a{
+        margin-top: 20px;
+    }
+
+    .mainPanel .row02{
+        text-align: center;
+    }
+    .mainPanel .row02 li{
+        display: block;
+        text-align: center;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .mainPanel .row02 li .border {
+        display: inline-block;
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
+
+
+
+
+

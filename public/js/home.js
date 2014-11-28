@@ -593,6 +593,11 @@ var EBE_MobileMenuManager = function(){
 };
 
 $(function(){
+    var bodyEl = $("body").css("visibility","visible");
+    if(!$.support.style && !$.support.tbody ){
+        bodyEl.empty().append( $("<h1 style='text-align: center;margin-top: 100px;'>请使用IE8以上现代浏览器查看本站！</h1>") );
+        return;
+    }
     new EBE_MobileMenuManager();
     new EBE_ScrollManager();
 });
