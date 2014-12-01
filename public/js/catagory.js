@@ -367,12 +367,13 @@ var EBE_FilterManager = function(changeFn){
 	}};
 };
 
-var EBE_ListItem = function(toWishHandler,el){
+var EBE_ListItem = function(toWishHandler,el,bg){
 	this.toWishHandler = toWishHandler;
 	this.el = el;
 	this.isCache = false;
 	this.id = "";
 	this.data = null;
+	this.holderBg = bg;
 	this.init();
 };
 (function(){
@@ -413,6 +414,7 @@ var EBE_ListItem = function(toWishHandler,el){
 		this.el = $("<li></li>");
 		var borderEl = $("<div class='border'></div>").appendTo(this.el);
 		this.aEl = $("<a href='#'></a>").appendTo(borderEl);
+		$("<img src='"+ this.holderBg +"' class='bg'/>").appendTo(this.aEl);
 		this.imgEl = $("<img src=''/>").appendTo(this.aEl);
 		this.wishBtnEl = $("<i></i>").appendTo(borderEl);
 		var descriptEl = $("<div class='descriptBlock'></div>").appendTo(borderEl);
@@ -437,7 +439,7 @@ var EBE_ListItem = function(toWishHandler,el){
 	
 }).call(EBE_ListItem.prototype);
 
-var EBE_List = function( pageHandler,toWishFn,totalPage ){
+var EBE_List = function( pageHandler,toWishFn,totalPage,holderBg ){
 	if(totalPage){
 		this.page = 1;
 		this.totalPage = totalPage;
@@ -450,6 +452,7 @@ var EBE_List = function( pageHandler,toWishFn,totalPage ){
 	this.isLoading = false;
 	this.used = [];
 	this.items = [];
+	this.holderBg = holderBg;
 	this.init();
 };
 (function(){
@@ -516,7 +519,7 @@ var EBE_List = function( pageHandler,toWishFn,totalPage ){
 				return  item;
 			}
 		}
-		item = new EBE_ListItem( $.proxy(this.itemToWishHandler,this) );
+		item = new EBE_ListItem( $.proxy(this.itemToWishHandler,this) ,null,this.holderBg );
 		this.items.push(item);
 		return item;
 	};
@@ -533,7 +536,8 @@ var EBE_List = function( pageHandler,toWishFn,totalPage ){
 		var that = this;
 		liEls.each(function(index){
 			var liEl =  liEls.eq(index);
-			var item = new EBE_ListItem( $.proxy(that.itemToWishHandler,that),liEl );
+			var item = new EBE_ListItem( $.proxy(that.itemToWishHandler,that),liEl ,that.holderBg );
+
 			that.used.push(item);
 			that.items.push(item);
 		});	
@@ -551,42 +555,21 @@ $(function(){
 	var cacheFilterData = null;
 	
 	var list = new EBE_List(function(page){
-		//console.log("请求数据页面[页]",page);
+		console.log("请求数据页面[页]",page);
 		//请求服务器  过滤条件 cacheFilterData 页数:page
 
-		$.post("getpage/xxxx", { "filter": cacheFilterData, "page":page },
-			function(result){
-				console.log( result );
-				// 分拆result  按以下格式填充
-				//list.appendData( getPageData(5), page );
-			}
-		);
-		
+		list.appendData( getPageData(5), page );
 	},function(id,name){
 		//console.log("添加收藏[id,名称]",id,name);
 		//请求服务器
-
-		$.post("towhish/xxxx", { "id": id, "name":name },
-			function(result){
-				console.log( result );
-				// 根据result  判断是否收藏成功
-				//alert("添加"+name+"到收藏成功!");
-				//list.toWish( id );
-			}
-		);
-	},window.totalPage);	
+		alert("添加"+name+"到收藏成功!");
+		//list.toWish( id );
+	},window.totalPage,"public/images/holder_230_335.png");
 	var filter = new EBE_FilterManager(function(data){
-		//console.log("过滤条件",data);	
+		console.log("过滤条件",data);
 		cacheFilterData = data;
 		//请求服务器  过滤条件 cacheFilterData 页数:1
-		$.post("getpage/xxxx", { filter: cacheFilterData, page:1 },
-			function(result){
-				console.log( result );
-				// 分拆result  按以下格式填充
-				//list.setData( getPageData(2), 5 , 888 );
-			}
-		);
-		
+		list.setData( getPageData(2), 5 , 888 );
 	});
 	//filter.update();
 });

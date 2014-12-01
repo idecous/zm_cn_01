@@ -233,7 +233,8 @@
 	background: url(../images/catagory_toWish.png) no-repeat -32px 0;	
 }
 .mainPanel .listPanel li .border a{
-	display: block;	
+	display: block;
+	position: relative;
 }
 
 .mainPanel .listPanel li .border i:hover{
@@ -250,8 +251,15 @@
 	text-align: center;
 }
 .mainPanel .listPanel li .border img{
+	position: absolute;
 	width: 100%;
+	left: 0;
+	right: 0;
 }
+.mainPanel .listPanel li .border .bg{
+	position: static;
+}
+
 .mainPanel .listPanel li .border .descriptBlock h3{
 	font-size: 14px;
 	line-height: 40px;
