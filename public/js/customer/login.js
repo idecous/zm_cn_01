@@ -1,7 +1,7 @@
 var EBE_LoginLeftManager = function(eMailReg,passwordReg){
     var formEl = $(".leftPanel form:eq(0)");
-    var inputEls = formEl.find("input");
-    var borderEl = formEl.find(".inputText");
+    var inputEls = formEl.find(".comm_form_formList input");
+    var borderEl = formEl.find(".comm_form_formList .inputText");
     formEl.submit(function(){
         var hasErr= false;
         if( !eMailReg.test( $.trim(inputEls.eq(0).val()) ) ){
@@ -45,8 +45,8 @@ var EBE_ForgotManager = function(eMailReg){
 };
 var EBE_LoginRightManager = function(eMailReg,passwordReg){
     var formEl = $(".rightPanel form:eq(0)");
-    var inputEls = formEl.find("input");
-    var borderEl = formEl.find(".inputText");
+    var inputEls = formEl.find(".comm_form_formList input");
+    var borderEl = formEl.find(".comm_form_formList .inputText");
 
     formEl.submit(function(){
         var hasErr= false;

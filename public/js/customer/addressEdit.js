@@ -69,7 +69,7 @@ var EBE_Combox = function(el,emptyVal,index){
         return this.index;
     };
     this.build = function(){
-        this.emptyOpt = $("<option value=''>"+this.emptyVal+"</option>").appendTo(this.el);
+        this.emptyOpt = $("<option value='---'>"+this.emptyVal+"</option>").appendTo(this.el);
     };
 }).call(EBE_Combox.prototype);
 
