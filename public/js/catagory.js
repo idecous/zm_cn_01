@@ -1,5 +1,5 @@
 var EBE_OrderFilterItemsManager = function(){
-	this.data = "";
+	this.data = -1;
 	this.index = -1;
 	this.init();
 };
@@ -8,7 +8,7 @@ var EBE_OrderFilterItemsManager = function(){
 		this.build();
 		var defaultOption = this.optionEls.filter("[class='current']");
 		this.index = this.optionEls.index( defaultOption );
-		this.data = defaultOption.attr("iid");
+		this.data = parseInt( defaultOption.attr("iid") ) ;
 		this.labelEl.text( defaultOption.text() );
 		var that = this;
 		this.optionEls.click(function(){
@@ -21,7 +21,7 @@ var EBE_OrderFilterItemsManager = function(){
 				that.optionEls.eq(that.index).removeClass("current");
 			}
 			that.index = tIndex;
-			that.data = optionEl.attr("iid");
+			that.data =   parseInt( optionEl.attr("iid") );
 			that.labelEl.text( optionEl.text() );
 			that.optionEls.eq(that.index).addClass("current");
 			
@@ -90,15 +90,15 @@ var EBE_FilterItemsManager = function(changeFn){
 			}
 			for( k=0; k < modelItems.length ;k++){
 				modelItem = modelItems[k];
-				moduleData.push(  modelItem.data );
+				moduleData.push( modelItem.data  );
 			}
 			data.push(moduleData);
 		}
-		if( this.orderManager.data != "" ){
+		if( this.orderManager.data != -1 ){
 			hasFilter = true;
 			data.push( this.orderManager.data );
 		}else if( hasFilter ){
-			data.push("");
+			data.push(-1);
 		}
 		return hasFilter?data:null;
 	};
@@ -136,7 +136,7 @@ var EBE_FilterItem = function(){
 	};	
 	this.setData = function(textVal,data){
 		this.textEl.text(textVal);
-		this.data = data;
+		this.data = data  ;
 	};
 	this.build = function(){
 		this.el = $("<div class='border'></div>");
@@ -211,8 +211,7 @@ EBE_PriceFilter.prototype = Object.create(EBE_FilterBlockBase.prototype);
 (function(){
 	this.init = function(){
 		this.build();
-		this.popInputEls.keypress($.proxy(this._inputKeypressHandler,this)).
-		keyup($.proxy(this._inputKeyupHandler,this));
+		this.popInputEls.keypress($.proxy(this._inputKeypressHandler,this)).keyup($.proxy(this._inputKeyupHandler,this));
 		var that = this;
 		this.popSureBtnEl.click(function(){
 			that.clearItem();
@@ -279,11 +278,11 @@ EBE_Size7StyleFilter.prototype = Object.create(EBE_FilterBlockBase.prototype);
 			var itemEl = that.popItemEls.eq(tIndex);
 			if( itemEl.hasClass("selected") ){
 				itemEl.removeClass("selected");
-				that.removeItemByData( itemEl.attr("iid") );
+				that.removeItemByData( parseInt( itemEl.attr("iid") ) );
 			}else{
 				itemEl.addClass("selected");
 				var item = that.getItem();
-				item.setData( itemEl.text() , itemEl.attr("iid") );
+				item.setData( itemEl.text() , parseInt( itemEl.attr("iid") ) );
 				that.insertItem( item );	
 			}
 		});
@@ -292,7 +291,7 @@ EBE_Size7StyleFilter.prototype = Object.create(EBE_FilterBlockBase.prototype);
 		var i,popItem,iid = item.data;
 		for(var i=0; i< this.popItemEls.length;i++){
 			popItem = this.popItemEls.eq(i);
-			if( popItem.attr("iid") == iid ){
+			if(parseInt( popItem.attr("iid") ) == iid ){
 				popItem.removeClass("selected");
 				break;
 			}
@@ -313,7 +312,7 @@ EBE_FilterColorItem.prototype = Object.create(EBE_FilterItem.prototype);
 (function(){
 	this.setData = function(imgUrl,textVal,data){
 		this.textEl.text(textVal);
-		this.data = data;
+		this.data = parseInt( data) ;
 		this.imgEl.attr("src",imgUrl);
 	};
 	this.build = function(){
