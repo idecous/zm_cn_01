@@ -190,8 +190,9 @@
 }
 .mainPanel .filterPanel .keyRow .border img{
 	vertical-align: -2px;
+	width: 13px;
+	height: 13px;
 }
-
 .mainPanel .filterPanel .comboxRow{
 	position: relative;
 	z-index: 9;

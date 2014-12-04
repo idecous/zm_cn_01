@@ -277,24 +277,26 @@ var EBE_AppendManager = function(sizeError,toWishHandler,toCarHandler){
 		return numcheck.test(keychar);
 	}).keyup(function(){
 		var val = parseInt( qtyInputEl.val() );
+		var maxVal = parseInt( inventoriesTextEl.text() );
 		if( isNaN(val) ||  val < 1){
 			qtyInputEl.val(1);
 			return;
 		}
-		if( val > 999 ){
-			qtyInputEl.val(999);
+		if( val > maxVal ){
+			qtyInputEl.val(maxVal);
 			return;
 		}
 	});
 	var numStepBtnEls = $(".mainParamBlock .QtyRow a");
 	numStepBtnEls.click(function(){
 		var val = parseInt( qtyInputEl.val() );
+		var maxVal = parseInt( inventoriesTextEl.text() );
 		if( numStepBtnEls.index(this) == 1){
 			val++;
 		}else{
 			val--;
 		}
-		if(val>999){val=999;}
+		if(val>maxVal){val=maxVal;}
 		if(val<1){val=1;}
 		qtyInputEl.val(val);
 	});
@@ -306,8 +308,7 @@ var EBE_AppendManager = function(sizeError,toWishHandler,toCarHandler){
 	var inventoriesTextEl = inventoriesEl.find("b");
 	var priceEl = $(".mainParamBlock h1");
 	var currentSizeEl = $(".mainParamBlock .sizeGroup li .checked ");
-	
-	
+
 	if( currentSizeEl.length > 0 ){
 		priceEl.text( currentSizeEl.attr("price") );
 		inventoriesEl.css("visibility","visible");
@@ -326,6 +327,11 @@ var EBE_AppendManager = function(sizeError,toWishHandler,toCarHandler){
 		inventoriesEl.css("visibility","visible");
 		inventoriesTextEl.text( currentSizeEl.attr("qty") );
 		priceEl.text( currentSizeEl.attr("price") );
+
+		var maxVal = parseInt( inventoriesTextEl.text() );
+		if( parseInt( qtyInputEl.val() ) > maxVal  ){
+			qtyInputEl.val(maxVal);
+		}
 	});
 	$(".mainParamBlock .actionRow .toWish").click(function(){
 		if( sizeAllEls.length != 0 && currentSizeEl == null ){
