@@ -944,6 +944,7 @@ a.comm_form_button{
 	font-size: 14px;
 	line-height: 30px;
 	text-align: justify;
+	color: #666;
 }
 .comm_accordion li .bottomSeparator{
 	height: 1px;
@@ -972,6 +973,20 @@ a.comm_form_button{
 .comm_accordion tbody:first-child th{
 	padding: 4px 4px;
 }
+
+.comm_accordion .imgBlock{
+	text-align: center;
+	margin: 10px 0 ;
+	display: block;
+}
+.comm_accordion .imgBlock img{
+	width: 100%;
+}
+.comm_accordion .textBlock{
+	text-indent: 2em;
+	display: block;
+}
+
 
 
 @media \0screen {
