@@ -476,10 +476,10 @@ var EBE_List = function( pageHandler,toWishFn,totalPage,holderBg ){
 	};
 	this.setData = function(data,totalPage,Qty){
 		this.clear();
-		this.page = 1;
+		this.page = totalPage==0?0:1;
 		this.totalPage = totalPage;
 		this.QtylEl.text(Qty);
-		this.appendData(data,1);		
+		this.appendData(data,this.page);
 	};
 	this.itemToWishHandler = function(data){
 		this.toWishFn( data.id , data.name);
@@ -558,7 +558,9 @@ $(function(){
 		console.log("请求数据页面[页]",page);
 		//请求服务器  过滤条件 cacheFilterData 页数:page
 
-		list.appendData( getPageData(5), page );
+	//	list.appendData( getPageData(5), page );
+		list.appendData([],0);
+
 	},function(id,name){
 		//console.log("添加收藏[id,名称]",id,name);
 		//请求服务器
@@ -569,9 +571,11 @@ $(function(){
 		console.log("过滤条件",data);
 		cacheFilterData = data;
 		//请求服务器  过滤条件 cacheFilterData 页数:1
-		list.setData( getPageData(2), 5 , 888 );
+		//list.setData( getPageData(2), 5 , 888 );
+
+		list.setData( 0,0,0);
 	});
-	//filter.update();
+	filter.update();
 });
 
 
