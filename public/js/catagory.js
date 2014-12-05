@@ -222,6 +222,13 @@ EBE_PriceFilter.prototype = Object.create(EBE_FilterBlockBase.prototype);
 			item.setData(minVal+"-"+maxVal ,[minVal,maxVal]  );
 			that.insertItem( item );
 		});
+		this.popInputEls.blur(function(){
+			var inputEl = that.popInputEls.eq( that.popInputEls.index(this) );
+			var val = parseInt( inputEl.val() );
+			if( isNaN(val) ){
+				inputEl.val(1);
+			}
+		});
 	};
 	this._inputKeypressHandler = function(e){
 		var keynum;
@@ -240,6 +247,9 @@ EBE_PriceFilter.prototype = Object.create(EBE_FilterBlockBase.prototype);
 		var tIndex = this.popInputEls.index(e.target);
 		var inputEl =  this.popInputEls.eq(tIndex);
 		var val = parseInt( inputEl.val() );
+		if($.trim(inputEl.val()) ==""){
+			return;
+		}
 		inputEl.val(val);
 		if( isNaN(val) ||  val < 1){
 			inputEl.val(1);
