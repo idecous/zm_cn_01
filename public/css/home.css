@@ -688,6 +688,7 @@ html,body {
     display: none;
     position: relative;
     padding: 30px 0;
+    z-index: 100;
 }
 .mobileMenu .button{
     position: relative;
