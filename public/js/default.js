@@ -584,14 +584,29 @@ var EBE_AccordionManager = function(){
 		});
 		el.css("visibility","visible");
 	}
-	winEl.resize(resizeHandler);
-	resizeHandler();
+
+	var imgLoadedCount= 0;
+	var imgEls = el.find("img");
+	imgEls.each(function(index){
+		if( imgEls.eq(index).eq(index).prop("complete")  ){
+			imgLoadedCount++;
+		}else{
+			imgEls.eq(index).load(init);
+		}
+	});
+
+	function init(){
+		imgLoadedCount++;
+		if(  imgLoadedCount == imgEls.length ){
+			el.css("visibility","visible");
+			winEl.resize(resizeHandler);
+			resizeHandler();
+		}
+	}
 };
 
 var G_screenHeightManager;
 var G_shoppingCar=null;
-
-
 
 $(function(){
 	var bodyEl = $("body").css("visibility","visible");
