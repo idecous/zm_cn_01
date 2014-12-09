@@ -444,6 +444,7 @@ var EBE_SizePopManager = function(){
 };
 
 $(function(){
+
 	new EBE_GoodsViewManager();
 	new EBE_SizePopManager();
 	

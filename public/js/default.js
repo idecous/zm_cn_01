@@ -19,9 +19,24 @@ var EVE_ScreenHeightManager = function(){
             screenHeightPlaceholderEl.height(tH);
         }
     }
-	winEl.resize(screenHeightPlaceholderHandler);
-	screenHeightPlaceholderHandler();
-	
+
+
+	var imgEls = $("img");
+	var imgLoadedCount = 0;
+	imgEls.each(function(index){
+		if( imgEls.eq(index).prop("complete") ){
+			init();
+		}else{
+			imgEls[index].onload = init;
+		}
+	});
+	function init(){
+		imgLoadedCount++;
+		if( imgLoadedCount == imgEls.length ){
+			winEl.resize(screenHeightPlaceholderHandler);
+			screenHeightPlaceholderHandler();
+		}
+	}
 	return {"update":screenHeightPlaceholderHandler};
 };
 

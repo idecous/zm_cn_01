@@ -235,12 +235,16 @@
 .mainParamBlock .borderBlock h1{
 	font-size: 20px;
 	color: #ff4553;
-}
-.mainParamBlock .borderBlock .productCode{
-	font-size: 14px;
-	color: #666;
 	line-height: 60px;
 }
+.mainParamBlock .borderBlock .productCode{
+	color: #272727;
+	line-height: 30px;
+}
+.mainParamBlock .borderBlock .extraInfo{
+	color: #666;
+}
+
 .mainParamBlock .borderBlock .label{
 	line-height: 18px;
 	position: relative;
@@ -402,21 +406,50 @@
 	z-index: 1;
 	border-bottom: 1px solid #ccc;
 }
+.mainParamBlock .messageNavBar ul{
+	margin-left: -3px;
+	margin-right: -1px;
+	height: 31px\0;
+}
+.mainParamBlock .messageNavBar li{
+	display: inline-block;
+	width: 25%;
+	line-height:26px;
+}
 .mainParamBlock .messageNavBar a{
 	position:relative;
-	
-	display: inline-block;
+	display: block;
 	border: 1px solid #fff;
-	height:32px;
-	line-height:32px;
-	font-size: 14px;
+	height:29px;
+	font-size: 12px;
 	text-align: center;
-	width: 135px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: #e9e9e9;
+	margin-left: 3px;
+	border-bottom-color: #e9e9e9;
+	padding: 0 4px;
+}
+.mainParamBlock .messageNavBar a .border{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mainParamBlock .messageNavBar a i{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background: url(../images/icons.png) no-repeat -83px -102px;
+	margin-right: 3px;
 }
 .mainParamBlock .messageNavBar .current{
-	border-color: #ccc;
+	border-color: #ddd;
 	border-bottom-color: #fff; 
 	bottom:-1px;
+	background-color: #fff;
+}
+.mainParamBlock .messageNavBar .current i{
+	background-position: -76px -102px;
 }
 
 .mainParamBlock .messageContentBlock{
@@ -424,9 +457,12 @@
 	overflow-y: scroll;
 	margin-top: -1px;
 	position: relative;
+	border: 1px solid #ddd;
+	border-top: none;
 }
 .mainParamBlock .messageContentBlock .block{
-	padding: 15px 4px;
+	padding: 15px;
+	line-height: 20px;
 }
 .mainParamBlock .messageContentBlock .block.hide{
 	display: none;
@@ -463,9 +499,9 @@
 	right: 0;
 	text-decoration: none;
 }
-
-
-
+.mainParamBlock .messageContentBlock .block .textBlock{
+	color: #666;
+}
 
 .mainPanel .subTitleBar{
 	margin-top: 60px;
@@ -581,9 +617,6 @@
 	.mainParamBlock .borderBlock {
 		margin: 0 10px;
 	}
-	.mainParamBlock .messageNavBar a {
-		width: 80px;
-	}
 	.mainPanel .recommendPanel {
 		margin-left: 0;
 	}
@@ -599,7 +632,9 @@
 		max-width: 230px;
 		margin-left: 0;
 	}
-	
+	.mainParamBlock .messageNavBar ul{
+
+	}
 	
 	
 }
