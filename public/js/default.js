@@ -11,28 +11,31 @@ var EVE_ScreenHeightManager = function(){
 	var screenHeightPlaceholderEl = $("<div class='comm_footerBeforeHolder'></div>");
 	$(".footer").before(screenHeightPlaceholderEl);
 	
-	function screenHeightPlaceholderHandler(){
-        var tH = winEl.height() - (bodyEl.height()-screenHeightPlaceholderEl.height() +41 );
-        if(tH < 0){
-            screenHeightPlaceholderEl.height(0);
-        }else{
-            screenHeightPlaceholderEl.height(tH);
-        }
-    }
-
-
+	function screenHeightPlaceholderHandler() {
+		var tH = winEl.height() - (bodyEl.height() - screenHeightPlaceholderEl.height() + 41 );
+		if (tH < 0) {
+			screenHeightPlaceholderEl.height(0);
+		} else {
+			screenHeightPlaceholderEl.height(tH);
+		}
+	}
 	var imgEls = $("img");
 	var imgLoadedCount = 0;
-	imgEls.each(function(index){
-		if( imgEls.eq(index).prop("complete") ){
-			init();
-		}else{
-			imgEls[index].onload = init;
-		}
-	});
+	if( imgEls.length == 0){
+		init();
+	}else{
+		imgEls.each(function(index){
+			if( imgEls.eq(index).prop("complete") ){
+				init();
+			}else{
+				imgEls[index].onload = init;
+			}
+		});
+	}
 	function init(){
 		imgLoadedCount++;
-		if( imgLoadedCount == imgEls.length ){
+		if( imgLoadedCount >= imgEls.length ){
+
 			winEl.resize(screenHeightPlaceholderHandler);
 			screenHeightPlaceholderHandler();
 		}
@@ -602,17 +605,20 @@ var EBE_AccordionManager = function(){
 
 	var imgLoadedCount= 0;
 	var imgEls = el.find("img");
-	imgEls.each(function(index){
-		if( imgEls.eq(index).eq(index).prop("complete")  ){
-			imgLoadedCount++;
-		}else{
-			imgEls.eq(index).load(init);
-		}
-	});
-
+	if( imgEls.length ==0 ){
+		init();
+	}else{
+		imgEls.each(function(index){
+			if( imgEls.eq(index).eq(index).prop("complete")  ){
+				init();
+			}else{
+				imgEls.eq(index).load(init);
+			}
+		});
+	}
 	function init(){
 		imgLoadedCount++;
-		if(  imgLoadedCount == imgEls.length ){
+		if(  imgLoadedCount >= imgEls.length ){
 			el.css("visibility","visible");
 			winEl.resize(resizeHandler);
 			resizeHandler();
