@@ -55,7 +55,7 @@ var EBE_Combox = function(el,emptyVal,index){
         return this.index;
     };
     this.build = function(){
-        this.emptyOpt = $("<option value=''>"+this.emptyVal+"</option>").appendTo(this.el);
+        this.emptyOpt = $("<option value='---'>"+this.emptyVal+"</option>").appendTo(this.el);
     };
 }).call(EBE_Combox.prototype);
 
@@ -169,13 +169,13 @@ var EBE_FormManager = function(){
             }else{
                 nameBorderEl.removeClass("warn");
             }
-            if( $.trim(provincesInputEl.val()) == "" ){
+            if( $.trim(provincesInputEl.val()) == "---" ){
                 result = false;
                 provincesBorderEl.addClass("warn");
             }else{
                 provincesBorderEl.removeClass("warn");
             }
-            if( $.trim(cityInputEl.val()) == "" ){
+            if( $.trim(cityInputEl.val()) == "---" ){
                 result = false;
                 cityBorderEl.addClass("warn");
             }else{
