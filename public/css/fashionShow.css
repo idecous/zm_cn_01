@@ -20,7 +20,13 @@
     top: 0;
     left: 0;
 }
-.mainPanel .multipleViewBlock .contentBlock a img{
+.mainPanel .multipleViewBlock .contentBlock a .index{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mainPanel .multipleViewBlock .contentBlock a .content{
     width: 100%;
 }
 

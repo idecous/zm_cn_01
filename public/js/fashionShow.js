@@ -3,6 +3,7 @@ var EBE_MultipleViewManager = function(){
     var el = $(".mainPanel .multipleViewBlock");
     var bgEl = el.find(".holderBG");
     var blockEls = el.find("a");
+    var indexEls = el.find("a .index");
 
     var blockCount = blockEls.length;
     var elWidth = 0;
@@ -29,23 +30,28 @@ var EBE_MultipleViewManager = function(){
         el.css("visibility","visible");
         winEl.resize(resizeHandler);
 
-
         blockEls.mouseenter(function(){
             var tIndex  = blockEls.index(this);
+            indexEls.stop();
             blockEls.stop().each(function(index){
                 var blockEl = blockEls.eq(index);
                 if(  index < tIndex){
                     blockEl.animate({"left": index * minWidth});
+                    indexEls.eq(index).animate({"opacity":1});
                 }else if( index > tIndex){
                     blockEl.animate({"left":elWidth - (blockCount-index)*minWidth });
+                    indexEls.eq(index).animate({"opacity":1});
                 }else{
-                    blockEl.animate({"left":index * minWidth  });
+                    blockEl.animate({"left":index * minWidth });
+                    indexEls.eq(index).animate({"opacity":0});
                 }
             });
         });
         el.mouseleave(function(){
+            indexEls.stop();
             blockEls.stop().each(function(index){
                 blockEls.eq(index).animate({ "left" :index * spaceH } );
+                indexEls.eq(index).animate({"opacity":1});
             });
         });
     };
