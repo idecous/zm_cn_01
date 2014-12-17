@@ -551,7 +551,7 @@ var EBE_AccordionManager = function(){
 	var subTitleEls = liEls.children(".subTitleRow");
 	var subTitleIconEls = subTitleEls.children("i");
 	var subTitleTextEls = subTitleEls.children("span");
-	var openIndex = 0;
+	var openIndex = -1;
 	var liHeights =[];
 
 	subTitleEls.click(function(){
