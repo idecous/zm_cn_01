@@ -26,13 +26,18 @@ table thead tr{
     border-bottom: 1px solid #ddd;
 }
 table thead tr th{
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 14px;
+    padding: 0 4px;
 }
-table tbody td{
+table tbody tr .operation{
     text-align: center;
-    padding: 4px 2px;
+}
+
+table tbody td{
+    text-align: left;
+    padding: 4px 4px;
     line-height: 26px;
     font-size: 12px;
     border-bottom: 1px solid #ddd;

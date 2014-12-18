@@ -39,7 +39,7 @@ table thead tr{
     padding: 0 4px;
 }
 table tbody td{
-    text-align: center;
+    text-align: left;
     padding: 10px 2px;
     line-height: 26px;
     font-size: 12px;

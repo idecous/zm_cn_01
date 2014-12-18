@@ -623,17 +623,12 @@ html,body {
     width: 0;
     background-color: #ebebeb;
     overflow:hidden;
-    transition: all 0.25s ease-out 0s;
-}
-.mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .subMenuBlock.open{
-    width: 235px;
 }
 .mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock .propaganda{
     display:block;
     position: absolute;
     left: 210px;
     top:10px;
-    transition: all 0.25s ease-out 0s;
 }
 .mainViewArea  .contentBlock .navigationBlock .normalMenu .topNavModule .popBlock img{
     width: 100%;
@@ -817,19 +812,7 @@ html,body {
     .mobileMenu{
         display: block;
     }
-
-
-
-
-
 }
-
-
-
-
-
-
-
 
 
 

@@ -20,18 +20,62 @@
 }
 .popSizeWindow .viewBlock a{
 	display: block;
-	width: 31px;
-	height: 31px;
+	width: 48px;
+	height: 48px;
 	position: absolute;
-	top: 12px;
-	right: 12px;
-	background:url(../images/icons.png) no-repeat 0 -115px;		
+	top: -24px;
+	right: -24px;
+	background:url(../images/closeBtn01.png) no-repeat -48px 0;
 }
+.popSizeWindow .viewBlock a:hover{
+	right: -25px;
+	background-position: 0 0;
+}
+
+.leftGroup{
+	float: left;
+	width: 59%;
+}
+.leftGroup .sizePanel{
+	padding-top: 30px;
+}
+.leftGroup .sizePanel .titleBar{
+	position: relative;
+	height: 24px;
+}
+.leftGroup .sizePanel .titleBar h1{
+	position: relative;
+	display: inline-block;
+	background-color: #fff;
+	z-index: 2;
+	font-size: 20px;
+}
+.leftGroup .sizePanel .titleBar .separator{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+.leftGroup .sizePanel .helperBar{
+	line-height: 50px;
+	height: 50px;
+	color: #666;
+	position: relative;
+}
+.leftGroup .sizePanel .helperBar a{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	color: #666;
+}
+.leftGroup .sizePanel img{
+	width: 100%;
+}
+
 
 .mainPreviewBlock{
 	position:relative;
-	float: left;
-	width: 59%;
 	background-color: #B7B7B7;
 	overflow: hidden;
 }
@@ -282,7 +326,17 @@
 	line-height: 0;
 }
 .mainParamBlock .borderBlock .colorGroup .current a{
-	border: 4px solid #ddd;
+	border: 2px solid #f33b7e;
+	position: relative;
+}
+.mainParamBlock .borderBlock .colorGroup .current a i{
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border: 2px solid #fff;
 }
 .mainParamBlock .borderBlock .colorGroup li a img{
 	width: 100%;
@@ -298,17 +352,30 @@
 }
 .mainParamBlock .sizeGroup li a{
 	display: block;
-	width: 60px;
+	width: 62px;
 	height: 26px;
 	line-height:26px;
-	border: 1px solid #ccc;
 	color: #666;
 	text-align: center;
+	position: relative;
+}
+.mainParamBlock .sizeGroup li a i{
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #ccc;
 }
 .mainParamBlock .sizeGroup .checked {
 	border-color: #333;
 	color: #000;
 }
+.mainParamBlock .sizeGroup .checked i{
+	border: 2px solid #f33b7e;
+}
+
 .mainParamBlock .sizeGroup .unable{
 	color: #999;
 	background: url(../images/details_size_unable.jpg) no-repeat 100% 100%;
@@ -399,6 +466,9 @@
 	background: url(../images/icons.png) no-repeat -56px -102px;
 	vertical-align: -2px;
 }
+.mainParamBlock .actionRow .toWish:hover i{
+	background-position: -76px -109px;
+}
 
 .mainParamBlock .messageNavBar{
 	margin-top: 45px;
@@ -408,8 +478,7 @@
 }
 .mainParamBlock .messageNavBar ul{
 	margin-left: -3px;
-	margin-right: -1px;
-	height: 31px\0;
+	height: 31px;
 }
 .mainParamBlock .messageNavBar li{
 	display: inline-block;
@@ -441,6 +510,10 @@
 	height: 7px;
 	background: url(../images/icons.png) no-repeat -83px -102px;
 	margin-right: 3px;
+	vertical-align: -3px;
+}
+.mainParamBlock .messageNavBar a span{
+	vertical-align: -3px;
 }
 .mainParamBlock .messageNavBar .current{
 	border-color: #ddd;
@@ -589,10 +662,14 @@
      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
 	}
 }
+.header .topNavigationBlock .normalMenu .current {
+	padding-bottom: 6px\0;
+}
 
 @media only screen and (max-width: 784px) {
 	
 	.comm_navDenoteBar,
+	.leftGroup .sizePanel,
 	.mainPreviewBlock .showMore,
 	.mainParamBlock .partViewPosUtility{
 		display: none;

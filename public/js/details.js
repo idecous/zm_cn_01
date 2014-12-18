@@ -405,7 +405,9 @@ var EBE_SizePopManager = function(){
 	var blockEl = popWinEl.find(".viewBlock");
 	var imgEl = blockEl.find("img");
 	var imgWidth =0,  imgHeight = 0;
-	var openEl = $(".mainParamBlock .borderBlock .label a");
+	var openEl01 = $(".mainParamBlock .borderBlock .label a");
+	var openEl02 = $(".leftGroup .sizePanel .helperBar a");
+
 	var closeEl = popWinEl.find("a");
 	var isPop = false;
 	
@@ -415,27 +417,31 @@ var EBE_SizePopManager = function(){
 		imgEl[0].onload = init;
 	}
 	function init(){
-		imgWidth = imgEl.width();
-		imgHeight = imgEl.height();
+		imgWidth = imgEl.width() ;
+		imgHeight = imgEl.height() ;
 		popWinEl.css("visibility","visible").hide();
+
+		winEl.resize(updateView);
 	}
 	function updateView(){
 		if( !isPop ){return;}
-		var wWidth = winEl.width();
-		var wHeight = winEl.height();
-
+		var wWidth = winEl.width() - 48;
+		var wHeight = winEl.height() - 48;
 		var rate = Math.max( imgWidth/wWidth, imgHeight/wHeight );
 		if( rate < 1){
 			rate = 1;
 		}
 		var nWidth = imgWidth/rate,nHeight=imgHeight/rate;
-		blockEl.css({"width":nWidth,"height":nHeight,"left": (wWidth-nWidth)/2,"top":(wHeight-nHeight)/2});
+		blockEl.css({"width":nWidth,"height":nHeight,"left": (wWidth-nWidth)/2 + 24,"top":(wHeight-nHeight)/2 + 24});
 	};
-	openEl.click(function(){
+	function openHandler(){
 		isPop = true;
 		popWinEl.show().css("visibility","visible");
 		updateView();
-	});
+	}
+	openEl01.click(openHandler);
+	openEl02.click(openHandler);
+
 	closeEl.click(function(){
 		isPop = false;
 		popWinEl.hide();
@@ -444,7 +450,6 @@ var EBE_SizePopManager = function(){
 };
 
 $(function(){
-
 	new EBE_GoodsViewManager();
 	new EBE_SizePopManager();
 	

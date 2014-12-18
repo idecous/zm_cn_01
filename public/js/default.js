@@ -332,7 +332,7 @@ var EBE_MobileMenuManager = function(){
 	});
 };
 var EBE_TopMenuModule = function(el,index){
-	var mianWidth = 200;
+	var mainWidth= 200;
 	var subWidth = 235;
 	var blockEl = el.find(".popBlock");
 	var imgWidth =0,imgHeight=0;
@@ -404,15 +404,18 @@ var EBE_TopMenuModule = function(el,index){
 		var blockWidth = blockEl.width();
 		var blockHeight = blockEl.height();
 		var subMunWidth = subBlockEl.hasClass("open")?subWidth:0;
-		var canvasWidth = blockWidth-mianWidth-subMunWidth - 20;
+		var canvasWidth = blockWidth-mainWidth-subMunWidth - 20;
 		var canvasHeight = blockHeight - 20;
 		
 		var rate = Math.min( canvasWidth/imgWidth ,canvasHeight/imgHeight );
 		var niWidth = imgWidth * rate,niHeight = imgHeight * rate;
 		if(niWidth>imgWidth){niWidth=imgWidth;}
 		if(niHeight>imgHeight){niHeight=imgHeight;}
-		propagandaEl.width(niWidth).height(niHeight);
-		propagandaEl.css({"top": ( canvasHeight - niHeight) /2 + 10,"left":mianWidth+subMunWidth +  (canvasWidth-niWidth)/2 + 10});
+
+		propagandaEl.stop();
+		propagandaEl.animate({"width":niWidth,"height":niHeight,
+			"top": ( canvasHeight - niHeight) /2 + 10,"left":mainWidth+subMunWidth +  (canvasWidth-niWidth)/2 + 10},200);
+
 	}
 	el.mouseenter(centerImg);
 	mainMenuLiEls.mouseenter(function(){
@@ -430,10 +433,11 @@ var EBE_TopMenuModule = function(el,index){
 		   	   sub.hide();
 			}	
 		}
+		subBlockEl.stop();
 		if(hasSub){
-			subBlockEl.addClass("open");
+			subBlockEl.animate({"width":235},200).addClass("open");
 		}else{
-			subBlockEl.removeClass("open");
+			subBlockEl.animate({"width":0},200).removeClass("open");
 		}
 		centerImg();
 	});
@@ -444,7 +448,8 @@ var EBE_TopMenuModule = function(el,index){
 			sub = subMenus[i];
 			if(sub){sub.hide();}
 		}
-		subBlockEl.removeClass("open");
+		subBlockEl.stop();
+		subBlockEl.width(0).removeClass("open");
 		centerImg();
 	});
 };
@@ -632,7 +637,7 @@ var G_shoppingCar=null;
 $(function(){
 	var bodyEl = $("body").css("visibility","visible");
 	if(!$.support.style && !$.support.tbody ){
-		bodyEl.empty().append( $("<h1 style='text-align: center;margin-top: 100px;'>请使用IE8以上现代浏览器查看本站！</h1>") );
+		bodyEl.empty().append( $("<h1 style='text-align: center;margin-top: 100px;'>请使用IE7以上现代浏览器查看本站！</h1>") );
 		return;
 	}
 	G_screenHeightManager = new EVE_ScreenHeightManager();
