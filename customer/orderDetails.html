@@ -159,54 +159,45 @@
             <div class="comm_centerBlock">
                 <div class="comm_topSpace"></div>
                 <div class="comm_contentMainPanel">
-                    <h1 class="comm_form_pageTitle">Order</h1>
-                    <ul class="orderBlock">
-                        <li>
-                            <div class="half">
-                                <h3>订单日期</h3>
-                                <p>2014年9月16日</p>
-                            </div>
-                            <div class="half right">
-                                <h3>配送方式</h3>
-                                <p>货到付款</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="half">
-                                <h3>送货地址</h3>
-                                <p>王翠利 ，北京北京市大兴区北京市大兴区中关村医药基地天河区东区往东1000米,双禾物流院内裂帛物流中心，010-58103196</p>
-                            </div>
-                            <div class="half right">
-                                <h3>账单地址</h3>
-                                <p>王翠利 ，北京北京市大兴区北京市大兴区中关村医药基地天河区东区往东1000米,双禾物流院内裂帛物流中心，010-58103196</p>
-                            </div>
-                        </li>
-                        <li class="clearFloat"></li>
-                    </ul>
+                    <h1 class="comm_form_pageTitle">订单信息</h1>
+                    <div class="infoPanel">
+                        <ul class="orderInfo">
+                            <li><div class="border">订单编号：696693775084662</div></li>
+                            <li><div class="border">下单时间：2014-06-16 16:15:56</div></li>
+                            <li><div class="border">订单状态：<b>正在处理</b></div></li>
+                        </ul>
+                        <div class="comm_clearFloat"></div>
+
+                        <ul class="addressInfo">
+                            <li><div class="col01"><div class="border">快递方式：顺丰</div></div><div class="col02"><div class="border">快递单号：253542542543535</div></div></li>
+                            <li><div class="col01"><div class="border">收  货  人：某某某</div></div><div class="col02"><div class="border">地      址：广东省深圳市龙华新区某某村某某公寓501</div></div></li>
+                            <li><div class="col01"><div class="border">手  机  号：18319282210</div></div></li>
+                        </ul>
+                        <div class="comm_clearFloat"></div>
+                    </div>
+                    <h3 class="listTitle">商品清单</h3>
+
                     <table>
                         <thead>
                         <tr>
+                            <th width="100">商品编号</th>
                             <th class="alignLeft">产品名</th>
-                            <th width="100">订单编号</th>
                             <th width="100"><span>价格</span></th>
                             <th width="100">数量</th>
-                            <th width="100">小计</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td class="alignLeft">kate spade/凯特·丝蓓女士蝴蝶结连衣裙 </td>
                             <td>688515498</td>
-                            <td>￥9999.00</td>
+                            <td class="name">kate spade/凯特·丝蓓女士蝴蝶结连衣裙 </td>
                             <td>1</td>
-                            <td>￥9999.00</td>
+                            <td class="price">￥9999.00</td>
                         </tr>
                         <tr>
-                            <td class="alignLeft">kate spade/凯特·丝蓓女士蝴蝶结连衣裙 </td>
                             <td>688515498</td>
-                            <td>￥9999.00</td>
+                            <td class="name">kate spade/凯特·丝蓓女士蝴蝶结连衣裙 </td>
                             <td>1</td>
-                            <td>￥9999.00</td>
+                            <td class="price">￥9999.00</td>
                         </tr>
                         </tbody>
                     </table>
@@ -215,7 +206,7 @@
                         <ul>
                             <li>
                                 <div class="NoRow">
-                                    <span>订单号：<span>1001470070</span></span>
+                                    <span>商品编号：<span>1001470070</span></span>
                                 </div>
                                 <div class="paramRow">
                                     <img src="../public/source/customer/account/order/002.jpg" />
@@ -228,7 +219,7 @@
                             </li>
                             <li>
                                 <div class="NoRow">
-                                    <span>订单号：<span>1001470070</span></span>
+                                    <span>商品编号：<span>1001470070</span></span>
                                 </div>
                                 <div class="paramRow">
                                     <img src="../public/source/customer/account/order/002.jpg" />
@@ -241,10 +232,20 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="totalRow">
-                        <span>小计   ￥1010.00</span><span>运费和手续费  ￥10.00</span><span class="total">总计   ￥1010.00</span>
-                        <a class="again comm_form_button" href="#">支付</a>
+
+                    <div class="amountBlock">
+                        <ul>
+                            <li>总商品金额：￥1176.00</li>
+                            <li>-优惠：￥0.00</li>
+                            <li>+运费：￥10.00</li>
+                            <li><div class="separate"></div></li>
+                            <li class="total">应付总额：<b>￥1186.00</b></li>
+                        </ul>
                     </div>
+                    <div class="totalRow">
+                        <a class="comm_form_button" href="#">支付</a>
+                    </div>
+
 
                 </div>
                 <div class="comm_sidePanel">

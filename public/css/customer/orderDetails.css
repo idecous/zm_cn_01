@@ -1,31 +1,50 @@
 .comm_topSpace{
     height:  30px;
 }
-.mainPanel .orderBlock{
-    overflow: hidden;
+.mainPanel .infoPanel{
+    background-color: #f0eeef;
 }
-.mainPanel .orderBlock h3{
-    font-size: 14px;
-    margin-right:20px;
-    line-height: 30px;
-    font-weight: bold;
+.mainPanel .infoPanel .orderInfo{
+    padding: 0 10px;
 }
-.mainPanel .orderBlock p{
-    font-size: 12px;
-    margin-right:20px;
-    padding-bottom: 20px;
+.mainPanel .infoPanel .orderInfo li{
+    width: 33.33%;
+    line-height: 55px;
+    float: left;
+    word-break: break-all;
 }
-.mainPanel .orderBlock .right h3{
-    margin-left: 20px;
+.mainPanel .infoPanel .orderInfo li b{
+    color: #f00;
+    font-weight: normal;
 }
-.mainPanel .orderBlock .right p{
-    margin-left: 20px;
-    line-height: 20px;
+.mainPanel .infoPanel .orderInfo li .border{
+    padding: 0 4px;
 }
-.mainPanel .orderBlock .half{
-    width: 50%;
+.mainPanel .infoPanel .addressInfo{
+    border-top: 1px solid #ddd;
+    padding:  10px;
+}
+.mainPanel .infoPanel .addressInfo li{
+    line-height: 32px;
+    word-break: break-all;
+}
+.mainPanel .infoPanel .addressInfo li .border{
+    padding: 0 4px;
+}
+.mainPanel .infoPanel .addressInfo li .col01{
+    width: 33.5%;
     float: left;
 }
+.mainPanel .infoPanel .addressInfo li .col02{
+    width: 66.5%;
+    float: left;
+}
+.mainPanel .listTitle{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 table{
     width: 100%;
     margin-top: 10px;
@@ -38,34 +57,59 @@ table thead tr{
     background-color: #f1f1f1;
     padding: 0 4px;
 }
+table thead tr th{
+    padding: 0 4px;
+}
 table tbody td{
     text-align: left;
     padding: 10px 2px;
     line-height: 26px;
     font-size: 12px;
 }
+table .name{
+    color: #005aa1;
+}
+table .price{
+    color: #f00;
+}
 
-table .alignLeft{
-    text-align: left;
-    padding: 0 10px;
+
+
+
+.mainPanel .amountBlock{
+    line-height: 50px;
+    font-size: 14px;
+    text-align: right;
+    padding: 25px 0 ;
+}
+.mainPanel .amountBlock ul{
+    font-size: 12px;
+    display: inline-block;
+    width: 250px;
+}
+.mainPanel .amountBlock ul li{
+    line-height: 24px;
+}
+.mainPanel .amountBlock ul .separate{
+    border: 1px solid #dcdcdc;
+}
+.mainPanel .amountBlock ul .total{
+    font-size: 14px;
+    line-height: 30px;
+}
+.mainPanel .amountBlock ul b{
+    color: #f00;
 }
 .mainPanel .totalRow{
     line-height: 70px;
+    text-align: right;
 }
-.mainPanel .totalRow .again{
-    height: 30px;
-    line-height:30px;
-    width: 100px;
-    float: right;
-    margin-top: 15px;
-    text-align: center;
+
+.mainPanel .totalRow a{
+    padding: 0 40px;
 }
-.mainPanel .totalRow span{
-    font-size: 12px;
-}
-.mainPanel .totalRow .total{
-    font-size: 16px;
-}
+
+
 
 .mobileBlock{
     display: none;
@@ -135,18 +179,22 @@ table .alignLeft{
         line-height: 40px;
         border-bottom: 1px solid #ddd;
     }
-    .mainPanel .totalRow{
-        margin: 0 10px;
-        text-align: right;
-        line-height: 20px;
+    .mainPanel .amountBlock{
+        padding: 20px 10px;
+        text-align: left;
     }
-    .mainPanel .totalRow span{
-        white-space: nowrap;
-    }
-    .mainPanel .totalRow .again{
+    .mainPanel .amountBlock ul{
+        width: auto;
         display: block;
-        float: none;
-        width: 100%;
     }
-
+    .mainPanel .amountBlock{
+        padding: 0 10px;
+    }
+    .mainPanel .totalRow{
+        padding-top: 10px;
+    }
+    .mainPanel .totalRow a{
+        display: block;
+        margin: 0 10px;
+    }
 }

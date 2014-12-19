@@ -145,11 +145,29 @@
 .mainPanel .amountBlock{
     line-height: 50px;
     font-size: 14px;
+    text-align: right;
+    padding: 35px 0 ;
+
 }
-.mainPanel .amountBlock b{
-    font-size: 16px;
-    color: #df4141;
+.mainPanel .amountBlock ul{
+    font-size: 12px;
+    display: inline-block;
+    width: 250px;
 }
+.mainPanel .amountBlock ul li{
+    line-height: 24px;
+}
+.mainPanel .amountBlock ul .separate{
+    border: 1px solid #dcdcdc;
+}
+.mainPanel .amountBlock ul .total{
+    font-size: 14px;
+    line-height: 30px;
+}
+.mainPanel .amountBlock ul b{
+    color: #f00;
+}
+
 .mainPanel .actionBlock{
     text-align: right;
 }
@@ -260,9 +278,6 @@
     .mainPanel .updateRow .comm_form_button{
         margin-top: 10px;
     }
-    .mainPanel .amountBlock{
-        padding: 0 10px;
-    }
 
     .mainPanel .actionBlock {
         text-align: left;
@@ -271,6 +286,15 @@
     .mainPanel .actionBlock a{
         display: block;
         margin: 10px 10px 0 10px;
+    }
+
+    .mainPanel .amountBlock{
+        padding: 20px 10px;
+        text-align: left;
+    }
+    .mainPanel .amountBlock ul{
+        width: auto;
+        display: block;
     }
 }
 
