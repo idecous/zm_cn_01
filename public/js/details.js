@@ -259,7 +259,7 @@ var EBE_GoodsViewManager = function(){
 	});
 };
 
-var EBE_AppendManager = function(sizeError,toWishHandler,toCarHandler){
+var EBE_AppendManager = function(hasWish,sizeError,toWishHandler,toCarHandler){
 	var nameEl = $(".mainParamBlock h2");
 	var numcheck = /\d/;
 	var qtyInputEl = $(".mainParamBlock .QtyRow input");
@@ -333,7 +333,15 @@ var EBE_AppendManager = function(sizeError,toWishHandler,toCarHandler){
 			qtyInputEl.val(maxVal);
 		}
 	});
-	$(".mainParamBlock .actionRow .toWish").click(function(){
+	var toWishBtn = $(".mainParamBlock .actionRow .toWish");
+	if( hasWish ){
+		toWishBtn.addClass("has");
+	}
+
+	toWishBtn.click(function(){
+		if( hasWish ){
+			return;
+		}
 		if( sizeAllEls.length != 0 && currentSizeEl == null ){
 			alert(sizeError);
 			return;
@@ -453,7 +461,7 @@ $(function(){
 	new EBE_GoodsViewManager();
 	new EBE_SizePopManager();
 	
-	new EBE_AppendManager("请选择尺寸！",function(data){
+	new EBE_AppendManager(window.hasWish,"请选择尺寸！",function(data){
 		console.log("添加到搜藏",data);
 		//请求服务器
 		alert("已收藏:"+data.name);

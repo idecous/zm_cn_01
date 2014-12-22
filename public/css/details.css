@@ -469,7 +469,9 @@
 .mainParamBlock .actionRow .toWish:hover i{
 	background-position: -76px -109px;
 }
-
+.mainParamBlock .actionRow .toWish.has i{
+	background-position: -76px -109px;
+}
 .mainParamBlock .messageNavBar{
 	margin-top: 45px;
 	position: relative;

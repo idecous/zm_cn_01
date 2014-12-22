@@ -326,23 +326,33 @@
     line-height:140px;
     text-align: center;
 }
-.mainPanel .amountRow{
-    border-bottom: 1px solid #ddd;
-    background-color: #f4f4f4;
-    text-align: right;
-    padding: 15px 15px 20px 0;
-}
-.mainPanel .amountRow b{
-    font-weight: normal;
-    color: #df4141;
-}
-.mainPanel .amountRow .row1{
+
+.mainPanel .amountBlock{
+    line-height: 50px;
     font-size: 14px;
+    text-align: right;
+    padding: 35px 0 ;
 }
-.mainPanel .amountRow .row2{
-    font-size: 16px;
-    margin-top: 20px;
+.mainPanel .amountBlock ul{
+    font-size: 12px;
+    display: inline-block;
+    width: 250px;
 }
+.mainPanel .amountBlock ul li{
+    line-height: 24px;
+}
+.mainPanel .amountBlock ul .separate{
+    border: 1px solid #dcdcdc;
+}
+.mainPanel .amountBlock ul .total{
+    font-size: 14px;
+    line-height: 30px;
+}
+.mainPanel .amountBlock ul b{
+    color: #f00;
+}
+
+
 .mainPanel .actionRow{
     text-align: right;
     margin-top: 20px;
