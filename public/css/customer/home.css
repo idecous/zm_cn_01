@@ -23,7 +23,7 @@
 }
 .mainPanel .subTitle a{
     color: #f00;
-    margin-right: 4px;
+    margin-right: 8px;
 }
 .mainPanel p{
     line-height: 20px;
@@ -66,5 +66,8 @@
     }
     .mainPanel .secondRow .subTitle{
         margin: 0 10px;
+    }
+    .mainPanel .subContent{
+        padding: 0 10px;
     }
 }

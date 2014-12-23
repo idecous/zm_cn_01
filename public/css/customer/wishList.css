@@ -34,6 +34,9 @@ table thead tr th{
 table tbody tr .operation{
     text-align: center;
 }
+table tbody tr .operation a{
+    color: #f00;
+}
 
 table tbody td{
     text-align: left;

@@ -351,13 +351,15 @@
 .mainPanel .amountBlock ul b{
     color: #f00;
 }
-
-
 .mainPanel .actionRow{
     text-align: right;
     margin-top: 20px;
 }
-
+@media \0screen {
+    .mainPanel .appendAddressBlock .addressRow .contentBlock .col .inputBorder select{
+        padding: 0 0 6px 4px;
+    }
+}
 @media only screen and (max-width: 784px) {
     .comm_navDenoteBar,
     .mainPanel .processPanel span,

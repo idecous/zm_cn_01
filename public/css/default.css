@@ -993,12 +993,18 @@ a.comm_form_button{
 		background:url(1pAlpha.png);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
 	}
+	.comm_form_formList li select{
+		padding:0 0 6px 4px;
+	}
+	.comm_form_formList li input[type='text']{
+		line-height:35px;
+	}
 }
-
 .comm_sidePanel{
 	float:left;
 	width: 220px;
 	text-transform:uppercase;
+
 }
 .comm_sidePanel ul{
 	width: 100%;

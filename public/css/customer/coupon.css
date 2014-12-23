@@ -1,0 +1,102 @@
+.hintPanel{
+    color: #666;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-collapse:collapse;
+}
+table thead tr{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+table thead tr th{
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 4px;
+}
+table tbody tr .operation{
+    text-align: center;
+}
+table tbody td{
+    text-align: left;
+    line-height: 26px;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    padding: 4px;
+    color: #666;
+}
+table tbody a{
+    display: block;
+}
+table tbody a:hover{
+    color: #adadad;
+}
+table tbody .textLeft{
+    padding-left: 10px;
+}
+
+
+.mobileBlock{
+    display: none;
+    line-height:40px;
+}
+.mobileBlock ul{
+    margin: 10px 0;
+}
+.mobileBlock ul li{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.mobileBlock ul li .row span{
+    float: left;
+    text-align: right;
+    display: block;
+    width: 90px;
+}
+.mobileBlock ul li .row div{
+    margin-left: 110px;
+}
+.mobileBlock .pageBar{
+    height: 60px;
+    line-height: 40px;
+}
+.mobileBlock .pageBar div {
+    float: left;
+    width: 50%;
+}
+.mobileBlock .pageBar div a {
+    border: 1px solid #ccc;
+    color: #666;
+    display: block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 784px) {
+    .comm_bottomSpace{
+        height: 10px;
+    }
+    .comm_topSpace{
+        height:  20px;
+    }
+    table,
+    .comm_pageBar{
+        display:none;
+    }
+    .mobileBlock{
+        display: block;
+    }
+    .hintPanel{
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,71 @@
+.mainPanel .comm_form_formList{
+    margin-top: 20px;
+}
+.mainPanel .comm_form_formList .inputBorder{
+    border: 1px solid #c3c3c3;
+    clear: both;
+    padding: 0;
+}
+.comm_form_formList li .comm_form_inputBox .inputText.warn,
+.mainPanel .comm_form_formList .inputBorder.warn,
+.comm_form_formList li .comm_form_inputBox .inputTextarea.warn{
+    border-color: #f00;
+}
+.mainPanel .comm_form_formList .inputBorder select{
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+.mainPanel .comm_form_formList .inputBorder select option{
+    padding: 0 10px;
+}
+
+.mainPanel .comm_form_formList li .comm_form_inputBox input[type="file"]{
+    display: none;
+}
+.mainPanel .comm_form_formList li .inputFile{
+    clear: both;
+}
+.mainPanel .comm_form_formList li .fileBtn{
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 100px;
+    float: right;
+}
+.mainPanel .comm_form_formList li .filePathBlock{
+    border: 1px solid #ddd;
+    margin-right: 110px;
+    height: 35px;
+    line-height: 35px;
+}
+.mainPanel .comm_form_formList li .filePathBlock span{
+    margin: 4px;
+}
+.mainPanel .comm_form_formList li .contact{
+    position: relative;
+}
+.mainPanel .comm_form_formList li .contact span{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    color: #ccc;
+}
+.mainPanel .comm_form_formList li .contact input{
+    position: relative;
+    background: none;
+    z-index: 2;
+}
+.mainPanel .comm_form_formList li .contact.Col01{
+    width: 190px;
+    float: left;
+}
+.mainPanel .comm_form_formList li .contact.Col02{
+    margin-left: 220px;
+    clear: none;
+}
+
+
