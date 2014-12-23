@@ -31,12 +31,20 @@
 .mainPanel .infoPanel .addressInfo li .border{
     padding: 0 4px;
 }
+.mainPanel .infoPanel .addressInfo li .col00{
+    width: 33.33%;
+    float: left;
+}
 .mainPanel .infoPanel .addressInfo li .col01{
     width: 33.5%;
     float: left;
 }
 .mainPanel .infoPanel .addressInfo li .col02{
-    width: 66.5%;
+     width: 66.5%;
+     float: left;
+ }
+.mainPanel .infoPanel .addressInfo li .col03{
+    width: 100%;
     float: left;
 }
 .mainPanel .listTitle{
@@ -150,7 +158,6 @@ table .price{
     .comm_topSpace{
         height:  20px;
     }
-
     table{
         display: none;
     }
@@ -175,6 +182,15 @@ table .price{
         font-size: 14px;
         line-height: 40px;
         border-bottom: 1px solid #ddd;
+    }
+    .mainPanel .infoPanel .orderInfo li,
+    .mainPanel .infoPanel .addressInfo li .col00,
+    .mainPanel .infoPanel .addressInfo li .col01,
+    .mainPanel .infoPanel .addressInfo li .col02,
+    .mainPanel .infoPanel .addressInfo li .col03{
+        float: none;
+        width: auto;
+        line-height: 26px;
     }
     .mainPanel .amountBlock{
         padding: 20px 10px;
