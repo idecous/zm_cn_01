@@ -225,12 +225,12 @@ var EVE_ShoppingCar = function(){
 	}
 	function updateCount(){
 		var i,count = 0;
-		for( i=0;i<items.length;i++){
-			count += items[i].count;
-		}
-		count01El.text( count );
-		count02El.text( count );
-		count03El.text( count );
+		//for( i=0;i<items.length;i++){
+		//	count += items[i].count;
+		//}
+		count01El.text( items.length );
+		count02El.text( items.length );
+		count03El.text( items.length );
 	}
 	update();
 	return {"addGoods":addGoods};
