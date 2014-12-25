@@ -29,7 +29,7 @@ var EBE_FormManager  = function(){
     });
     formEl.submit(function(){
         var hasError = false;
-        for(var i=0; i < 5;i++){
+        for(var i=0; i < 4;i++){
             if( $.trim( inputEls.eq(i).val() ) == "" ){
                 hasError = true;
                 warnBorderEls.eq(i).addClass("warn");
