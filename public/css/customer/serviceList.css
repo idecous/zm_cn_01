@@ -7,52 +7,52 @@
 .toQuestion{
     text-align: right;
 }
-table{
+.module01 table{
     width: 100%;
     margin-top: 10px;
     border: 1px solid #ddd;
     border-collapse:collapse;
 }
-table thead tr{
+.module01 table thead tr{
     height: 38px;
     line-height: 38px;
     background-color: #f1f1f1;
     border-bottom: 1px solid #ddd;
 }
-table thead tr th{
+.module01 table thead tr th{
     text-align: left;
     font-weight: bold;
     font-size: 14px;
     padding: 0 4px;
 }
-table tbody tr .operation{
+.module01 table tbody tr .operation{
     text-align: center;
 }
-table tbody td{
+.module01 table tbody td{
     text-align: left;
     line-height: 26px;
     font-size: 12px;
     border-bottom: 1px solid #ddd;
     padding: 4px;
 }
-table tbody a{
+.module01 table tbody a{
     display: block;
 }
-table tbody a:hover{
+.module01 table tbody a:hover{
     color: #adadad;
 }
-table tbody .textLeft{
+.module01 table tbody .textLeft{
     padding-left: 10px;
 }
 
-.mobileBlock{
+.module01 .mobileBlock{
     display: none;
     line-height:40px;
 }
-.mobileBlock ul{
+.module01 .mobileBlock ul{
     margin: 10px 0;
 }
-.mobileBlock ul li{
+.module01 .mobileBlock ul li{
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
@@ -60,45 +60,117 @@ table tbody .textLeft{
     font-size: 12px;
     padding: 0 10px;
 }
-.mobileBlock ul li .row span{
+.module01 .mobileBlock ul li .row span{
     float: left;
     text-align: right;
     display: block;
     width: 70px;
 }
-.mobileBlock ul li .row div{
+.module01 .mobileBlock ul li .row div{
     margin-left: 80px;
 }
-.mobileBlock ul li .operationRow{
+.module01 .mobileBlock ul li .operationRow{
     text-align: right;
 }
-.mobileBlock ul li .operationRow a{
+.module01 .mobileBlock ul li .operationRow a{
     padding: 0 10px;
     line-height: 28px;
     height: 28px;
 }
-.mobileBlock .pageBar{
+.module01 .mobileBlock .pageBar{
     height: 60px;
     line-height: 40px;
 }
-.mobileBlock .pageBar div {
+.module01 .mobileBlock .pageBar div {
     float: left;
     width: 50%;
 }
-.mobileBlock .pageBar div a {
+.module01 .mobileBlock .pageBar div a {
     border: 1px solid #ccc;
     color: #666;
     display: block;
     margin: 0 10px;
     text-align: center;
 }
-
-.emptyMessage{
+.module01 .emptyMessage{
     font-size: 40px;
     line-height: 180px;
     text-align: center;
     color: #666;
 }
+
+.module02{
+    display: none;
+}
+.module02 .comm_form_formList{
+    margin-top: 20px;
+}
+.module02 .comm_form_formList .inputBorder{
+    border: 1px solid #c3c3c3;
+    clear: both;
+    padding: 0;
+}
+.module02 .comm_form_formList li .comm_form_inputBox .inputText.warn,
+.module02 .comm_form_formList .inputBorder.warn,
+.module02 .comm_form_formList li .comm_form_inputBox .inputTextarea.warn{
+    border-color: #f00;
+}
+.module02 .comm_form_formList .inputBorder select{
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+.module02 .comm_form_formList .inputBorder select option{
+    padding: 0 10px;
+}
+.module02 .comm_form_formList li .comm_form_inputBox input[type="file"]{
+    display: none;
+}
+.module02 .comm_form_formList li .inputFile{
+    clear: both;
+}
+.module02 .comm_form_formList li .fileBtn{
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 100px;
+    float: right;
+}
+.module02 .comm_form_formList li .filePathBlock{
+    border: 1px solid #ddd;
+    margin-right: 110px;
+    height: 35px;
+    line-height: 35px;
+}
+.module02 .comm_form_formList li .filePathBlock span{
+    margin: 4px;
+}
+.module02 .comm_form_formList li .contact{
+    position: relative;
+}
+.module02 .comm_form_formList li .contact span{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    color: #ccc;
+}
+.module02 .comm_form_formList li .contact input{
+    position: relative;
+    background: none;
+    z-index: 2;
+}
+.module02 .comm_form_formList li .contact.Col01{
+    width: 190px;
+    float: left;
+}
+.module02 .comm_form_formList li .contact.Col02{
+    margin-left: 220px;
+    clear: none;
+}
+
 @media only screen and (max-width: 784px) {
     .comm_bottomSpace{
         height: 10px;
@@ -106,11 +178,11 @@ table tbody .textLeft{
     .comm_topSpace{
         height:  20px;
     }
-    table,
-    .comm_pageBar{
+    .module01 table,
+    .module01 .comm_pageBar{
         display:none;
     }
-    .mobileBlock{
+    .module01 .mobileBlock{
         display: block;
     }
     .toQuestion{
@@ -118,6 +190,9 @@ table tbody .textLeft{
     }
     .toQuestion a{
         display: block;
+    }
+    .module02{
+        padding: 20px 10px 0 10px;
     }
 
 }
