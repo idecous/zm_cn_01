@@ -33,9 +33,6 @@ var EBE_FormManager  = function(){
     var formEl = $(".module02 form");
     var inputEls = formEl.find("select,textarea,input[type='text']");
     var warnBorderEls = formEl.find(".inputBorder,.inputText,.inputTextarea");
-
-    console.log( inputEls );
-
     var contactInputEls = formEl.find(".contact input");
     var contactSpanEls = formEl.find(".contact span");
 

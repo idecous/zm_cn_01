@@ -866,10 +866,11 @@ a.comm_form_button{
 	border-color: #f00;
 }
 
-.messages{
+.comm_form_messages .messages{
 	width: 100%;
 }
-.messages .success-msg,.messages .error-msg{
+.comm_form_messages .messages .success-msg,
+.comm_form_messages .messages .error-msg{
 	border-style: solid !important;
 	border-width: 1px !important;
 	font-size: 11px !important;
@@ -878,12 +879,12 @@ a.comm_form_button{
 	margin-bottom: 18px;
 	padding: 8px 10px;
 }
-.messages .success-msg{
+.comm_form_messages .messages .success-msg{
 	background-color: #eff5ea;
 	border-color: #446423;
 	color: #3d6611;
 }
-.messages .error-msg{
+.comm_form_messages .messages .error-msg{
 	background-color: #faebe7;
 	border-color: #f16048;
 	color: #df280a;
@@ -1095,6 +1096,10 @@ a.comm_form_button{
 .comm_pageBar input[type="submit"]:hover{
 	color: #fff;
 	background-color: #333;
+}
+
+.comm_form_messages{
+
 }
 
 
