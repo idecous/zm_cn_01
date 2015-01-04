@@ -53,7 +53,7 @@
 }
 
 .mainPanel .row03 .rightGroup{
-    display: inline-block;
+    float: right;
     width: 67%;
     text-align: justify;
 }
