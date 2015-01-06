@@ -201,9 +201,14 @@ var EBE_TopGroupNavigationManager = function(initFn){
         }
     }
     if(holderEl.prop("complete")){
-        setTimeout(initFn,10);
+        setTimeout(initFn,100);
     }else{
-        holderEl[0].onload = initFn;
+        var img = new Image();
+        img.onload = initFn;
+        img.src = holderEl.eq(0).attr("src");
+        if(img.complete){
+            setTimeout(initFn,100);
+        }
     }
     return {"resizeHandler":resizeHandler,"setOpacity":setOpacityHandler};
 };
@@ -348,7 +353,7 @@ var EBE_ContentBlockManage = function( initFn ){
     img.onload = initFn;
     img.src = aboutImgEls.eq(0).attr("src");
     if(img.complete){
-        setTimeout(initFn,10);
+        setTimeout(initFn,100);
     }
     aboutEls.mouseenter(function(){
         var tIndex = aboutEls.index(this);

@@ -617,7 +617,12 @@ var EBE_AccordionManager = function(){
 			if( imgEls.eq(index).prop("complete")  ){
 				init();
 			}else{
-				imgEls.eq(index).load(init);
+				var img = new Image();
+				img.onload = init;
+				img.src = imgEls.eq(index).attr("src");
+				if(img.complete){
+					init();
+				}
 			}
 		});
 	}
