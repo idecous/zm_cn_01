@@ -614,7 +614,7 @@ var EBE_AccordionManager = function(){
 		init();
 	}else{
 		imgEls.each(function(index){
-			if( imgEls.eq(index).eq(index).prop("complete")  ){
+			if( imgEls.eq(index).prop("complete")  ){
 				init();
 			}else{
 				imgEls.eq(index).load(init);
