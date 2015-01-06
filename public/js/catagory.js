@@ -568,8 +568,8 @@ $(function(){
 		console.log("请求数据页面[页]",page);
 		//请求服务器  过滤条件 cacheFilterData 页数:page
 
-	//	list.appendData( getPageData(5), page );
-		list.appendData([],0);
+		list.appendData( getPageData(5), page );
+
 
 	},function(id,name){
 		//console.log("添加收藏[id,名称]",id,name);
@@ -581,9 +581,9 @@ $(function(){
 		console.log("过滤条件",data);
 		cacheFilterData = data;
 		//请求服务器  过滤条件 cacheFilterData 页数:1
-		//list.setData( getPageData(2), 5 , 888 );
+		list.setData( getPageData(12), 5 , 888 );
 
-		list.setData( 0,0,0);
+		//list.setData( 0,0,0);
 	});
 	filter.update();
 });

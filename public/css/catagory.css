@@ -263,17 +263,18 @@
 
 .mainPanel .listPanel li .border .descriptBlock h3{
 	font-size: 14px;
-	line-height: 40px;
+	line-height: 36px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 .mainPanel .listPanel li .border .descriptBlock h1{
-	font-size: 18px;
+	font-size: 14px;
 	color: #f33b7e;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	line-height: 22px;
 }
 
 .mainPanel .loadingRow{
