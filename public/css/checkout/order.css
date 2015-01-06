@@ -206,7 +206,7 @@
     width: 100%;
     border: none;
     z-index: 2;
-    background: none;
+    background: url(../1pAlpha.png);
 }
 .mainPanel .recommendRow .col02 .inputBorder b{
     position: absolute;
@@ -215,6 +215,7 @@
     font-weight: normal;
     color: #aaa;
     font-size: 12px;
+    z-index: 0;
 }
 .mainPanel .paymentRow li{
     line-height: 30px;
