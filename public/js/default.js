@@ -482,7 +482,7 @@ var TopSwitchManager = function(){
 		liEl = ulEl.children("li");
 		var str = "";
 		for( i=0; i < liCount;i++){
-			str += "<a href='javascript:;'></a>";
+			str += ("<a href='javascript:;'><span>"+(i+1)+"</span></a>");
 		}
 		navBlockEl.append( $(str) );
 		var navBtnEls = navBlockEl.find("a");

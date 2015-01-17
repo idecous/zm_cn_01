@@ -682,6 +682,9 @@ h1,h2,h3,h4,h5,h6{
 	float: left;
 	margin-left: 5px;
 }
+.comm_topSwitchViewBlock .topSwitchNavBlock a span{
+	display: none;
+}
 .comm_topSwitchViewBlock .topSwitchNavBlock a:first-child{
 	margin-left: 0;
 }
@@ -1097,11 +1100,6 @@ a.comm_form_button{
 	color: #fff;
 	background-color: #333;
 }
-
-.comm_form_messages{
-
-}
-
 
 @media only screen and (min-width: 785px) and (max-width: 920px) {
 	.comm_sidePanel{

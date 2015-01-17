@@ -1,0 +1,433 @@
+.comm_grayBG{
+    background-color: #f9f9f9;
+}
+
+.mainPanel .topSwitchPanel{
+    background-color: #959aae;
+}
+.comm_centerBlock{
+    max-width: 1190px;
+}
+.comm_topSwitchViewBlock .topSwitchNavBlock{
+    display: block;
+    left: 0;
+    width: 100%!important;
+    text-align: center;
+    height: 20px;
+}
+.comm_topSwitchViewBlock .topSwitchNavBlock a{
+    float: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 19px;
+    margin-left: 7px;
+    background: url("../../images/activity/switch_nav_btn.png") no-repeat -20px 0;
+}
+.comm_topSwitchViewBlock .topSwitchNavBlock a.current{
+    background-position: 0px 0px;
+    background-color: transparent;
+}
+.comm_topSwitchViewBlock .topSwitchNavBlock a span{
+    display: inline-block;
+    color: #fff;
+}
+.topSwitch_space{
+    height: 30px;
+}
+.row01{
+    position: relative;
+}
+.row01 img{
+    width: 100%;
+}
+.row01 a{
+    display: inline-block;
+}
+.row01 .group01{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 74.28%;
+}
+.row01 .group01 .g1_c1,
+.row01 .group01 .g1_c2{
+    display: inline-block;
+    width: 50%;
+}
+.row01 .group01 .g1_c3{
+    display: inline-block;
+    width: 100%;
+}
+.row01 .group02{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25.72%;
+}
+.row02{
+    margin-top: 35px;
+}
+.row02 .titleBar{
+    position: relative;
+    height: 20px;
+}
+.row02 .titleBar .leftBlock{
+    display: inline;
+}
+.row02 .titleBar .leftBlock h2{
+    font-size: 18px;
+    color: #333333;
+    display: inline-block;
+}
+.row02 .titleBar .leftBlock h3{
+    font-size: 18px;
+    color: #f33b7e;
+    display: inline-block;
+    margin-left: 5px;
+}
+.row02 .titleBar .rightBlock{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.row02 .titleBar .rightBlock span,
+.row02 .titleBar .rightBlock a{
+    color: #999;
+    margin-left: 15px;
+}
+.row02 .titleBar .rightBlock a:first-child{
+    margin-left: 0;
+}
+.row02 .mainBlock{
+    margin-top: 15px;
+    position: relative;
+}
+.row02 .mainBlock img{
+    width: 100%;
+}
+.row02 .mainBlock a{
+    display: inline-block;
+}
+.row02 .mainBlock .group01{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 14.45%;
+}
+.row02 .mainBlock .group01 .border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 10px;
+    bottom: 0;
+    background-color: #fff;
+}
+.row02 .mainBlock .group01 .border h3{
+    font-size: 14px;
+    color: #f1a8ad;
+}
+.row02 .mainBlock .group01 .border a{
+    display: inline-block;
+    color: #888;
+    margin-right: 20px;
+    line-height: 20px;
+}
+.row02 .mainBlock .group01 .border .category01{
+    position: relative;
+    height: 34%;
+}
+.row02 .mainBlock .group01 .border .category02{
+    position: relative;
+    height: 16%;
+}
+.row02 .mainBlock .group01 .border .frame{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    bottom: 10px;
+    overflow: hidden;
+}
+.row02 .mainBlock .group01 .border .separator{
+    border-bottom: 1px dotted #e7e7e7;
+    margin: 0 20px;
+}
+.row02 .mainBlock .group01 .border .cover{
+    position: absolute;
+    bottom: 0;
+}
+.row02 .mainBlock .group02{
+    position: absolute;
+    top: 0;
+    left: 14.45%;
+    width: 43.69%;
+    height: 100%;
+}
+.row02 .mainBlock .group02 .border{
+    position: absolute;
+    left: 0;
+    right: 10px;
+    top: 0;
+    height: 100%;
+}
+.row02 .mainBlock .group02 .border .c_02{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.row02 .mainBlock .group03{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 41.93%;
+    height: 100%;
+}
+.row02 .mainBlock .group03 .placeholderBG{
+    display: none;
+}
+.row02 .mainBlock .group03 .r_01 .c_01{
+    display: inline-block;
+    width:50.9%;
+}
+.row02 .mainBlock .group03 .r_01 .c_01  a{
+    margin-right: 10px;
+}
+.row02 .mainBlock .group03 .r_01 .c_02{
+    width:49.1%;
+    display: inline-block;
+}
+.row02 .mainBlock .group03 .r_02{
+    position: absolute;
+    bottom: 0;
+}
+.row02 .mainBlock .group03 .r_02 .b_01{
+    width:50.9%;
+    display: inline-block;
+}
+.row02 .mainBlock .group03 .r_02 .b_01 .border{
+    margin-right: 10px;
+}
+.row02 .mainBlock .group03 .r_02 .b_01 .border .c_01{
+    padding-bottom: 10px;
+}
+.row02 .mainBlock .group03 .r_02 .b_02{
+    width:49.1%;
+    display: inline-block;
+}
+
+.row03{
+    margin-top: 35px;
+}
+.row03 .titleBar{
+    position: relative;
+    height: 20px;
+}
+.row03 .titleBar h2{
+    font-size: 18px;
+    color: #333333;
+    display: inline-block;
+}
+.row03 .titleBar h3{
+    font-size: 18px;
+    color: #f33b7e;
+    display: inline-block;
+    margin-left: 5px;
+}
+.row03 .mainBlock{
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.row03 .mainBlock li{
+    width: 20%;
+    float: left;
+}
+.row03 .mainBlock li .border{
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.row03 .mainBlock li .border img{
+    width: 100%;
+}
+.row03 .mainBlock li .border a{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.row03 .mainBlock li .border .descriptBlock{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: -70px;
+    background-color: rgba(255,255,255,0.8);
+    transition: all 0.25s ease-out 0s;
+}
+.row03 .mainBlock li .border:hover .descriptBlock{
+    bottom: 0;
+}
+.row03 .mainBlock li .border .descriptBlock h3{
+    color: #666;
+    font-size: 14px;
+    padding: 10px 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.row03 .mainBlock li .border .descriptBlock h2{
+    color: #cd294b;
+    font-size: 20px;
+    padding: 4px 20px 0;
+}
+.row03 .mainBlock li .border .descriptBlock b{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline;
+    background-color: #f33b7e;
+    color: #fff;
+    padding: 0 4px;
+}
+
+
+@media \0screen {
+    .comm_centerBlock{
+        width: 1190px;
+    }
+}
+@media only screen and (max-width: 784px) {
+    .comm_topSwitchViewBlock .topSwitchNavBlock{
+        bottom: -30px;
+    }
+    .topSwitch_space{
+        height: 42px;
+    }
+    .row01 .group02,
+    .row02 .mainBlock .group01,
+    .row01 .placeholderBG,
+    .row02 .mainBlock .placeholderBG,
+    .row02 .mainBlock .group03 .r_02 .b_02,
+    .row03 .mainBlock .first,
+    .row03 .mainBlock .last{
+        display: none;
+    }
+    .row01 .group01{
+        position: static;
+        width: auto;
+    }
+    .row01 .group01 .g1_c1,
+    .row01 .group01 .g1_c2,
+    .row01 .group01 .g1_c3{
+        display: block;
+        text-align: center;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .row01 .group01 .g1_c1 a,
+    .row01 .group01 .g1_c2 a{
+        width: 100%;
+        max-width: 442px;
+    }
+    .row01 .group01 .g1_c3 a{
+        width: 100%;
+        max-width: 884px;
+    }
+    .row02 .mainBlock .group02{
+        position: static;
+        width: auto;
+    }
+    .row02 .mainBlock .group02 .border{
+        position: static;
+        height: auto;
+        text-align: center;
+    }
+    .row02 .mainBlock .group02 .border .c_02{
+        position: static;
+        margin-top: 4px;
+    }
+    .row02 .mainBlock .group03{
+        position: static;
+        width: auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .row02 .mainBlock .group03 .r_01{
+        position: relative;
+        width: 100%;
+        max-width: 510px;
+        display: inline-block;
+    }
+    .row02 .mainBlock .group03 .r_01 .c_01{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49.8%;
+        text-align: left;
+    }
+    .row02 .mainBlock .group03 .r_01 .c_02{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50.2%;
+        text-align: right;
+    }
+    .row02 .mainBlock .group03 .r_02{
+        position: relative;
+        width: 100%;
+        max-width: 510px;
+        display: inline-block;
+    }
+    .row02 .mainBlock .group03 .placeholderBG{
+        display: inline-block;
+    }
+    .row02 .mainBlock .group03 .r_02 .b_01{
+        width: auto;
+    }
+    .row02 .mainBlock .group03 .r_02 .b_01 .border{
+        position: relative;
+        margin: 10px 0 0 0;
+    }
+    .row02 .mainBlock .group03 .r_02 .b_01 .border .c_01{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49.8%;
+        padding: 0;
+    }
+    .row02 .mainBlock .group03 .r_02 .b_01 .border .c_01 a{
+        margin-right: 10px;
+    }
+    .row02 .mainBlock .group03 .r_02 .b_01 .border .c_02{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50.2%;
+        text-align: right;
+    }
+    .row03 .mainBlock{
+        margin: 20px 0 0 0;
+    }
+    .row03 .mainBlock li{
+        width: auto;
+        text-align: center;
+        float: none;
+    }
+    .row03 .mainBlock li .border{
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 10px 0;
+        max-width: 213px;
+    }
+
+
+
+
+
+
+
+
+
+}

@@ -160,6 +160,16 @@ var EBE_FormManager = function(){
     var zipBorderEl = appendAddressBlockEl.find(".inputBorder:eq(6)");
     var zipInputEl = appendAddressBlockEl.find("input:eq(3)");
 
+
+    if($.trim( recommendInputEl.val() ) != "" ){
+        recommendInputBlockEl.css("visibility","visible");
+        recommendRadioEl.eq(1).prop("checked","checked");
+        recommendHintEl.hide();
+    }
+
+
+
+
     formEl.submit(function(){
         var result = true;
         if( appendAddressBlockEl.is(":visible") ){
