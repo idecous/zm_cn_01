@@ -77,7 +77,7 @@ table tbody td{
 table .name{
     color: #005aa1;
 }
-table .price{
+table .state{
     color: #f00;
 }
 
@@ -114,8 +114,6 @@ table .price{
     padding: 0 40px;
 }
 
-
-
 .mobileBlock{
     display: none;
     font-size: 12px;
@@ -139,6 +137,16 @@ table .price{
     padding: 10px 10px;
     min-height:100px;
     line-height: 24px;
+}
+.mobileBlock ul li .paramRow .comm_form_button{
+    margin: 10px;
+    width: auto;
+    display: block;
+    line-height: 30px;
+    height: 30px;
+}
+.mobileBlock ul li .paramRow .paramCol .state{
+    color: #f00;
 }
 .mobileBlock ul li .paramRow .paramCol h1{
     font-size: 14px;

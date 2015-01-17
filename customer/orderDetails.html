@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../public/css/customer/orderDetails.css"/>
         <script type="text/javascript" src="../public/js/jquery.js"></script>
         <script type="text/javascript" src="../public/js/default.js"></script>
+        <script type="text/javascript" src="../public/js/customer/orderDetails.js"></script>
     </head>
     <body>
     <div class="header centerBlock">
@@ -159,6 +160,7 @@
             <div class="comm_centerBlock">
                 <div class="comm_topSpace"></div>
                 <div class="comm_contentMainPanel">
+                    <form action="#del"><input type="hidden" value=""/></form>
                     <h1 class="comm_form_pageTitle">订单信息</h1>
                     <div class="infoPanel">
                         <ul class="orderInfo">
@@ -180,14 +182,15 @@
                         <div class="comm_clearFloat"></div>
                     </div>
                     <h3 class="listTitle">商品清单</h3>
-
                     <table>
                         <thead>
                         <tr>
                             <th width="100">商品编号</th>
                             <th class="alignLeft">产品名</th>
-                            <th width="100"><span>价格</span></th>
+                            <th width="50"><span>价格</span></th>
                             <th width="100">数量</th>
+                            <th width="60">状态</th>
+                            <th width="100">操作</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -195,13 +198,17 @@
                             <td>688515498</td>
                             <td class="name">kate spade/凯特·丝蓓女士蝴蝶结连衣裙 </td>
                             <td>1</td>
-                            <td class="price">￥9999.00</td>
+                            <td>￥9999.00</td>
+                            <td class="state">等待付款</td>
+                            <td><a iid="688515498" class="comm_form_button" href="#return">申请退货</a></td>
                         </tr>
                         <tr>
                             <td>688515498</td>
                             <td class="name">kate spade/凯特·丝蓓女士蝴蝶结连衣裙 </td>
                             <td>1</td>
-                            <td class="price">￥9999.00</td>
+                            <td>￥9999.00</td>
+                            <td class="state">等待回复</td>
+                            <td></td>
                         </tr>
                         </tbody>
                     </table>
@@ -218,7 +225,9 @@
                                         <h1>价格: ￥9999.00</h1>
                                         <div>数量: 1</div>
                                         <div>￥9999.00</div>
+                                        <div class="state">等待付款</div>
                                     </div>
+                                    <a iid="688515498" class="comm_form_button" href="#return">申请退货</a>
                                 </div>
                             </li>
                             <li>
@@ -231,6 +240,7 @@
                                         <h1>价格: ￥9999.00</h1>
                                         <div>数量: 1</div>
                                         <div>小计: ￥9999.00</div>
+                                        <div class="state">等待回复</div>
                                     </div>
                                 </div>
                             </li>
