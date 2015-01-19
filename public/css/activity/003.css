@@ -1,0 +1,255 @@
+.comm_grayBG,
+.comm_footerBeforeHolder{
+    background-color: #f9f9f9;
+}
+.comm_centerBlock{
+    max-width: 1190px;
+}
+.row_space{
+    height: 20px;
+}
+.row01{
+    position: relative;
+}
+.row01 img{
+    width: 100%;
+}
+.row01 a{
+    display: inline-block;
+}
+.row01 .leftGroup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22.94%;
+}
+.row01 .leftGroup li{
+    display: inline-block;
+    position: relative;
+}
+.row01 .leftGroup li .border{
+    position: absolute;
+    top: 0;
+    bottom: 1px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+.row01 .leftGroup li .border.last{
+    bottom: 0;
+}
+.row01 .leftGroup li .border .cover{
+    width: 35.53%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.row01 .leftGroup li .border .list{
+    position: absolute;
+    left: 35.53%;
+    top: 0;
+    width: 64.46%;
+    height: 100%;
+    position: relative;
+}
+.row01 .leftGroup li .border .list .group{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    right: 10px;
+    bottom: 5px;
+    overflow: hidden;
+}
+.row01 .leftGroup li .border .list .group h3{
+    font-size: 14px;
+    line-height: 22px;
+}
+.row01 .leftGroup li .border .list .group a{
+    color: #999;
+    width: 50%;
+    display: inline-block;
+    line-height: 20px;
+}
+.row01 .rightGroup{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75.63%;
+    height: 100%;
+}
+
+.row01 .rightGroup .list{
+    position: absolute;
+    bottom: 0;
+    bottom: -15px\0;
+    left: 0;
+    width: 100%;
+}
+.row01 .rightGroup .list li{
+    display: inline-block;
+    width: 33.88%;
+}
+.row01 .rightGroup .list li a{
+    margin-left: 15px;
+}
+.row01 .rightGroup .list li.c_01{
+    width: 32.24%;
+}
+.row01 .rightGroup .list li.c_01 a{
+    margin-left: 0;
+}
+.row02 a{
+    display: block;
+}
+.row02 img{
+    width: 100%;
+}
+.row02 .titleBar{
+    position: relative;
+    line-height: 40px;
+}
+.row02 .titleBar h1{
+    display: inline;
+    font-size: 18px;
+}
+.row02 .titleBar h2{
+    display: inline;
+    font-size: 18px;
+    color: #f33b7e;
+    margin-left: 4px;
+}
+.row02 .titleBar a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #666;
+}
+.row02 .mainBlock{
+    position: relative;
+}
+.row02 .mainBlock .col_01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16.63%;
+}
+.row02 .mainBlock .col_02{
+    position: absolute;
+    top: 0;
+    left: 17.47%;
+    width: 65.04%;
+}
+.row02 .mainBlock .col_03{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16.63%;
+    height: 100%;
+}
+.row02 .mainBlock .col_03 .c_02{
+    position: absolute;
+    bottom: 0;
+}
+.row03{
+    margin-left: -10px;
+    margin-top: 10px;
+}
+.row03 img{
+    width: 100%;
+}
+.row03 li{
+    width: 20%;
+    float: left;
+    margin-bottom: 10px;
+}
+.row03 li a{
+    display: block;
+    margin-left: 10px;
+    border: 1px solid #f7f2f0;
+}
+.row03 li  .descriptBlock{
+    background-color: #fff;
+    height: 75px;
+}
+.row03 li  .descriptBlock h1{
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px;
+    text-align: center;
+    line-height: 30px;
+}
+.row03 li .descriptBlock h1 b{
+    color: #e71b50;
+    font-style: normal;
+}
+.row03 li .descriptBlock .buttonRow{
+    text-align: center;
+}
+.row03 li .descriptBlock .buttonRow img{
+    width: 93px;
+    height: 23px;
+}
+
+@media \0screen {
+    .comm_centerBlock{
+        width: 1190px;
+    }
+}
+@media only screen and (max-width: 784px) {
+
+    .row01 .placeholderBG,
+    .row01 .leftGroup,
+    .row01 .rightGroup .list li.c_03,
+    .row02 .mainBlock .col_01,
+    .row02 .mainBlock .col_03,
+    .row02 .mainBlock .placeholderBG,
+    .row02 .titleBar a{
+        display: none;
+    }
+    .row01{
+        text-align: center;
+    }
+    .row01 .rightGroup{
+        position: static;
+        display: inline-block;
+        width: 100%;
+        max-width: 900px;
+    }
+    .row01 .rightGroup .list{
+        position: static;
+        text-align: center;
+    }
+    .row01 .rightGroup .list li.c_01,
+    .row01 .rightGroup .list li.c_02{
+        display: inline-block;
+        width: 50%;
+        max-width: 290px;
+    }
+    .row01 .rightGroup .list li a{
+        margin-left: 0;
+    }
+    .row02 .titleBar {
+        text-align: center;
+    }
+    .row02 .mainBlock .col_02{
+        position: static;
+        width: auto;
+    }
+    .row02 .mainBlock .col_02 a{
+        width: 100%;
+        max-width: 774px;
+    }
+
+    .row03 li{
+        width: 33.33%;
+    }
+
+}
+@media only screen and (max-width: 470px) {
+    .row03 li{
+        width: 50%;
+    }
+}
