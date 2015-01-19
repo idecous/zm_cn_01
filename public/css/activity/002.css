@@ -1,0 +1,260 @@
+.comm_grayBG,
+.comm_footerBeforeHolder{
+    background-color: #f9f9f9;
+}
+.comm_centerBlock{
+    max-width: 1190px;
+}
+.mainPanel .topSwitchPanel{
+    background-color: #959aae;
+    text-align: center;
+}
+.mainPanel .topSwitchPanel a{
+    display: inline-block;
+    max-width: 1190px;
+}
+.mainPanel .topSwitchPanel a img{
+    width: 100%;
+}
+.row_space{
+    height: 30px;
+}
+.row01{
+    position: relative;
+}
+.row01 img{
+    width: 100%;
+}
+.row01 a{
+    display: inline-block;
+}
+.row01 .group01{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 74.28%;
+}
+.row01 .group01 .g1_c1,
+.row01 .group01 .g1_c2{
+    display: inline-block;
+    width: 50%;
+}
+.row01 .group01 .g1_c3{
+    display: inline-block;
+    width: 100%;
+}
+.row01 .group02{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25.72%;
+}
+.row02{
+    position: relative;
+    border-top: 2px solid #e5e5e5;
+}
+.row02 img{
+    width: 100%;
+}
+.row02 a{
+    display: block;
+}
+.row02 .group01{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75.12% ;
+}
+.row02 .group01 .border{
+    display: inline-block;
+    width: 25%;
+}
+.row02 .group01 .border a{
+    margin-left: 2px;
+}
+.row02 .group01 .border.c_01{
+    width: 24.83%;
+}
+.row02 .group01 .border.c_01 a{
+    margin-left: 0;
+}
+.row02 .group01 .border.c_02{
+    width: 50.11%;
+}
+.row02 .group01 .border.c_03{
+    width: 25.05%;
+}
+.row02 .group02{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    bottom: -3px\0;
+    width: 75.12% ;
+}
+.row02 .group02 .border{
+    display: inline-block;
+    width: 25.05%;
+}
+.row02 .group02 .border a{
+    margin-left: 2px;
+}
+.row02 .group02 .border.c_01{
+    width: 24.83%;
+}
+.row02 .group02 .border.c_01 a{
+    margin-left: 0;
+}
+.row02 .group03{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24.88%;
+}
+.row02 .group01 .placeholderBG,
+.row02 .group02 .placeholderBG{
+    display: none;
+}
+.row02 .titleBar{
+    display: none;
+}
+.row02 .titleBar h1{
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.row02 .titleBar div{
+    text-align: center;
+}
+.row02 .titleBar div img{
+    width: 100%;
+}
+.row02.even .group03{
+    right: auto;
+    left: 0;
+}
+.row02.even .group01,
+.row02.even .group02{
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+@media \0screen {
+    .comm_centerBlock{
+        width: 1190px;
+    }
+}
+@media only screen and (max-width: 784px) {
+    .row01 .group02,
+    .row01 .placeholderBG,
+    .row02 .placeholderBG,
+    .row02 .group03,
+    .row02 .group01 .border.c_02 {
+        display: none;
+    }
+    .row01 .group01{
+        position: static;
+        width: auto;
+    }
+    .row01 .group01 .g1_c1,
+    .row01 .group01 .g1_c2,
+    .row01 .group01 .g1_c3{
+        display: block;
+        text-align: center;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .row01 .group01 .g1_c1 a,
+    .row01 .group01 .g1_c2 a{
+        width: 100%;
+        max-width: 442px;
+    }
+    .row01 .group01 .g1_c3 a{
+        width: 100%;
+        max-width: 884px;
+    }
+    .row02{
+        border-top: none;
+        text-align: center;
+    }
+    .row02 .titleBar{
+        display: block;
+    }
+
+    .row02 .group01,
+    .row02 .group02{
+        position: relative;
+        display: inline-block;
+        width: auto;
+    }
+    .row02 .group01 .border a{
+        margin: 0;
+    }
+    .row02 .group01 .border.c_01{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+    .row02 .group01 .border.c_01 a{
+        margin-right: 1px;
+    }
+    .row02 .group01 .border.c_03{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+    }
+    .row02 .group01 .border.c_03 a{
+        margin-left: 1px;
+    }
+    .row02 .group02{
+        margin-top: 2px;
+        margin-top: -3px\0;
+    }
+    .row02 .group02 .border.c_01,
+    .row02 .group02 .border.c_02,
+    .row02 .group02 .border.c_03,
+    .row02 .group02 .border.last{
+        width: 50%;
+        position: absolute;
+    }
+    .row02 .group02 .border a{
+        margin: 0;
+    }
+    .row02 .group02 .border.c_01{
+        left: 0;
+        top: 0;
+    }
+    .row02 .group02 .border.c_01 a{
+        margin-right: 1px;
+    }
+    .row02 .group02 .border.c_02{
+        right: 0;
+        top: 0;
+    }
+    .row02 .group02 .border.c_02 a{
+        margin-left: 1px;
+    }
+    .row02 .group02 .border.c_03{
+        left: 0;
+        bottom: 0;
+    }
+    .row02 .group02 .border.c_03 a{
+        margin-right: 1px;
+    }
+    .row02 .group02 .border.last{
+        right: 0;
+        bottom: 0;
+    }
+    .row02 .group02 .border.last a{
+        margin-left: 1px;
+    }
+    .row02 .group01 .placeholderBG,
+    .row02 .group02 .placeholderBG{
+        display: inline-block;
+        width: 100%;
+        max-width: 444px;
+    }
+}

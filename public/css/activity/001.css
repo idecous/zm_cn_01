@@ -1,12 +1,12 @@
-.comm_grayBG{
+.comm_grayBG,
+.comm_footerBeforeHolder{
     background-color: #f9f9f9;
-}
-
-.mainPanel .topSwitchPanel{
-    background-color: #959aae;
 }
 .comm_centerBlock{
     max-width: 1190px;
+}
+.mainPanel .topSwitchPanel{
+    background-color: #959aae;
 }
 .comm_topSwitchViewBlock .topSwitchNavBlock{
     display: block;
