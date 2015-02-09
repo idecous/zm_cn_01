@@ -58,6 +58,19 @@ h1,h2,h3,h4,h5,h6{
 .comm_enFontFamily{
 	font-family: "Times New Roman";
 }
+.common_messageBlock .messages li{
+    margin-top: 10px;
+}
+.common_messageBlock .messages .error-msg li{
+    border: 1px solid #f00;
+    color: #f00;
+    padding: 5px 10px;
+}
+.common_messageBlock .messages .success-msg li{
+    border: 1px solid #00df5a;
+    color: #00df5a;
+    padding: 5px 10px;
+}
 .comm_whiteBG{
 	background-color: #fff;
 }
@@ -78,20 +91,19 @@ h1,h2,h3,h4,h5,h6{
 	top:0;
 	left:0;
 	width: 100%;
-	border-bottom: 1px solid #312f2f;
-	border-top:1px solid #312f2f;
-	background-color: #272727;
-	height: 39px;
+	background-color: #f5f5f5;
+	height: 26px;
 	z-index: 50;
 }
 .header .topBar{
 	position:fixed;
 	top:0;
 	left:0;
-	height: 41px;
-	line-height: 41px;
+	height: 26px;
+	line-height: 26px;
 	z-index: 51;
 	width: 100%;
+    color: #666;
 }
 .header .topBar .comm_centerBlock{
 	position: relative;
@@ -103,23 +115,19 @@ h1,h2,h3,h4,h5,h6{
 	display: block;
 	float:left;
 	text-align: center;
-	color: #ff7cb0;
-	font-size: 18px;
+	color: #666;
+	font-size: 12px;
 }
 .header .topBar .leftGroup .col01{
-	font-size: 14px;
-	line-height: 14px;
-	padding:6px 10px 0 10px; 
-	height:35px;
-	width:100px;
-	color: #444;
+	font-size: 12px;
+	padding:0 20px;
+	height:26px;
+	color: #f33b7e;
 	background-color: #fcd4d2;
 	text-align: center;
 }
 .header .topBar .leftGroup .col02{
 	width: 140px;
-	border-left:1px solid #383838;
-	border-right: 1px solid #383838;
 }
 .header .topBar .leftGroup .col02:hover{
 	background-color: #383838;
@@ -135,7 +143,7 @@ h1,h2,h3,h4,h5,h6{
 	top:1px;
 	right:0;
 	font-size: 14px;
-	color: #fff;
+	color: #666;
 }
 .header .topBar .rightGroup a{
 	color: #fff;
@@ -156,7 +164,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .header .topBar .rightGroup .combox .popBlock{
 	position: absolute;
-	top: 40px;
+	top: 26px;
 	background-color: #272727;
 	width: 100%;
 	visibility: hidden;
@@ -217,12 +225,18 @@ h1,h2,h3,h4,h5,h6{
 	background: url(../images/icons.png) no-repeat -7px 0;
 	margin-right: 4px;
 }
+.header .topBar .rightGroup .shoppingCar:hover i{
+    background-position: -161px -34px;
+}
+.header .topBar .rightGroup .shoppingCar:hover{
+    color: #fff;
+}
 .header .topBar .rightGroup .shoppingCar u{
 	text-decoration: none;
 }
 .header .topBar .rightGroup .shoppingCar .popWindow{
 	position:absolute;
-	top: 40px;
+	top: 26px;
 	right:0;
 	width: 325px;
 	background-color: #636363;
@@ -523,13 +537,24 @@ h1,h2,h3,h4,h5,h6{
 
 .header .topNavigationBlock .normalMenu{
 	position:relative;
-	line-height: 40px;
-	height: 40px;
+	line-height: 32px;
+	height: 32px;
+    background-color: #f33b7e;
 }
-.header .topNavigationBlock .normalMenu .current{ 
-	font-weight: bold;
-	border-bottom: 4px solid #f33b7e;
-	padding-bottom: 5px;
+.header .topNavigationBlock .normalMenu.fixed{
+    position: fixed;
+    top: 26px;
+    left: 0;
+    width: 100%;
+}
+
+.header .topNavigationBlock .normalMenu ul{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.header .topNavigationBlock .normalMenu .current{
+    background-color: #bd1067;
 }
 .header .topNavigationBlock .normalMenu .topNavModule>li{
 	width: 10%;
@@ -537,9 +562,13 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 14px;
 	float: left;
 }
+.header .topNavigationBlock .normalMenu .topNavModule>li a{
+    color: #fff;
+    display: block;
+}
+
 .header .topNavigationBlock .normalMenu .topNavModule>li:hover>.btnBlock a{
-	border-bottom: 4px solid #f33b7e;
-	padding-bottom: 5px;
+    background-color: #bd1067;
 }
 .header .topNavigationBlock .normalMenu .topNavModule>li:hover .popBlock{
 	visibility:visible;
@@ -549,9 +578,10 @@ h1,h2,h3,h4,h5,h6{
 	visibility:hidden;
 	opacity:0;
 	position: absolute;
-	top: 40px;
+	top: 32px;
 	left: 0;
 	width: 100%;
+    max-width: 1000px;
 	background-color: #e1e1e1;
 	text-align: left;
 	font-size: 14px;
@@ -570,6 +600,7 @@ h1,h2,h3,h4,h5,h6{
 
 .header .topNavigationBlock .normalMenu .topNavModule .popBlock li .btnBlock a{
 	display: block;
+    color: #333;
 }
 .header .topNavigationBlock .normalMenu .topNavModule .popBlock li .btnBlock i{
 	position: absolute;
@@ -1158,6 +1189,7 @@ a.comm_form_button{
 	.header .topNavigationBlock {
 		margin-top: 10px;
 		padding-bottom: 10px;
+        background:none;
 	}
 	.header .searchPanel .mobileSearch.toSearch,
 	.header .searchPanel .logo.toSearch,

@@ -11,7 +11,7 @@
 }
 .mainPanel .topSwitchPanel a{
     display: inline-block;
-    max-width: 1190px;
+    width: 100%;
 }
 .mainPanel .topSwitchPanel a img{
     width: 100%;

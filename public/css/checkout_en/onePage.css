@@ -1,0 +1,518 @@
+.popWindow{
+    position: absolute;
+    top: 320px;
+    left: 335px;
+    width: 512px;
+    height: 260px;
+    background: url(../../../img/customer/checkout/onepage_popwin.png) no-repeat;
+    display: none;
+    z-index: 1000;
+}
+.mainPanel .topSpace{
+    height: 20px;
+}
+.mainPanel .cartListBlock{
+    float: right;
+    width: 266px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.mainPanel .cartListBlock .topInfoBar{
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.mainPanel .cartListBlock .itemsBlock li{
+    position: relative;
+}
+.mainPanel .cartListBlock .itemsBlock li img{
+    position: absolute;
+    top:10px;
+    left: 20px;
+}
+.mainPanel .cartListBlock .itemsBlock li .paramCol{
+    margin-left: 100px;
+    margin-right:10px;
+    min-height: 110px;
+    padding-top:10px;
+    font-size: 12px;
+}
+.mainPanel .cartListBlock .itemsBlock li .paramCol .number{
+    color: #666;
+    line-height: 32px;
+}
+.mainPanel .cartListBlock .viewAllRow{
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    text-align: center;
+}
+.mainPanel .cartListBlock .viewAllRow a{
+    text-decoration: underline;
+}
+.mainPanel .cartListBlock .summaryTitleBar{
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+.mainPanel .cartListBlock .summaryBlock li{
+    position: relative;
+    padding: 10px 0 ;
+}
+.mainPanel .cartListBlock .summaryBlock li .label{
+    margin-left:10px;
+    width: 125px;
+    text-align: right;
+}
+.mainPanel .cartListBlock .summaryBlock li .priceCol{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 125px;
+    text-align: right;
+    padding-right: 10px;
+}
+.mainPanel .cartListBlock .summaryBlock .total {
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.mainPanel .cartListBlock .summaryBlock .total .separator{
+    border-top: 1px dotted #ddd;
+    height: 0;
+    margin: 0 20px;
+}
+
+.mainPanel .checkoutProcessBlock{
+    margin-right: 310px;
+}
+.mainPanel .checkoutProcessBlock .titleRow{
+    height: 31px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 0;
+}
+.mainPanel .checkoutProcessBlock>li{
+    padding-bottom: 10px;
+    position: relative;
+}
+.mainPanel .checkoutProcessBlock li .titleBar{
+    position:relative;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ddd;
+    overflow: hidden;
+    color: #666;
+}
+.mainPanel .checkoutProcessBlock li .titleBar .stepNum{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.mainPanel .checkoutProcessBlock li .titleBar h2{
+    height: 38px;
+    line-height:38px;
+    margin: 1px 1px 0 41px;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.mainPanel .checkoutProcessBlock li .titleBar a{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 60px;
+    height:17px;
+    line-height:17px;
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+    display: none;
+}
+.mainPanel .checkoutProcessBlock li .titleBar i{
+    display: inline-block;
+    width: 21px;
+    height: 14px;
+    background: url(../../images/icons.png) no-repeat -119px -67px;
+    margin-left: 6px;
+    vertical-align: -1px;
+}
+.mainPanel .checkoutProcessBlock li .titleBar a:hover{
+    text-decoration: underline;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock{
+    display: none;
+    background-color: #f1f1f1;
+    padding: 20px 30px;
+    font-size: 12px;
+    color: #333;
+    overflow: hidden;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock h3{
+    font-size: 14px;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .descript{
+    color: #666;
+    line-height: 30px;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .error{
+    border: 1px solid #f00;
+    background-color: #faebe7;
+    padding: 0 4px;
+    margin-top: 4px;
+    color: #f00;
+    display: none;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .loadingRow{
+    text-align: right;
+    margin-top: 10px;
+    visibility: hidden;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .loadingRow img{
+    margin-right: 5px;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit {
+    clear: both;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit .label{
+    line-height: 22px;
+    height: 22px;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit .label i{
+    color: #df4141;
+    font-style: normal;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit .inputBorder{
+    border: 1px solid #dedede;
+    background-color: #fff;
+    padding: 4px 4px 3px 4px;
+    height: 21px;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit .inputBorder input{
+    border: none;
+    width: 100%;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit .selectBorder{
+    border: 1px solid #dedede;
+    background-color: #fff;
+    height: 28px;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit .selectBorder select{
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 0 5px 4px;
+    border: none;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit .selectBorder option{
+    padding: 0 4px;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .continueButton{
+    display:block;
+    width: 100px;
+    height: 30px;
+    line-height:30px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .halfLeft{
+    width: 48%;
+    float: left;
+    clear: none;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .halfRight{
+    width: 48%;
+    float: right;
+    clear: none;
+}
+.mainPanel .checkoutProcessBlock li .operationBlock .inputUnit .warn{
+    color: #f00;
+    padding-top: 2px;
+    visibility: hidden;
+}
+.mainPanel .checkoutProcessBlock .allow .titleBar a{
+    display: block;
+}
+.mainPanel .checkoutProcessBlock .allow .titleBar h2{
+    background-color: #f1f1f1;
+}
+.mainPanel .checkoutProcessBlock .action .stepNum{
+    background-color: #df4141;
+    color: #fff;
+}
+.mainPanel .checkoutProcessBlock .action .operationBlock{
+    display: block;
+}
+.mainPanel .checkoutProcessBlock .action .titleBar h2 {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+}
+.mainPanel .checkoutProcessBlock .action .titleBar{
+    background-color: #f1f1f1;
+}
+.mainPanel .checkoutProcessBlock .login .loginBlock{
+    float:right;
+    width: 48%;
+}
+.mainPanel .checkoutProcessBlock .login .loginBlock .info01{
+    margin: 5px 0 20px 0;
+}
+.mainPanel .checkoutProcessBlock .login .loginBlock .forgotRow{
+    margin-top: 5px;
+}
+.mainPanel .checkoutProcessBlock .login .loginBlock .forgotRow a{
+    text-decoration: underline;
+}
+.mainPanel .checkoutProcessBlock .login .loginBlock .continueButton{
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.mainPanel .checkoutProcessBlock .login .registerBlock{
+    float:left;
+    width: 48%;
+}
+.mainPanel .checkoutProcessBlock .login .registerBlock div{
+    margin-top: 5px;
+}
+.mainPanel .checkoutProcessBlock .login .registerBlock ul{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.mainPanel .checkoutProcessBlock .login .registerBlock ul input{
+    margin-right:5px;
+    vertical-align: -2px;
+}
+.mainPanel .checkoutProcessBlock .login .registerBlock a{
+    margin-top: 10px;
+}
+
+.mainPanel .checkoutProcessBlock .billingInformation .saveRow{
+    clear: both;
+    padding-top: 10px;
+}
+.mainPanel .checkoutProcessBlock .billingInformation .saveRow input{
+    margin-right: 10px;
+    vertical-align: -1px;
+}
+.mainPanel .checkoutProcessBlock .billingInformation .addressRow{
+    margin-top: 20px;
+    line-height: 30px;
+    clear: both;
+}
+.mainPanel .checkoutProcessBlock .billingInformation .addressRow input{
+    margin-right: 10px;
+    vertical-align: -1px;
+}
+.mainPanel .checkoutProcessBlock .billingInformation .continueRow{
+    margin-top: 10px;
+}
+
+.mainPanel .checkoutProcessBlock .shippingInformation .operationRow{
+    margin-top: 10px;
+    clear: both;
+    line-height: 35px;
+}
+.mainPanel .checkoutProcessBlock .shippingInformation .operationRow input{
+    margin-right: 10px;
+    vertical-align: -1px;
+}
+.mainPanel .checkoutProcessBlock .shippingInformation .continueRow{
+    margin-top: 10px;
+}
+
+.mainPanel .checkoutProcessBlock .shippingMethod ul{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.mainPanel .checkoutProcessBlock .shippingMethod ul input{
+    margin-right: 4px;
+}
+.mainPanel .checkoutProcessBlock .shippingMethod .continueRow{
+    margin-top: 10px;
+}
+.mainPanel .checkoutProcessBlock .paymentInformation .paypal{
+    padding-left: 20px;
+}
+.mainPanel .checkoutProcessBlock .paymentInformation .credit{
+    padding-top: 10px;
+}
+.mainPanel .checkoutProcessBlock .paymentInformation .typeBlock{
+    line-height: 30px;
+    height: 30px;
+}
+.mainPanel .checkoutProcessBlock .paymentInformation .typeBlock input{
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+.mainPanel .checkoutProcessBlock .paymentInformation .paramBlock.credit{
+    display: none;
+}
+
+.mainPanel .checkoutProcessBlock .paymentInformation .descript a{
+    display: inline-block;
+    margin-top: 27px;
+    color: #666;
+}
+.mainPanel .checkoutProcessBlock .paymentInformation .continueRow{
+    clear: both;
+    padding-top: 10px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .listBlock li{
+    position: relative;
+    padding: 10px 0;
+}
+.mainPanel .checkoutProcessBlock .orderReview .listBlock .paramCol{
+    margin-right: 140px;
+    color: #666;
+    line-height: 20px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .listBlock .paramCol h1{
+    font-size: 14px;
+    color: #333;
+}
+.mainPanel .checkoutProcessBlock .orderReview .listBlock .quantityCol{
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 40px;
+    text-align: center;
+    line-height: 70px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .listBlock .price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 70px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .listBlock .headerRow{
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+}
+.mainPanel .checkoutProcessBlock .orderReview .headerRow .paramCol{
+    line-height: 24px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .headerRow .price{
+    font-size: 12px;
+    line-height: 24px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .headerRow .quantityCol{
+    line-height: 24px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .totalBlock{
+    line-height: 40px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .totalBlock li{
+    position: relative;
+}
+.mainPanel .checkoutProcessBlock .orderReview .totalBlock .label{
+    margin-right: 110px;
+    text-align: right;
+}
+.mainPanel .checkoutProcessBlock .orderReview .totalBlock .priceCol{
+    position: absolute;
+    right:0;
+    top: 0;
+    text-align: right;
+}
+.mainPanel .checkoutProcessBlock .orderReview .totalBlock b{
+    font-size: 16px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .continueRow{
+    position: relative;
+    margin-top: 20px;
+}
+.mainPanel .checkoutProcessBlock .orderReview .continueRow .extra{
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.mainPanel .checkoutProcessBlock .orderReview .continueRow .extra a{
+    text-decoration: underline;
+}
+.bottomSpace{
+    height: 120px;
+}
+
+
+@media only screen and (max-width: 785px) {
+    header .top_logoBlockHolder{
+        display: block;
+    }
+    .mainPanel .cartListBlock {
+        display: none;
+    }
+    .mainPanel .checkoutProcessBlock{
+        margin-right: 0;
+    }
+    .mainPanel .checkoutProcessBlock li .operationBlock{
+        padding: 10px;
+    }
+    .mainPanel .checkoutProcessBlock .login .registerBlock{
+        width: auto;
+        float: none;
+        margin-top: 20px;
+    }
+    .mainPanel .checkoutProcessBlock .login .loginBlock{
+        width: auto;
+        float: none;
+    }
+    .mainPanel .checkoutProcessBlock li .operationBlock h3{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .mainPanel .checkoutProcessBlock li .operationBlock .halfLeft,
+    .mainPanel .checkoutProcessBlock li .operationBlock .halfRight {
+        float: none;
+        width: auto;
+    }
+
+    .mainPanel .checkoutProcessBlock li .operationBlock .continueButton {
+        width: 100%;
+    }
+    .mainPanel .checkoutProcessBlock .paymentInformation .descript a{
+        margin-top: 0;
+    }
+    .mainPanel .checkoutProcessBlock .orderReview .continueRow{
+        margin-top: 0;
+    }
+    .mainPanel .checkoutProcessBlock .orderReview .continueRow .extra{
+        position: static;
+        line-height: 40px;
+    }
+    .bottomSpace{
+        height: 20px;
+    }
+
+    .common_topNavigationBlock{
+        position: fixed;
+        left:auto;
+        background: #000;
+        top:0;
+        width: 100%;
+        z-index: 100;
+    }
+}
+

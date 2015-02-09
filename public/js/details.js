@@ -5,12 +5,11 @@ var EBE_GoodsViewManager = function(){
 	var holderEl = el.find(".placeholderBG");
 
 	var mainPreviewEl = el.children(".imgContainer");
-	var listEl = el.find(".listGroup");
+	var listEl = $(".leftGroup .listGroup");
 	var containerEl = listEl.find(".listContainer");
 	var containerUlEl = containerEl.find("ul");
 	var leftArrowEl = listEl.find(".leftArrow").hide();
 	var rightArrowEl = listEl.find(".rightArrow");
-	var showMoreEl = el.find(".showMore");
 	var containerLiEl = containerUlEl.find("li");
 	
 	var viewMaskEl = el.find(".whitehMask"); 
@@ -33,7 +32,7 @@ var EBE_GoodsViewManager = function(){
 
 	var viewCount = 0;
 	var totalItem = containerLiEl.length;;
-	var liWidth = 137;
+	var liWidth = 142;
 	var liRightM = 0;
 	
 	var i,str="";
@@ -60,19 +59,6 @@ var EBE_GoodsViewManager = function(){
 		containerLiEl.eq(viewIndexL).addClass("checked");
 		setMainViewIndex( viewIndexL );
 	}
-
-	showMoreEl.mouseenter(function(){
-		listEl.stop();
-		listEl.animate({"bottom":0},"fast",function(){
-			showMoreEl.hide();
-		});
-	});
-	listEl.mouseleave(function(){
-		listEl.stop();
-		listEl.animate({"bottom":-220},"fast",function(){
-			showMoreEl.css("display","");
-		});
-	});
 	leftArrowEl.click(function(){
 		containerUlEl.stop();
 		scrollIndex--;
@@ -183,9 +169,8 @@ var EBE_GoodsViewManager = function(){
 	
 	function updateViewListCountBySize(){
 		var lWidth = listEl.width();
-		var mWidth = lWidth - 30;
-		viewCount = Math.floor( mWidth/liWidth );
-		var remain = mWidth % liWidth;
+		viewCount = Math.floor( lWidth/liWidth );
+		var remain = lWidth % liWidth;
 		var spacer = remain;
 		if( remain == 0){
 			spacer = liWidth;
@@ -193,16 +178,10 @@ var EBE_GoodsViewManager = function(){
 		}else if( remain < 4){
 			spacer = liWidth+remain;
 			viewCount--;
-		}
+        }
 		liRightM = viewCount ==0?0:spacer/(viewCount-1);
-		if( liRightM > 20){
-			liRightM = 20;
-		}
 		containerUlEl.width( totalItem * ( liWidth + liRightM) );
 		containerLiEl.css("marginRight",liRightM);
-		var nWidth = viewCount*liWidth + (viewCount-1)*liRightM;
-		var sideSpacer = (lWidth - nWidth)/2;
-		containerEl.css({"left":sideSpacer,"right":sideSpacer});
 		if(scrollIndex + viewCount > totalItem){
 			scrollIndex = totalItem - viewCount;
 			containerUlEl.css("left",-scrollIndex * 141);

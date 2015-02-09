@@ -2,6 +2,9 @@
 .comm_footerBeforeHolder{
     background-color: #f9f9f9;
 }
+.topSwitchPanel .comm_centerBlock{
+    max-width: none;
+}
 .comm_centerBlock{
     max-width: 1190px;
 }

@@ -1,0 +1,44 @@
+.mainPanel .subTitleBar{
+    font-size: 16px;
+    border-bottom: 1px solid #666;
+    padding: 20px 0 10px 0;
+}
+.mainPanel .infoBlock{
+    line-height: 240px;
+    height: 240px;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    background: #fff url("../../images/customer/comment_empty_bg.jpg") no-repeat center center;
+}
+.mainPanel .infoBlock a{
+    color: #e0183f;
+}
+
+.bottomSpace{
+    height: 120px;
+}
+@media only screen and (max-width: 785px) {
+    header .top_logoBlockHolder{
+        display: block;
+    }
+    .mainPanel .subTitleBar,
+    .mainPanel table{
+        display: none;
+    }
+    .common_topNavigationBlock{
+        position: fixed;
+        left:auto;
+        background: #000;
+        top:0;
+        width: 100%;
+        z-index: 100;
+    }
+    .mainPanel .infoBlock{
+        line-height: 480px;
+        height: 480px;
+    }
+    .bottomSpace{
+        height: 40px;
+    }
+}

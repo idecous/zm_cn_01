@@ -1,0 +1,117 @@
+.mainPanel .messageBlock{
+    padding-top: 95px;
+    text-align: center;
+    line-height: 30px;
+}
+.mainPanel .messageBlock i{
+    display: inline-block;
+    width: 42px;
+    height: 38px;
+    background: url(../../../img/show/icons.png) no-repeat -120px -144px;
+    vertical-align: -10px;
+}
+.mainPanel .messageBlock h1{
+    font-size: 26px;
+    display: inline-block;
+    margin: 0 20px;
+}
+.mainPanel .messageBlock a{
+    color: #666;
+    vertical-align: 2px;
+    white-space: nowrap;
+}
+.mainPanel .subTitleBar{
+    margin-top: 95px;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+.mainPanel .subTitleBar h1{
+    font-size: 20px;
+    float: left;
+}
+.mainPanel .subTitleBar .separator{
+    border-bottom: 1px solid #e1e1e1;
+    position: absolute;
+    left: 280px;
+    right: 0;
+    bottom: 0;
+}
+
+.mainPanel  .listBlock{
+    margin-top: 20px;
+    margin-left: -26px;
+}
+
+.mainPanel  .listBlock li{
+    width: 25%;
+    float: left;
+    margin-bottom: 40px;
+}
+.mainPanel  .listBlock li .border{
+    margin-left: 26px;
+    text-align: center;
+}
+.mainPanel  .listBlock li .border img{
+    width: 100%;
+}
+.mainPanel  .listBlock li .border h2{
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+}
+.mainPanel  .listBlock li .border h1{
+    font-size: 18px;
+    color: #f33b7e;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 40px;
+}
+.mainPanel  .listBlock li .border a{
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 14px;
+    line-height: 42px;
+    width:  140px;
+}
+.mainPanel  .listBlock li .border a:hover{
+    border: 1px solid #666;
+    background-color: #666;
+    color: #fcd4d2;
+}
+.bottomSpace{
+    height: 40px;
+}
+
+@media only screen and (max-width: 785px) {
+    .mainPanel .subTitleBar{
+        height: auto;
+    }
+    .mainPanel .subTitleBar h1 {
+        float: none;
+        text-align: center;
+    }
+    .mainPanel .subTitleBar .separator{
+        position: static;
+        margin-top: 10px;
+    }
+    .mainPanel .listBlock{
+        margin: 20px 0;
+        text-align: center;
+    }
+    .mainPanel .listBlock li{
+        float: none;
+        display: block;
+        width: auto;
+    }
+    .mainPanel .listBlock li .border{
+        margin: 0;
+        width: 100%;
+        max-width: 230px;
+        display: inline-block;
+    }
+}

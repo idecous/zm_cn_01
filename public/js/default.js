@@ -331,7 +331,8 @@ var EBE_MobileMenuManager = function(){
 		setNavVisible(false);	
 	});
 };
-var EBE_TopMenuModule = function(el,index){
+var EBE_TopMenuModule = function(owner,el,index){
+
 	var mainWidth= 200;
 	var subWidth = 235;
 	var blockEl = el.find(".popBlock");
@@ -367,7 +368,10 @@ var EBE_TopMenuModule = function(el,index){
 	mainMenuEl.height( maxLiCount * 48 );
 	blockEl.height( maxLiCount * 48 );
 	subBlockEl.height( maxLiCount * 48 );
-	
+
+    el.mouseenter(function(){
+        el.find(".popBlock").css("left",owner.offset().left);
+    });
 	if( imgEl.length > 0){
 		if(imgEl.prop("complete")){
 			imgCompleteHandler();
@@ -454,10 +458,24 @@ var EBE_TopMenuModule = function(el,index){
 	});
 };
 var EBE_TopMenuManager = function(){
-	var el = $(".header .normalMenu .topNavModule");
-	var moduleBlockEls = el.children("li");
+    var windowEl = $(window);
+	var normalMenuEl = $(".header .normalMenu");
+    function scrollHandler(){
+        if( windowEl.scrollTop() > 131 ){
+            if( !normalMenuEl.hasClass("fixed") ){
+                normalMenuEl.addClass("fixed");
+            }
+        }else if( normalMenuEl.hasClass("fixed") ){
+            normalMenuEl.removeClass("fixed");
+        }
+    }
+    windowEl.scroll(scrollHandler);
+    scrollHandler();
+
+    var el = $(".header .normalMenu .topNavModule");
+    var moduleBlockEls = el.children("li");
 	moduleBlockEls.each( function( index ){
-		new EBE_TopMenuModule( moduleBlockEls.eq(index) ,index);
+		new EBE_TopMenuModule(el, moduleBlockEls.eq(index) ,index);
 	} ); 
 };
 var TopSwitchManager = function(){
@@ -635,6 +653,9 @@ var EBE_AccordionManager = function(){
 		}
 	}
 };
+var EBE_Table = function(){
+    $("table.interval tr:even").css("backgroundColor","#f8f7f7");
+}
 
 var G_screenHeightManager;
 var G_shoppingCar=null;
@@ -652,4 +673,5 @@ $(function(){
 	new EBE_TopMenuManager();
 	new TopSwitchManager();
 	new EBE_AccordionManager();
+    new EBE_Table();
 });

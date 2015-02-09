@@ -129,24 +129,21 @@
 	z-index: 7;
 	background: url(1pAlpha.png);
 }
- .mainPreviewBlock .listGroup{
-	position:absolute;
-	left:0;
-	bottom: -220px;
-	width: 100%;
+ .leftGroup .listGroup{
+	position:relative;
 	height: 220px;
-	background:rgba(0,0,0,0.5);
-    z-index: 8;
+    margin-top: 10px;
+     margin-right: -1px;
 }
- .mainPreviewBlock .listGroup .listContainer{
+ .leftGroup .listGroup .listContainer{
 	position: absolute;
-	top: 9px;
-	left: 15px;
-	right: 15px;
-	bottom: 9px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 }
-.mainPreviewBlock .listGroup .arrow{
+.leftGroup .listGroup .arrow{
 	position:absolute;
 	top:50%;	
 	width: 15px;
@@ -154,34 +151,34 @@
 	background: url(../images/details_preview_arrows.png);
 	margin-top: -110px;
 }
-.mainPreviewBlock .listGroup .leftArrow{
+.leftGroup .listGroup .leftArrow{
 	left: 0;
 	background-position: 0 0;
 }
-.mainPreviewBlock .listGroup .rightArrow{
+.leftGroup .listGroup .rightArrow{
 	right: 0;
 	background-position: -15px 0;
 }
-.mainPreviewBlock .listContainer ul{
+.leftGroup .listGroup .listContainer ul{
 	position: absolute;
 	left: 0;
 	top: 0;
 }
-.mainPreviewBlock .listContainer ul li{
+.leftGroup .listGroup .listContainer ul li{
 	position:relative;
 	float:left;
-	width: 135px;
-	height:198px;
-	border:1px solid #908986;
+	width: 140px;
+	height:204px;
+	border:1px solid #fff;
 	overflow: hidden;
 }
-.mainPreviewBlock .listContainer ul li a img{
+.leftGroup .listGroup .listContainer ul li a img{
 	width: 100%;
 }
-.mainPreviewBlock .listContainer ul li.checked{
-	border:1px solid #000;
+.leftGroup .listGroup .listContainer ul li.checked{
+	border:1px solid #f44585;
 }
-.mainPreviewBlock .listContainer ul li a i{
+.leftGroup .listGroup .listContainer ul li a i{
 	position:absolute;
 	left:50%;
 	top:50%;
@@ -191,21 +188,6 @@
 	margin-left: -25px;
 	margin-top: -25px;
 	background: url(../images/details_playerBtn.png);
-}
-.mainPreviewBlock .showMore{
-	position:absolute;
-	bottom:0;
-	left:0;
-	line-height:38px;
-	width: 100%;
-	height: 38px;
-	color:#fff;
-	font-size:14px;
-	background:rgba(0,0,0,0.5);
-    z-index: 9;	
-}
-.mainPreviewBlock .showMore span{
-	padding-left:10px;
 }
 
 .mainPreviewBlock .mobileNavBlock{
@@ -450,7 +432,7 @@
 	display: inline-block;
 	width: 22px;
 	height: 14px;
-	background: url(../images/icons.png) no-repeat -7px 0;
+	background: url(../images/icons.png) no-repeat -161px -34px;
 	margin-right: 4px;
 	vertical-align: -2px;
 }
@@ -650,18 +632,13 @@
 		background:url(1pAlpha.png);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 	}
-	
 	.mainPreviewBlock .whitehMask{
-	background:url(1pAlpha.png);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7AFFFFFF, endColorstr=#7AFFFFFF);
-	}
-	.mainPreviewBlock .listGroup{
-	background:url(1pAlpha.png);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+        background:url(1pAlpha.png);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7AFFFFFF, endColorstr=#7AFFFFFF);
 	}
 	.mainPreviewBlock .showMore{
-	 background:url(1pAlpha.png);
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
+         background:url(1pAlpha.png);
+         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7A000000, endColorstr=#7A000000);
 	}
 }
 .header .topNavigationBlock .normalMenu .current {
@@ -673,7 +650,8 @@
 	.comm_navDenoteBar,
 	.leftGroup .sizePanel,
 	.mainPreviewBlock .showMore,
-	.mainParamBlock .partViewPosUtility{
+	.mainParamBlock .partViewPosUtility,
+    .leftGroup .listGroup{
 		display: none;
 	}
 	.mainPreviewBlock {
@@ -711,30 +689,5 @@
 		max-width: 230px;
 		margin-left: 0;
 	}
-	.mainParamBlock .messageNavBar ul{
 
-	}
-	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
