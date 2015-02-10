@@ -4,7 +4,7 @@
     left: 335px;
     width: 512px;
     height: 260px;
-    background: url(../../../img/customer/checkout/onepage_popwin.png) no-repeat;
+    background: url(../../images/checkout/onepage_popwin.png) no-repeat;
     display: none;
     z-index: 1000;
 }

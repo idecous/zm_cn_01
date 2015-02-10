@@ -688,7 +688,7 @@ EBE_PaymentModule.prototype = Object.create(EBE_ModuleBase.prototype);
         this.continueEl = this.el.find(".continueButton");
 
         this.popBtnEl = this.el.find(".inputUnit .descript");
-        this.popWindowEl = $(".popWindow");
+        this.popWindowEl = $(".popWindow").eq(1);
     };
 }).call(EBE_PaymentModule.prototype);
 
