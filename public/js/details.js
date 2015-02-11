@@ -184,16 +184,19 @@ var EBE_GoodsViewManager = function(){
 		containerLiEl.css("marginRight",liRightM);
 		if(scrollIndex + viewCount > totalItem){
 			scrollIndex = totalItem - viewCount;
-			containerUlEl.css("left",-scrollIndex * 141);
+			containerUlEl.css("left",-scrollIndex * 142);
 		}	
 		if( scrollIndex >= (totalItem-viewCount) ){ 
 			rightArrowEl.hide();
 		}else if( scrollIndex + viewCount < totalItem){
 			rightArrowEl.show();
-		}	
+		}
+        if( scrollIndex < 0){
+            scrollIndex = 0;
+        }
 		containerUlEl.css( "left",-scrollIndex * (liWidth+liRightM));
 	}
-	function setMainViewIndex(value){ 
+	function setMainViewIndex(value){
 		if( value ==  viewIndexM){return;}
 		mainViewImgEl.stop();
 		if( viewIndexM != -1){
