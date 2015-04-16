@@ -9,7 +9,7 @@
     max-width: 1190px;
 }
 .mainPanel .topSwitchPanel{
-    background-color: #959aae;
+    /*background-color: #959aae;*/
 }
 .comm_topSwitchViewBlock .topSwitchNavBlock{
     display: block;
@@ -57,10 +57,13 @@
 .row01 .group01 .g1_c2{
     display: inline-block;
     width: 50%;
+    margin: 0;
+    padding: 0;
 }
 .row01 .group01 .g1_c3{
     display: inline-block;
     width: 100%;
+
 }
 .row01 .group02{
     position: absolute;
@@ -68,6 +71,10 @@
     top: 0;
     width: 25.72%;
 }
+.row01 .group02 a{
+    display: block;
+}
+
 .row02{
     margin-top: 35px;
 }
@@ -299,6 +306,9 @@
 @media \0screen {
     .comm_centerBlock{
         width: 1190px;
+    }
+    .row01 .group01 .g1_c3{
+        margin-top: -3px;
     }
 }
 @media only screen and (max-width: 784px) {
